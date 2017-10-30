@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+>
+	<LinearLayout
+		android:id="@+id/ll_action_immediate"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+
+		<com.rey.material.widget.TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="快速到账"
+			android:layout_marginBottom="@dimen/dimen_35_dip"
+			android:layout_marginTop="@dimen/dimen_35_dip"
+			android:textSize="16sp"/>
+
+		<!--
+		<com.rey.material.widget.TextView
+			android:id="@+id/tv_describe"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="(两小时内到账)"
+			android:textSize="12sp"/>-->
+	</LinearLayout>
+</LinearLayout>

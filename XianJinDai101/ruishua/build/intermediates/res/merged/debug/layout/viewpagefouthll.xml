@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/viewpagefouthimg"
+        android:layout_width="1000px"
+        android:layout_height="1000px"
+        android:layout_marginTop="175px"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"/>
+    <ImageView
+        android:id="@+id/guidefouthtextimgview"
+        android:layout_width="700px"
+        android:layout_height="250px"
+        android:layout_marginTop="50px"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        />
+    <ImageView
+        android:id="@+id/viewpagefouth_startimg"
+        android:layout_width="450px"
+        android:layout_height="120px"
+        android:src="@drawable/guidefouthbutton"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_marginTop="50px"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

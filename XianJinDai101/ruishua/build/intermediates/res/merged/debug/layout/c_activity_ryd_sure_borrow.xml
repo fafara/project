@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/c_widget_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_amount" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c_tv_borrow_amount"
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px"
+                    android:text="¥0.00"
+                    android:textColor="@color/xd_blue" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_ryd_pending_amount" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/c_ryd_tv_pending_amount"
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px"
+                    android:text="¥0.00"
+                    android:textColor="@color/xd_blue" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:id="@+id/c_sure_borrow_shoukuan_account_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="60px"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_receive_bank_no" />
+
+                <TextView
+                    android:id="@+id/c_sure_borrow_shoukuan_account"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="60px" />
+
+                <ImageView
+                    android:id="@+id/c_sure_borrow_shoukuan_iv"
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/c_sure_borrow_shoukuan_account"
+                    android:src="@drawable/bank_default"
+                    android:visibility="visible" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_huankuan_bank_no" />
+
+                <TextView
+                    android:id="@+id/c_sure_borrow_huankuan_account"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginRight="60px" />
+
+                <ImageView
+                    android:id="@+id/c_sure_borrow_huankuan_iv"
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/c_sure_borrow_huankuan_account"
+                    android:src="@drawable/bank_default"
+                    android:visibility="visible" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />
+
+ <!--           <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="到账金额" />
+
+                <TextView
+                    android:id="@+id/c_daozhang_amount_tv"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px"
+                    android:text="0元"
+                    android:textColor="@color/xd_blue" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />-->
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_start_end_time" />
+
+                <TextView
+                    android:id="@+id/c_start_dead_date_tv"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />
+
+<!--            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_longest_time" />
+
+                <TextView
+                    android:id="@+id/tv_borrowterm"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px"
+                    android:text="0天" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>-->
+
+            <View style="@style/BlackHorizontalLine" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_borrower" />
+
+                <TextView
+                    android:id="@+id/c_tv_borrow_name"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View style="@style/BlackHorizontalLine" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="@android:color/white">
+
+                <TextView
+                    style="@style/SureBorrow.ContentTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_sure_borrow_borrower_id" />
+
+                <TextView
+                    android:id="@+id/c_borrow_sure_id_tv"
+                    style="@style/SureBorrow.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="60px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/c_borrow_sure_tip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60px"
+                    android:text="@string/c_sure_borrow_tipryd"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="90px"
+                    android:layout_marginTop="60px"
+                    android:text="@string/c_sure_borrow_tip2"
+                    android:textColor="@color/red_second"
+                    android:textSize="@dimen/bodylittletextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:orientation="vertical">
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/c_sure_borrow_btn"
+                    style="@style/CLightRaiseColorButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="60px"
+                    android:text="@string/c_sure_borrow"
+                    android:textSize="@dimen/bodytextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

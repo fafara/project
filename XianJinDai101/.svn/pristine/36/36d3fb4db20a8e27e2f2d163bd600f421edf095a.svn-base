@@ -1,0 +1,70 @@
+package com.ryx.payment.ruishua.activity;
+
+import android.webkit.WebView;
+import android.widget.TextView;
+
+import com.ryx.payment.ruishua.R;
+import com.ryx.payment.ruishua.bean.MsgInfo;
+import com.ryx.payment.ruishua.bean.Param;
+import com.ryx.payment.ruishua.bean.RyxPayResult;
+import com.ryx.payment.ruishua.net.XmlCallback;
+import com.ryx.payment.ruishua.utils.DateUtil;
+
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Click;
+import org.androidannotations.annotations.EActivity;
+import org.androidannotations.annotations.ViewById;
+
+@EActivity(R.layout.activity_message_detail_activiy)
+public class MessageDetailActiviy extends BaseActivity {
+
+    @ViewById(R.id.tv_msgtitle)
+    TextView tv_msgtitle;
+    @ViewById(R.id.tv_time)
+    TextView tv_time;
+    @ViewById(R.id.wv_msg)
+    WebView wv_msg;
+
+    private MsgInfo msgMap = new MsgInfo();
+    Param qtpayNoticeCode;
+
+    @AfterViews
+    public void initViews() {
+        setTitleLayout("我的消息", true, false);
+        if (getIntent() != null) {
+            msgMap = (MsgInfo) getIntent().getSerializableExtra("msgMap");
+            if (msgMap != null) {
+                tv_msgtitle.setText(msgMap.getTitle());
+                wv_msg.loadDataWithBaseURL(null,msgMap.getContent(),"text/html","utf-8",null);
+                if (msgMap.getTime() != null) {
+                    tv_time.setText(DateUtil.DateToShortStr(DateUtil.StrToDate(msgMap.getTime())));
+                }
+                initQtPatParams();
+                //如果是个人消息，并且如果消息未读，则更新个人消息状态
+                if ("1".equals(msgMap.getNoticeType())&&"0".equals(msgMap.getReadFlag()))
+                    updatePersonalMsg();
+            }
+        }
+
+    }
+
+    private void updatePersonalMsg() {
+        qtpayApplication = new Param("application", "UpdatePublicNoticePerson.Req");
+        qtpayNoticeCode = new Param("noticeCode");
+        qtpayNoticeCode.setValue(msgMap.getNoticeCode() + "");
+        qtpayAttributeList.add(qtpayApplication);
+        qtpayParameterList.add(qtpayNoticeCode);
+        httpsPost("UpdatePublicNoticePerson", new XmlCallback() {
+            @Override
+            public void onTradeSuccess(RyxPayResult payResult) {
+
+            }
+        });
+
+    }
+
+    @Click(R.id.tileleftImg)
+    public void cancelPage() {
+        finish();
+    }
+}

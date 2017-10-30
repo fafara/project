@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GridBG"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/merchantinfo_title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"></include>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_geti"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFAB2E"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.zhy.autolayout.AutoLinearLayout
+           android:id="@+id/ll_userinfoaddlayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_shiming_geti" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                style="@style/shiming_text_getititle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:text="@string/i_am_a_self_employed" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_show_yewuguize_geti"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:gravity="center_vertical|left" >
+
+            <TextView
+                android:id="@+id/tv_yewuguize1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:clickable="false"
+                android:padding="10dp"
+                android:text="@string/view_business_rules"
+                android:textColor="@color/view_business_rules_self_employed"
+                android:textSize="16sp" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_renzheng_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:src="@drawable/img_shiming_jiantou11" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/yewuguize_geti"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/img_shiming_ico_blue" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_rule1"
+                    android:padding="10dp"
+                    android:text=" "
+                    android:textColor="@color/text_a"
+                    android:textSize="16sp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!-- shanghu -->
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/ll_shanghu"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="36dp"
+        android:background="#9BD119"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right|center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="20dp"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_shiming_shanghu" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                style="@style/shiming_text_getititle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:clickable="false"
+                android:text="@string/i_am_a_business" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_show_yewuguize_shanghu"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:gravity="center_vertical|left" >
+
+            <TextView
+                android:id="@+id/tv_yewuguize2"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="9"
+                android:clickable="false"
+                android:padding="10dp"
+                android:text="@string/view_business_rules"
+                android:textColor="@color/view_business_rules_business"
+                android:textSize="16sp" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_renzheng_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:src="@drawable/img_shiming_jiantou21" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/yewuguize_shanghu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/img_shiming_ico_green" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text=" "
+                    android:id="@+id/tv_rule2"
+                    android:textColor="@color/text_a"
+                    android:textSize="16sp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

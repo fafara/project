@@ -1,0 +1,109 @@
+package com.ryx.ryxcredit.newfragment.baseinfo;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.rey.material.widget.Button;
+import com.ryx.ryxcredit.R;
+import com.ryx.ryxcredit.utils.CLogUtil;
+import com.ryx.ryxcredit.utils.CPreferenceUtil;
+import com.ryx.ryxcredit.xjd.BaseInfoSuccesActivity;
+import com.zhy.autolayout.AutoLinearLayout;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class JingDongFragment extends Fragment implements View.OnClickListener {
+    private BaseInfoSuccesActivity baseInfoActivity;
+    private BaseInfoSuccesActivity callback;
+    private CPreferenceUtil preferenceUtil;
+    private View rootView;
+    private AutoLinearLayout ll_sitchooseone_jingdong_account;
+    private EditText et_sitchooseone_jingdong_account;
+    private AutoLinearLayout ll_sitchooseone_jingdong_password;
+    private EditText et_sitchooseone_jingdong_password;
+    private CheckBox cb_sitchooseone_jingdong_agreement;
+    private Button bt_sitchooseone_jingdong_next;
+    private int cb_sitchooseone_jingdong_agreement_num;
+    private TextView tv_sitchooseone_creditcardbill_agreement;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        baseInfoActivity = (BaseInfoSuccesActivity) getActivity();
+        callback = (BaseInfoSuccesActivity) getActivity();
+        preferenceUtil = CPreferenceUtil.getInstance(getActivity().getApplication());
+        rootView = inflater.inflate(R.layout.xjd_sixchooseone_fragment_jing_dong, container, false);
+        initView();
+        return rootView;
+    }
+
+    /*
+    * 初始化控件
+    * */
+    private void initView() {
+        ll_sitchooseone_jingdong_account = (AutoLinearLayout) rootView.findViewById(R.id.xjd_ll_sitchooseone_jingdong_account);
+        et_sitchooseone_jingdong_account = (EditText) rootView.findViewById(R.id.xjd_et_sitchooseone_jingdong_account);
+        ll_sitchooseone_jingdong_password = (AutoLinearLayout) rootView.findViewById(R.id.xjd_ll_sitchooseone_jingdong_password);
+        et_sitchooseone_jingdong_password = (EditText) rootView.findViewById(R.id.xjd_et_sitchooseone_jingdong_password);
+        cb_sitchooseone_jingdong_agreement = (CheckBox) rootView.findViewById(R.id.xjd_cb_sitchooseone_jingdong_agreement);
+        bt_sitchooseone_jingdong_next = (Button) rootView.findViewById(R.id.xjd_bt_sitchooseone_jingdong_next);
+        tv_sitchooseone_creditcardbill_agreement = (TextView) rootView.findViewById(R.id.xjd_tv_sitchooseone_creditcardbill_agreement);
+        tv_sitchooseone_creditcardbill_agreement.setOnClickListener(this);
+        cb_sitchooseone_jingdong_agreement.setOnClickListener(this);
+        bt_sitchooseone_jingdong_next.setOnClickListener(this);
+    }
+    /*
+    * 检测内容是否输入完整
+    * */
+    private boolean checkInput() {
+        String sitchooseone_jingdong_accountEt = et_sitchooseone_jingdong_account.getText().toString().trim();
+        if (TextUtils.isEmpty(sitchooseone_jingdong_accountEt)) {
+            CLogUtil.showToast(getActivity(), "京东账号不能为空!");
+            return false;
+        }
+        String sitchooseone_jingdong_passwordEt = et_sitchooseone_jingdong_password.getText().toString().trim();
+        if (TextUtils.isEmpty(sitchooseone_jingdong_passwordEt)) {
+            CLogUtil.showToast(getActivity(), "京东密码不能为空!");
+            return false;
+        }
+        if (cb_sitchooseone_jingdong_agreement_num ==1) {
+            CLogUtil.showToast(getActivity(), "请同意授权信息使用协议!");
+            return false;
+        }
+        return true;
+    }
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id==R.id.xjd_bt_sitchooseone_jingdong_next){
+            if (checkInput()){
+
+            }
+        }else if(id==R.id.xjd_cb_sitchooseone_jingdong_agreement){
+            cb_sitchooseone_jingdong_agreement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (cb_sitchooseone_jingdong_agreement.isChecked()) {
+                        cb_sitchooseone_jingdong_agreement_num =0;
+                    }else{
+                        cb_sitchooseone_jingdong_agreement_num =1;
+                    }
+                }
+            });
+        }else if(id==R.id.xjd_tv_sitchooseone_creditcardbill_agreement){
+            //跳转协议
+            CLogUtil.showLog("协议");
+        }
+    }
+
+
+}

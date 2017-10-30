@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="20dp"
+    tools:showIn="@layout/activity_scanning_code"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent">
+
+        <com.rey.material.widget.Button
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:id="@+id/btn_select_pic"
+            android:text="相册选择二维码"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <com.rey.material.widget.Button
+            android:layout_marginLeft="8dp"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:id="@+id/btn_open_light"
+            android:text="开灯"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+        <com.rey.material.widget.Button
+            android:visibility="gone"
+            android:layout_marginLeft="8dp"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:id="@+id/btn_close_light"
+            android:text="关灯"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

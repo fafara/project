@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+    <include layout="@layout/ryxpaytitle"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/choose_coupons_mycoupons"
+        android:layout_height="240px"
+        android:layout_width="match_parent"
+        android:layout_margin="40px"
+        android:background="@color/white"
+        >
+    <ImageView
+        android:id="@+id/choose_coupons_oneimg"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60px"
+        android:src="@drawable/choose_coupon"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/choose_coupons_oneimg"
+        android:text="手续费优惠券"
+        android:textColor="@color/black"
+        android:textSize="@dimen/maxtextsize"
+        android:layout_marginLeft="60px"/>
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/c_icon_jiantou_right"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/choose_coupons_mycardvoucher"
+        android:layout_height="240px"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/choose_coupons_twoimg"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60px"
+            android:src="@drawable/choose_coupon_cardvoucher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/choose_coupons_twoimg"
+            android:text="我的卡券"
+            android:textColor="@color/black"
+            android:textSize="@dimen/maxtextsize"
+            android:layout_marginLeft="60px"/>
+        <ImageView
+            android:layout_width="20px"
+            android:layout_height="50px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:layout_centerVertical="true"
+            android:src="@drawable/c_icon_jiantou_right"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

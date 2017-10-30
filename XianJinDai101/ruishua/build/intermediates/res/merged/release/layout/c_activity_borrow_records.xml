@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.ryx.ryxcredit.ryd.BorrowRecordsActivity">
+
+    <include layout="@layout/c_widget_title" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        app:elevation="0dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/c_tl_borrow_records"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:tabSelectedTextColor="@color/xd_blue"
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            app:tabTextColor="@color/threeblack">
+
+            <!--<android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="applyAction"
+                android:text="申请中"
+                 />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="payAction"
+                android:text="待还款" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="payAction"
+                android:text="已结清" />-->
+        </android.support.design.widget.TabLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/fourblack"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/c_fl_borrow_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

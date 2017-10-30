@@ -1,0 +1,215 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryx.ryxcredit.newfragment.baseinfo.CenterBankCreditFragment">
+
+    <com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_bg"
+        android:orientation="vertical"
+        tools:context="com.ryx.ryxcredit.activity.CenterBankCreditActivity">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="@color/grey_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_login_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="授权瑞蚨小贷获取你的央行征信报告"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/selector_user_action_bg"
+            android:clickable="true" >
+            <TextView
+                android:id="@+id/tv_login_loginname"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="40px"
+                android:text="登录名:"
+                android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/et_login_loginname_input"
+                android:layout_width="0dp"
+                android:layout_height="150px"
+                android:layout_weight="1"
+                android:layout_marginLeft="190px"
+                android:drawablePadding="8dp"
+                android:hint="请输入"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:textSize="12sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/selector_user_action_bg"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_login__loginpassword"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="40px"
+                android:text="登录密码:"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/et_login_loginpassword_inpput"
+                android:layout_width="0dp"
+                android:layout_height="150px"
+                android:layout_marginLeft="153px"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="请输入"
+                android:inputType="textPassword"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:textSize="12sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0" />
+
+        <!--       &lt;!&ndash;图片验证码&ndash;&gt;
+               <com.zhy.autolayout.AutoLinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="150px"
+                   android:background="@drawable/selector_user_action_bg"
+                   android:clickable="true">
+
+                   <TextView
+                       android:id="@+id/tv_login_imageverificationcode"
+                       style="@style/textViewStyle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="40px"
+                       android:gravity="center"
+                       android:text="图片验证码:"
+                       android:textSize="12sp" />
+
+                   <EditText
+                       android:id="@+id/et_login_imageverificationcode_input"
+                       android:layout_width="282px"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="116px"
+                       android:hint="请输入"
+                       android:textColorHint="#cccccc"
+                       android:textCursorDrawable="@null"
+                       android:background="@null"
+                       android:textSize="12sp" />
+
+
+                   <ImageView
+                       android:id="@+id/iv_showCode"
+                       android:layout_width="282px"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="40px"
+                       android:clickable="true"/>
+               </com.zhy.autolayout.AutoLinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"/>
+
+        <!--身份验证码-->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/selector_user_action_bg"
+            android:clickable="true"
+            >
+            <TextView
+                android:id="@+id/tv_login_authentication"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="40px"
+                android:text="身份验证码:"
+                android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/et_tv_login_authentication_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="116px"
+                android:hint="请输入6位身份验证码"
+                android:maxLength="6"
+                android:textColorHint="#cccccc"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:textSize="12sp" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_login_how_get_idcardverification"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="120px"
+                android:layout_marginRight="40px"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:textColor="@color/xd_blue"
+                android:text="如何获取身份验证码? "/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.rey.material.widget.Button
+                android:id="@+id/bt_login_submit"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:background="@color/xd_colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:text="提交"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <CheckBox
+            android:id="@+id/cb_login_Agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="40px"
+            android:checked="true"
+            android:text="同意授权瑞蚨小贷获取您的征信报告"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ryx.ryxcredit">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+
+        <!-- 读取联系人权限 -->
+        <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+
+        <activity android:name=".activity.CreditActivity" />
+        <!-- android:configChanges="keyboardHidden|orientation|screenSize" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.ryx.credit.main"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".activity.BaseInfoActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.ryx.credit.promote" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".contactrecords.CallRecordsActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ryd.RepaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BorrowingMoneyActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.SureBorrowActivity" />
+        <activity android:name=".activity.PromoteQuotaActivity" />
+        <activity android:name=".ryd.RepayRecordActivity" />
+        <activity android:name=".activity.RepaymentActivity_back" />
+        <activity
+            android:name=".ryd.BorrowRecordsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ryd.BorrowDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activity.QuickPaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.ActivateLineActivity" />
+        <activity android:name=".activity.BillInfoActivity" />
+        <activity
+            android:name=".activity.CreditProductsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.InstructionActivity" />
+        <activity android:name=".activity.ComProblemActivity" />
+        <activity android:name=".activity.CommonH5Activity" />
+        <activity android:name=".activity.AgreementActivity" />
+        <activity
+            android:name="com.livedetect.FaceCollectActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:label="@string/htjc_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.livedetect.LiveDetectActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- 现金贷 -->
+        <activity
+            android:name=".xjd.MultiBorrowRecordsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xjd.CreditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ryx.credit.main" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".newactivity.BaseInfoActivity" />
+        <activity android:name=".xjd.BankSelectActivity" />
+        <activity android:name=".xjd.PromoteAmountActivity" />
+        <activity
+            android:name=".xjd.MultiBorrowDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xjd.XJDBorrowMoneyActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".xjd.XJDRepaymentAcitivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".xjd.XJDRepayPlanActivity" />
+        <activity
+            android:name=".xjd.XJDQuickrepaymentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".xjd.XJDSureBorrowActivity" />
+        <activity android:name=".xjd.MultiRYDRepayRecordActivity" />
+        <activity android:name=".newactivity.ActivateLineActivity" />
+        <activity
+            android:name=".xjd.BaseInfoSuccesActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".xjd.CenterBankCreditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name=".xjd.CommonH5Activity" />
+        <activity android:name=".xjd.XJDComProblemActivity" />
+        <activity android:name=".xjd.XJDMiddleActivity" />
+        <activity android:name=".ryd.activity.RYDSureBorrowActivity" />
+        <activity
+            android:name=".ryd.activity.RYDBorrowMoneyActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ryd.activity.RYDQuickrepaymentActivity" />
+        <activity android:name=".ryd.activity.RKDQuickrepaymentActivity" />
+        <activity android:name=".ryd.activity.RYDComProblemActivity" />
+        <activity android:name=".ryd.activity.MiddleActivity" />
+        <activity android:name=".activity.MiddleProblemActivity" />
+        <activity android:name=".ryd.activity.RYDMultiBorrowDetailActivity" />
+        <activity android:name=".ryd.activity.RYDRepayPlanActivity" />
+        <activity android:name=".ryd.activity.RYDMultiBorrowRecordsActivity" />
+        <activity android:name=".ryd.activity.RYDRepaymentAcitivity" />
+        <activity android:name=".ryd.activity.RYDBaseInfoSuccesActivity" />
+        <activity android:name=".ryd.activity.QuotaActivity" />
+        <activity android:name=".xjd.RKDQuotaActivity" />
+        <activity android:name=".xjd.RYDBossBaseInfoActivity" />
+        <activity android:name=".xjd.RKDBossBaseInfoSuccessActivity" />
+        <activity android:name=".ryd.activity.RYDBankSelectActivity" />
+        <activity android:name=".xjd.SixChooseOneActivity"></activity>
+    </application>
+
+</manifest>

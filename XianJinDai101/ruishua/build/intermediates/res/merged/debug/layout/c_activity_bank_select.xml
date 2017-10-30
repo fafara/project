@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/c_widget_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/c_rv_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <!--添加储蓄卡-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_add_debitCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60px"
+        android:paddingBottom="42px"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:paddingTop="42px"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/add_bank_card"
+            android:textAlignment="center"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/home_right_img"
+            android:scaleType="fitCenter" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_support_banklist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/threeblack"
+        android:textSize="@dimen/leasttextsize" />
+
+</com.zhy.autolayout.AutoLinearLayout>

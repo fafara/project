@@ -1,0 +1,758 @@
+[
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pic_delete_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pic_delete_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_manualwork_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_manualwork_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_delete_hismsg_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_delete_hismsg_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_7.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_7.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\trm_popup_bg.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\bae6441fa63dae40676c9361950fe74d425e17f2\\output\\res\\drawable-xhdpi-v4\\trm_popup_bg.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_back_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_back_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_tag_nonet.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_tag_nonet.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_chatfrom_bg_normal.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_chatfrom_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_zan_grey.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_zan_grey.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_successed_icon.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_successed_icon.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_copy_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_copy_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_manualwork_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_manualwork_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_dcim_hover.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_dcim_hover.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_star_empty.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_star_empty.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_keyboard_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_keyboard_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\work.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\work.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_6.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_6.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_star_full.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_star_full.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_camera_picture_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_camera_picture_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_back_disable.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_back_disable.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_bottombar_satisfaction.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_bottombar_satisfaction.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_announcement_img_icon.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_announcement_img_icon.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_avatar_robot.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_avatar_robot.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\systemmaintenanc.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\systemmaintenanc.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_btn_sendmsg_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_btn_sendmsg_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\boss.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\boss.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_fuzhi_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_fuzhi_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_5.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_5.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_chatto_bg_normal.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_chatto_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_take_picture_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_take_picture_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_8.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_8.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_fuzhi_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_fuzhi_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\c_credit_treat.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\c_credit_treat.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_leavemsg_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_leavemsg_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_takephoto.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_takephoto.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_10.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_10.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_5.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_5.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_button_yes_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_button_yes_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_reload_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_reload_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_loading_01.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_loading_01.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\systemmaintenanceclosebutton.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\systemmaintenanceclosebutton.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_dcim.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_dcim.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_reload_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_reload_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_loading_img.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_loading_img.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_black_right_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_black_right_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_keyboard_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_keyboard_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_close_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_close_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_emoticon_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_emoticon_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_3.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_3.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_copy_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_copy_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_timeshort.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_timeshort.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_glasses.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_glasses.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_logo_small_icon.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_logo_small_icon.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_black_right_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_black_right_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_volum2.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_volum2.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_forward_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_forward_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_2.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_2.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_not_readinfo.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_not_readinfo.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_delete_hismsg_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_delete_hismsg_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_icon_voice.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_icon_voice.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_5.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_5.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_no_grey.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_no_grey.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_volum4.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_volum4.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_take_picture_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_take_picture_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_emoticon_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_emoticon_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_failed_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_failed_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_cancel.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_cancel.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\message_bubble_1.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\message_bubble_1.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_2.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_2.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_1.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_1.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_bottombar_satisfaction_disabled.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_bottombar_satisfaction_disabled.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_1.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_1.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_face_frame.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_face_frame.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_letter.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_letter.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_picture_satisfaction_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_picture_satisfaction_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_satisfaction_disabled2x.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_satisfaction_disabled2x.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\pop_menu_bg.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\bae6441fa63dae40676c9361950fe74d425e17f2\\output\\res\\drawable-xhdpi-v4\\pop_menu_bg.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_12.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_12.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_1.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_1.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_nonet.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_nonet.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_no_white.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_no_white.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_volum5.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_volum5.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_emoticon_del_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_emoticon_del_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_forward_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_forward_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_mike.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_mike.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_start.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_start.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_picture_satisfaction_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_picture_satisfaction_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_reloading.gif",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_reloading.gif"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_leavemsg_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_leavemsg_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_close_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_close_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_back_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_back_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_start_hover.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_start_hover.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pic_list_add.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pic_list_add.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_back_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_back_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_sun.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_sun.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_11.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_11.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_picture_add_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_picture_add_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_3.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_3.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_iv_login_right.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_iv_login_right.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_word_delete_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_word_delete_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_3.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_3.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_bottombar_conversation.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_bottombar_conversation.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_chatfrom_voice_playing.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_chatfrom_voice_playing.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_right_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_right_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pic_delete_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pic_delete_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_2.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_2.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_vioce_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_vioce_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_webview_toolsbar_forward_disable.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_webview_toolsbar_forward_disable.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_consulting_default_pic.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_consulting_default_pic.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_logo_icon.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_logo_icon.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_volum3.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_volum3.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_picture_add_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_picture_add_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_load_4.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_load_4.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_word_delete_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_word_delete_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_4.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_send_anime_4.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_dialog_button_yes_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_dialog_button_yes_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_recording_volum1.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_recording_volum1.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\htjc_main_face.png",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\htjc_main_face.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_right_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_right_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_default_pic.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_default_pic.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_uploadpicture.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_uploadpicture.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_chatting_default_head.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_chatting_default_head.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_zan_white.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_zan_white.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_btn_sendmsg_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_btn_sendmsg_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_skill_group_scroll_img.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_skill_group_scroll_img.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_avatar_customerservice.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_avatar_customerservice.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_emoticon_del_press.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_emoticon_del_press.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_vioce_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_vioce_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_zan_blue.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_zan_blue.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_bottombar_message.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_bottombar_message.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_icon_back_pressed.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_icon_back_pressed.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_4.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_voice_receive_anime_4.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_camera_picture_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_camera_picture_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_failed_normal.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_failed_normal.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_default_pic_err.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_default_pic_err.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\sobot_pop_satisfaction2x.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\drawable-xhdpi-v4\\sobot_pop_satisfaction2x.png"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    }
+]

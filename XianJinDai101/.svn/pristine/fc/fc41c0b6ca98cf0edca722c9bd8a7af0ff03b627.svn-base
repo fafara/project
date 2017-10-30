@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_draw"
+            android:title="余额提现" />
+
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_record"
+            android:title="交易记录" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_pwd"
+            android:title="修改密码" />
+        <!--<item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_devs"
+            android:title="支付设备" />-->
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_center">
+        <item
+            android:id="@+id/nav_attention"
+            android:icon="@drawable/ic_menu_attention"
+            android:title="用户须知" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_menu_about"
+            android:title="关于我们" />
+        <item
+            android:id="@+id/nav_tel"
+            android:icon="@drawable/ic_menu_tel"
+            android:title="联系客服" />
+       <!-- <item
+            android:id="@+id/nav_resend"
+            android:icon="@drawable/ic_menu_resend"
+            android:title="意见反馈" />-->
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_bottom">
+        <item
+            android:id="@+id/nav_version"
+            android:icon="@drawable/ic_menu_version"
+            android:title="版本信息" />
+
+    </group>
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_resend"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>

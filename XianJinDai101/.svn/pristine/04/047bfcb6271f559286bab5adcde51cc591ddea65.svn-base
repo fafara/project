@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ryxpaytitle"></include>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_height="200px"
+    android:layout_marginTop="80px"
+    android:layout_marginBottom="20px"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="70px"
+    android:layout_marginRight="40px"
+    >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="2">
+        <ImageView
+            android:id="@+id/repayment_bankimgview"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/repayment_banknametextview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/repayment_bankimgview"
+            android:gravity="center"
+            android:textSize="@dimen/bodytextsize"
+            android:layout_marginLeft="15px"
+            android:text=""/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/tv_bankCardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/fourblack"
+            android:textSize="@dimen/bodytextsize"
+            android:text=""/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+<TextView
+    android:id="@+id/username"
+    android:gravity="right|center_vertical"
+    android:layout_weight="1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:textSize="@dimen/bodytextsize"
+    android:text=""/>
+</com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_marginLeft="70px"
+        android:background="@color/payhorizontalline" />
+
+<EditText
+    android:id="@+id/repayment_money"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:hint="请输入还款金额"
+    android:textColorHint="@color/fourblack"
+    android:layout_marginLeft="70px"
+    android:background="@null"
+    android:digits = "0123456789."
+    android:inputType="numberDecimal"
+    android:textColor="@color/secondblack"
+    android:textSize="@dimen/bodytextsize"
+    android:singleLine="true"
+    android:textCursorDrawable="@null"
+    />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_marginLeft="70px"
+        android:background="@color/payhorizontalline" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="120px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/bt_next"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="下一步"/>
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

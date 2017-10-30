@@ -1,0 +1,145 @@
+{
+    "desc": "icon功能列表",
+    "getIconList": [
+        {
+            "flag": "mobile_charge",
+            "id": "MobileRechargeActivity_",
+            "idx": "1",
+            "name": "手机充值",
+            "res": "icon_skin_mobilerecharge",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "liuliang_charge",
+            "id": "FlowActivity_",
+            "idx": "2",
+            "name": "流量充值",
+            "res": "icon_skin_flowrecharge",
+            "show": "0",
+            "permission":"01"
+        },
+    {
+          "flag": "jiayouka_charge",
+          "id": "RefuelRechargeActivity_",
+          "idx": "3",
+          "name": "加油卡充值",
+          "res": "icon_skin_gasfillingcardrecharge",
+          "show": "0",
+          "permission":"01"
+      },
+
+        {
+            "flag": "alipay_charge",
+            "id": "AliPayActivity_",
+            "idx": "4",
+            "name": "支付宝充值",
+            "res": "icon_skin_alipayrecharge",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "usernote",
+            "id": "HtmlMessageActivity_",
+            "idx": "5",
+            "name": "用户须知",
+            "res": "icon_skin_usernote",
+            "show":"0",
+            "permission":"01"
+        },
+        {
+                    "flag": "qb_charge",
+                    "id": "QCoinRecharge_",
+                    "idx": "6",
+                    "name": "Q币充值",
+                    "res": "icon_skin_qqcoinrecharge",
+                    "show": "1",
+                    "permission":"01"
+                },
+        {
+            "flag": "jd_charge",
+            "id": "JDRechargeActivity_",
+            "idx": "7",
+            "name": "京东卡充值",
+            "res": "icon_skin_jd_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+
+        {
+            "flag": "no1_charge",
+            "id": "NO1Recharge",
+            "idx": "8",
+            "name": "1号店礼品卡",
+            "res": "icon_skin_1no_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+
+        {
+            "flag": "ymx_charge",
+            "id": "YMXRecharge",
+            "idx": "9",
+            "name": "亚马逊礼品卡",
+            "res": "icon_skin_yamaxun_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+        {
+            "flag": "suning_charge",
+            "id": "SUNINGRecharge",
+            "idx": "10",
+            "name": "苏宁易购卡",
+            "res": "icon_skin_suning_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+        {
+            "flag": "sd_charge",
+            "id": "SDRecharge",
+            "idx": "11",
+            "name": "盛大点券 ",
+            "res": "icon_skin_shengda_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+        {
+            "flag": "bk_charge",
+            "id": "BKRecharge",
+            "idx": "12",
+            "name": "波克城市",
+            "res": "icon_skin_boke_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+        {
+            "flag": "sjtc_charge",
+            "id": "SJTCRecharge",
+            "idx": "13",
+            "name": "世纪天成 ",
+            "res": "icon_skin_tiancheng_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+        {
+            "flag": "gy_charge",
+            "id": "GYRecharge",
+            "idx": "14",
+            "name": "光宇币 ",
+            "res": "icon_skin_guangyu_recharge",
+            "show": "1",
+            "permission":"01"
+        },
+        {
+            "flag": "wm_charge",
+            "id": "WMRecharge",
+            "idx": "15",
+            "name": "完美点劵",
+            "res": "icon_skin_wanmei_recharge",
+            "show": "1",
+            "permission":"01"
+        }
+    ],
+    "result": "0",
+    "serviceid": "getIconlist"
+}

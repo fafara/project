@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_bank_icon"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginLeft="60px"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/tv_bankno"
+        android:layout_toRightOf="@+id/iv_bank_icon"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="69px"
+        android:layout_marginBottom="69px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/bodytextsize" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

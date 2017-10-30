@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/rl_user_transfer"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/dimen_150_dip"
+	android:background="@drawable/selector_user_action_bg"
+	android:clickable="true"
+>
+	<ImageView
+		android:id="@+id/iv_more_img"
+		android:layout_width="@dimen/dimen_66_dip"
+		android:layout_height="@dimen/dimen_66_dip"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="@dimen/dimen_60_dip"
+		android:scaleType="centerInside"
+		android:src="@drawable/icon_skin_credit"/>
+	<TextView
+		android:id="@+id/tv_more_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="@dimen/dimen_60_dip"
+		android:layout_toRightOf="@id/iv_more_img"
+		android:text="@string/tv_user_transfer"
+		android:textColor="#000000"
+		android:textSize="16sp"/>
+	<CheckBox
+		android:id="@+id/cb_show"
+		android:layout_width="@dimen/dimen_70_dip"
+		android:layout_height="@dimen/dimen_70_dip"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/more_function_checkbox_bg"
+		android:button="@null"
+		android:layout_marginRight="@dimen/dimen_46_dip"/>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_alignLeft="@id/tv_user_transfer"
+		android:layout_alignParentBottom="true"
+		android:background="@color/DevideBlock"
+	/>
+</RelativeLayout>

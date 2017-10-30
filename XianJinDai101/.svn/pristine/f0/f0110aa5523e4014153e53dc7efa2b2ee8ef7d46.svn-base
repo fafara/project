@@ -1,0 +1,356 @@
+package com.ryx.ryxcredit.newfragment.baseinfo.boss;
+
+
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.livedetect.utils.LogUtil;
+import com.livedetect.utils.SerializableObjectForData;
+import com.rey.material.widget.Button;
+import com.ryx.quickadapter.inter.NoDoubleClickListener;
+import com.ryx.ryxcredit.R;
+import com.ryx.ryxcredit.beans.ReqAction;
+import com.ryx.ryxcredit.services.ICallback;
+import com.ryx.ryxcredit.services.UICallBack;
+import com.ryx.ryxcredit.utils.CLogUtil;
+import com.ryx.ryxcredit.utils.CPreferenceUtil;
+import com.ryx.ryxcredit.utils.HttpUtil;
+import com.ryx.ryxcredit.widget.RyxCreditLoadDialog;
+import com.ryx.ryxcredit.xjd.CommonH5Activity;
+import com.ryx.ryxcredit.xjd.RYDBossBaseInfoActivity;
+import com.ryx.ryxcredit.xjd.bean.CentralBankCreditStatus.CentralBankCreditStatusRequest;
+import com.ryx.ryxcredit.xjd.bean.CentralBankCreditStatus.CentralBankCreditStatusResponse;
+import com.ryx.ryxcredit.xjd.bean.centralBankCredit.CentralBankCreditRequest;
+import com.ryx.ryxcredit.xjd.bean.centralBankCredit.CentralBankCreditResponse;
+
+import java.util.Calendar;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import static com.ryx.ryxcredit.R.id.cb_login_Agreement;
+import static com.ryx.ryxcredit.R.id.et_login_loginname_input;
+import static com.ryx.ryxcredit.R.id.et_tv_login_authentication_input;
+import static com.ryx.ryxcredit.RyxcreditConfig.context;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class RYDBossCentBankFragment extends Fragment{
+    private TextView mtv_login_report ;//授权瑞扶小贷获取你的央行征信报告
+    private TextView mtv_login_loginname;//登录名
+    private EditText met_login_loginname_input;//请输入
+    private TextView mtv_login__loginpassword;//登录密码
+    private EditText met_login_loginpassword_inpput;//请输入
+    private TextView mtv_login_imageverificationcode;//图片验证码
+    private EditText met_login_imageverificationcode_input;//请输入
+    private TextView mtv_login_authentication;//身份验证码
+    private EditText met_tv_login_authentication_input;//请输入
+    private TextView mtv_login_how_get_idcardverification;//如何获取身份证验证码
+    private Button mbt_login_submit;//提交
+    private CheckBox mcb_login_Agreement;//同意授权瑞扶小贷获取您的征信报告
+    // private ImageView iv_showCode;
+    private RYDBossBaseInfoActivity baseInfoActivity;
+    private View rootView;
+    public SerializableObjectForData mSerializableObjectForData;
+    private RYDBossBaseInfoActivity callback;
+    private CPreferenceUtil preferenceUtil;
+    private String loginName;
+    private String loginPassword;
+    private String authentication;
+    private String result;
+    private String user_info_level;
+    private Timer mtimer;
+    private  int frequency =0;
+    private int cb_login_Agreement_num;
+    private int CenterBankCreditResponseCount;
+    private int mMinuts;
+    private Calendar mCalendar;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        baseInfoActivity = (RYDBossBaseInfoActivity) getActivity();
+        callback = (RYDBossBaseInfoActivity) getActivity();
+        preferenceUtil = CPreferenceUtil.getInstance(getActivity().getApplication());
+        rootView = inflater.inflate(R.layout.fragment_rydboss_cent_bank, container, false);
+        //  user_info_level = getArguments().getString("user_info_level");
+/*        if (user_info_level!=null) {
+            user_info_level = baseInfoActivity.getUser_info_level();
+        }*/
+        LogUtil.i("user_info_level",user_info_level);
+        if (Integer.parseInt(Build.VERSION.SDK) >= 14) {
+            getActivity().getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+        }
+        mSerializableObjectForData = new SerializableObjectForData();
+        user_info_level = ((RYDBossBaseInfoActivity) getActivity()).getUser_info_level();
+        // initConfig();
+        initView();
+        return rootView;
+    }
+
+    //控件初始化
+    private void initView() {
+        mtv_login_report = (TextView) rootView.findViewById(R.id.tv_login_report);
+        mtv_login_loginname= (TextView) rootView.findViewById(R.id.tv_login_loginname);
+        met_login_loginname_input= (EditText) rootView.findViewById(et_login_loginname_input);
+        mtv_login__loginpassword= (TextView)rootView. findViewById(R.id.tv_login__loginpassword);
+        met_login_loginpassword_inpput= (EditText)rootView. findViewById(R.id.et_login_loginpassword_inpput);
+        //       mtv_login_imageverificationcode= (TextView) findViewById(R.id.tv_login_imageverificationcode);
+        //       met_login_imageverificationcode_input= (EditText) findViewById(R.id.et_login_imageverificationcode_input);
+        mtv_login_authentication= (TextView) rootView.findViewById(R.id.tv_login_authentication);
+        met_tv_login_authentication_input= (EditText) rootView.findViewById(et_tv_login_authentication_input);
+        mtv_login_how_get_idcardverification= (TextView) rootView.findViewById(R.id.tv_login_how_get_idcardverification);
+        mbt_login_submit= (Button) rootView.findViewById(R.id.bt_login_submit);
+        mcb_login_Agreement= (CheckBox)rootView. findViewById(cb_login_Agreement);
+        //   iv_showCode = (ImageView) findViewById(R.id.iv_showCode);
+//        mtileleftImg.setVisibility(View.VISIBLE);
+        //将验证码用图片的形式显示出来
+    /*    iv_showCode.setImageBitmap(CCode.getInstance().createBitmap());
+        code = CCode.getInstance().getCode();
+        iv_showCode.setOnClickListener(this);*/
+        rootView.findViewById(R.id.bt_login_submit).setOnClickListener(new NoDoubleClickListener() {
+            @Override
+            public void onNoDoubleClick(View v) {
+                if (CenterBankCreditResponseCount>=5){
+                    Calendar mCalendar=Calendar.getInstance();
+                    mCalendar.setTimeInMillis(System.currentTimeMillis());
+                    //取得分钟
+                    mMinuts=mCalendar.get(Calendar.MINUTE);
+                    int currentmMinuts = CPreferenceUtil.getInstance(context.getApplicationContext()).getInt("mMinuts",0);
+                    if (mMinuts > CPreferenceUtil.getInstance(context.getApplicationContext()).getInt("mMinuts",mMinuts)+ 30) {
+                        CenterBankCreditResponseCount = 0;
+                    } else {
+                        CLogUtil.showToast(getActivity(), "输入错误次数过多，请半小时以后再试!");
+                    }
+                }
+                if (checkInput()) {
+                    if (CenterBankCreditResponseCount<5) {
+                        RyxCreditLoadDialog.getInstance(getActivity()).setMessage("授权需要1-2分钟，请不要退出!");
+                        RyxCreditLoadDialog.getInstance(getActivity()).show();
+                        submitData();
+                    }
+                    //征信+电信运营商
+                }
+            }
+        });
+        rootView.findViewById(cb_login_Agreement).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mcb_login_Agreement.isChecked()) {
+                    cb_login_Agreement_num =0;
+                }else{
+                    cb_login_Agreement_num =1;
+                }
+            }
+        });
+        rootView.findViewById(R.id.tv_login_how_get_idcardverification).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(baseInfoActivity, CommonH5Activity.class);
+                intent.putExtra("url_address","https://mposprepo.ruiyinxin.com:4430/xiaodai/peopleline/bank.html");
+                intent.putExtra("title","如何获取身份证验证码");
+                startActivity(intent);
+            }
+        });
+        // mtv_login_how_get_idcardverification.setOnClickListener((View.OnClickListener) this);
+    }
+
+
+
+    private boolean checkInput() {
+        loginName = met_login_loginname_input.getText().toString().trim();
+        if (TextUtils.isEmpty(loginName)) {
+            CLogUtil.showToast(getActivity(), "登录名不能为空");
+            return false;
+        }
+        loginPassword = met_login_loginpassword_inpput.getText().toString().trim();
+        if (TextUtils.isEmpty(loginPassword)) {
+            CLogUtil.showToast(getActivity(), "登录密码不能为空！");
+            return false;
+        }
+/*         imageVerificationCode = met_login_imageverificationcode_input.getText().toString().trim();
+        if (TextUtils.isEmpty(imageVerificationCode)) {
+            CLogUtil.showToast(CenterBankCreditActivity.this, "图片验证码不能为空！");
+            return false;
+        }*/
+        authentication = met_tv_login_authentication_input.getText().toString().trim();
+        if (TextUtils.isEmpty(authentication)) {
+            CLogUtil.showToast(getActivity(), "身份验证码不能为空！");
+            return false;
+        }
+        if (authentication.length()<6||authentication.length()>6){
+            CLogUtil.showToast(getActivity(), "请输入6位数验证码！");
+            return false;
+        }
+/*        if (code.equalsIgnoreCase(imageVerificationCode)){
+
+        }else {
+            CLogUtil.showToast(CenterBankCreditActivity.this, "请填写正确的图片验证码！");
+            return false;
+        }*/
+        if (cb_login_Agreement_num ==1) {
+            CLogUtil.showToast(getActivity(), "请同意授权瑞扶小贷获取您的征信报告！");
+            return false;
+        }
+        return true;
+    }
+
+    public void onClick(View v) {
+        int i = v.getId();
+        /*if (i == R.id.iv_showCode) {
+            iv_showCode.setImageBitmap(CCode.getInstance().createBitmap());
+
+        } else*/
+        if (i == R.id.bt_login_submit) {
+            //将数据保存在本地
+            if(checkInput()){
+                CentralBankCreditRequest centralBankCreditRequest = new CentralBankCreditRequest();
+                centralBankCreditRequest.setBankcredit_name( met_login_loginname_input.getText().toString().trim());
+                centralBankCreditRequest.setBankcredit_pass_word(met_login_loginpassword_inpput.getText().toString().trim());
+                centralBankCreditRequest.setBankcredit_verification(met_tv_login_authentication_input.getText().toString().trim());
+                savePersonalInfo();
+                CLogUtil.showToast(getActivity(), "修改资料成功！");
+                submitData();
+            }else {
+                savePersonalInfo();
+            }
+
+
+        }
+/*        else if (i== R.id.tv_login_how_get_idcardverification){
+            try {
+                Intent intent = new Intent(CenterBankCreditActivity.this,Class.forName(getApplicationContext().getPackageName() + ".activity.HtmlMessageActivity_"));
+                intent.putExtra("title","如何获取身份证验证码");
+                intent.putExtra("urlkey", CConstants.CREDIT_ID_NUM_ADDRESS);
+                startActivity(intent);
+            } catch (Exception e) {
+                e.printStackTrace();
+                CLogUtil.showToast(CenterBankCreditActivity.this, "数据异常！");
+            }
+        }*/
+
+    }
+
+    private void submitData() {
+        CentralBankCreditRequest centralBankCreditRequest = new CentralBankCreditRequest();
+        centralBankCreditRequest.setBankcredit_name(loginName);
+        centralBankCreditRequest.setBankcredit_pass_word(loginPassword);
+        centralBankCreditRequest.setBankcredit_verification(authentication);
+        HttpUtil.getInstance(getActivity()).httpsPost(centralBankCreditRequest, ReqAction.LOAN_BANKCREDIT_VERIFICATION, CentralBankCreditResponse.class, new ICallback<CentralBankCreditResponse>() {
+            @Override
+            public void success(CentralBankCreditResponse centralBankCreditResponse) {
+                // CLogUtil.showToast(CenterBankCreditActivity.this, "客户信息审核中");
+                RyxCreditLoadDialog.getInstance(getActivity()).setMessage("授权需要1-2分钟，请不要退出!");
+                RyxCreditLoadDialog.getInstance(getActivity()).show();
+                doResearch();
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(getActivity(), tips);
+                RyxCreditLoadDialog.getInstance(getActivity()).dismiss();
+
+            }
+        },new UICallBack() {
+            @Override
+            public void complete() {
+
+            }
+        });
+    }
+    //激活时人行征信状态
+    private void bCreditStatus() {
+        CentralBankCreditStatusRequest centralBankCreditStatusRequest = new CentralBankCreditStatusRequest();
+        HttpUtil.getInstance(getActivity()).httpsPost(centralBankCreditStatusRequest, ReqAction.LOAN_BCREDITSTATUS, CentralBankCreditStatusResponse.class, new ICallback<CentralBankCreditStatusResponse>() {
+
+            @Override
+            public void success(CentralBankCreditStatusResponse centralBankCreditStatusResponse) {
+                // CLogUtil.showToast(CenterBankCreditActivity.this, "客户信息审核中");
+                result =centralBankCreditStatusResponse.getResult();
+                if ("I".equalsIgnoreCase(result)) {
+                    // Toast.makeText(getContext(),"信息校验中",Toast.LENGTH_LONG).show();
+                    CLogUtil.showToast(getActivity(), "信息校验中");
+                    if(frequency==12){
+                        CLogUtil.showToast(getActivity(), "审核失败，请重试...");
+                        RyxCreditLoadDialog.getInstance(getActivity()).dismiss();
+                        mtimer.cancel();
+                    }else{
+                        frequency++;
+                    }
+
+                }else if ("S".equalsIgnoreCase(result)||("P".equalsIgnoreCase(result))) {
+                    Toast.makeText(getContext(), "信息校验成功", Toast.LENGTH_SHORT).show();
+                    if (mtimer != null) {
+                        mtimer.cancel();
+                        RyxCreditLoadDialog.getInstance(getActivity()).dismiss();
+                        if(mtimer == null){
+                            callback.setFaceCollectInfo();
+                        }
+                    }
+                }else if ("F".equalsIgnoreCase(result)) {
+                    //   Toast.makeText(getContext(),"用户名或密码错误",Toast.LENGTH_LONG).show();
+                    CenterBankCreditResponseCount++;
+                    if(CenterBankCreditResponseCount<5){
+                    mCalendar = Calendar.getInstance();
+                    mCalendar.setTimeInMillis(System.currentTimeMillis());
+                    //取得分钟
+                    mMinuts = mCalendar.get(Calendar.MINUTE);
+                    preferenceUtil.saveInt("mMinuts",mMinuts);
+                    CLogUtil.showToast(getActivity(), "用户名或密码错误");
+                }
+                    RyxCreditLoadDialog.getInstance(getActivity()).dismiss();
+                    mtimer.cancel();
+                }else if ("E".equalsIgnoreCase(result)) {
+                    //   Toast.makeText(getContext(),"身份验证码错误",Toast.LENGTH_LONG).show();
+                    CLogUtil.showToast(getActivity(), "身份验证码错误");
+                    RyxCreditLoadDialog.getInstance(getActivity()).dismiss();
+                    mtimer.cancel();
+                }
+
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(getActivity(), tips);
+                mtimer.cancel();
+                RyxCreditLoadDialog.getInstance(getActivity()).dismiss();
+            }
+        },new UICallBack() {
+            @Override
+            public void complete() {
+
+            }
+        });
+    }
+
+    private void savePersonalInfo() {
+        preferenceUtil.saveString("loginName",loginName);
+        preferenceUtil.saveString("loginPassword",loginPassword);
+        preferenceUtil.saveString("authentication",authentication);
+    }
+    //轮询search接口
+    private void doResearch() {
+        if (mtimer == null) {
+            mtimer = new Timer();
+            mtimer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    bCreditStatus();
+
+                }
+            }, 1000, 10000);
+        }
+    }
+
+}

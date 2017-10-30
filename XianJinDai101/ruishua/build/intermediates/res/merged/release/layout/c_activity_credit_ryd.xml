@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef1f3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/c_credit_home_header"
+        layout="@layout/c_widget_title" />
+
+    <!--额度审核中-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/c_credit_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c_credit_home_header"
+        android:background="@color/xd_blue"
+        android:orientation="vertical">
+        <!--额度审核中-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/xd_blue"
+            android:orientation="vertical">
+            <!--额度陆续开放中-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_opening"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/xd_blue"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180px"
+                    android:gravity="center"
+                    android:text="@string/c_credit_opening"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titletext" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="206px"
+                    android:layout_marginTop="50px"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bodylittletextsize"
+                    android:visibility="invisible" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <!--额度审核中-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_under_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/xd_blue"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180px"
+                    android:gravity="center"
+                    android:text="@string/c_limit_of_credit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titletext" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="206px"
+                    android:layout_marginTop="50px"
+                    android:gravity="center"
+                    android:text="请耐心等待"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bodylittletextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <!--信用评级未通过-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_check_denied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/xd_blue"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center"
+                    android:text="@string/c_estimate_not_gone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titletext" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="132px"
+                    android:layout_marginTop="60px"
+                    android:gravity="center"
+                    android:text="@string/c_estimate_not_gone_tip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bodylittletextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <!--重新激活-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_re_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/xd_blue"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48px"
+                    android:gravity="center"
+                    android:text="您的额度已过期，请重新激活"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/commontextsize" />
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/c_btn_activate"
+                    style="@style/CLightwhiteColorButtonRippleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90px"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="132px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/c_white_1px_rectangle"
+                    android:gravity="center"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="重新激活"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/contenttitletext" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <!--activation_status未返回值-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_has_not_applied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/c_default_ll_credit_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/xd_blue"
+                    android:orientation="vertical">
+<!--最高额度-->
+                    <TextView
+                        android:id="@+id/c_default_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:text="@string/c_max_amount_credit"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/bodylittletextsize"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <com.ryx.ryxcredit.widget.CMoneyTextView
+                        android:id="@+id/c_default_tv_max_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/c_default_tv_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30px"
+                        android:singleLine="true"
+                        android:text="0.00"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/biggertitletextsize"
+                        android:textStyle="bold" />
+
+<!--当前额度-->
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_below="@+id/c_default_tv_max_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="90px"
+                        android:layout_marginTop="128px"
+                        android:paddingTop="57px"
+                        android:paddingBottom="57px"
+                        android:background="@color/deep_blue"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/c_default_tv_m1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:singleLine="true"
+                            android:text="当前额度 "
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+
+                        <com.ryx.ryxcredit.widget.CMoneyTextView
+                            android:id="@+id/c_defaut_tv_available_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_toRightOf="@+id/c_default_tv_m1"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/c_ll_common_use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/c_ll_credit_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/xd_blue"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="75px"
+                        android:text="@string/c_availbale_credit"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/bodylittletextsize" />
+
+                    <com.ryx.ryxcredit.widget.CMoneyTextView
+                        android:id="@+id/c_tv_available_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30px"
+                        android:singleLine="true"
+                        android:text="0.00"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/biggertitletextsize"
+                        android:textStyle="bold" />
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_below="@+id/c_tv_available_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="90px"
+                        android:layout_marginTop="128px"
+                        android:paddingTop="57px"
+                        android:paddingBottom="57px"
+                        android:background="@color/deep_blue"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_m1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:singleLine="true"
+                            android:text="总额度 "
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+
+                        <com.ryx.ryxcredit.widget.CMoneyTextView
+                            android:id="@+id/c_tv_total_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_toRightOf="@+id/tv_m1"
+                            android:singleLine="true"
+                            android:text="0.00"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+
+                        <TextView
+                            android:id="@+id/tv_promote_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/right_promote_amount"
+                            android:text="立即提额"
+                            android:visibility="gone"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+
+                        <ImageView
+                            android:id="@+id/right_promote_amount"
+                            android:layout_width="18px"
+                            android:layout_height="36px"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginRight="30px"
+                            android:visibility="gone"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/home_right_little"
+                            android:scaleType="fitCenter" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ScrollView
+        android:id="@+id/scoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c_credit_home_top"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/c_ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/title_grey"
+            android:orientation="vertical">
+<!--瑞卡贷-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/c_borrow_rkd_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img_rkd"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/home_rkd_img"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_rkd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_rkd"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="40px"
+                    android:text="瑞易贷"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/line_rkd"
+                    android:layout_width="1px"
+                    android:layout_height="230px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80px"
+                    android:layout_toRightOf="@+id/img_rkd"
+                    android:background="@color/fourblack" />
+
+                <TextView
+                    android:id="@+id/tv2_rk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="40px"
+                    android:layout_toRightOf="@+id/line_rkd"
+                    android:text="个人信用卡账单代还（代偿）"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv3_rk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2_rk"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="40px"
+                    android:layout_toRightOf="@+id/line_rkd"
+                    android:text="最便捷灵活的现金贷款"
+                    android:textColor="@color/threeblack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv4_rk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3_rk"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@+id/line_rkd"
+                    android:text="最安全周到的贴心服务"
+                    android:textColor="@color/threeblack"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:background="@drawable/home_right_img"
+                    android:scaleType="fitCenter" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+<!--现金贷-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/c_borrow_xjd_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60px"
+                android:layout_marginTop="30px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img_xjd"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="60px"
+                    android:background="@drawable/home_xjd_img"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/tv_xjd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_xjd"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="40px"
+                    android:text="瑞卡贷"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/line_xjd"
+                    android:layout_width="1px"
+                    android:layout_height="230px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="80px"
+                    android:layout_toRightOf="@+id/img_xjd"
+                    android:background="@color/fourblack" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="40px"
+                    android:layout_toRightOf="@+id/line_xjd"
+                    android:text="消费分期贷款"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="40px"
+                    android:layout_toRightOf="@+id/line_xjd"
+                    android:text="最便捷灵活的现金贷款"
+                    android:textColor="@color/threeblack"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv3"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginLeft="80px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@+id/line_xjd"
+                    android:text="最安全周到的贴心服务"
+                    android:textColor="@color/threeblack"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:background="@drawable/home_right_img"
+                    android:scaleType="fitCenter" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_work_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/xd_blue"
+                    android:textSize="@dimen/bodylittletextsize"/>
+                    <com.rey.material.widget.Button
+                        android:id="@+id/c_repayment_btn"
+                        style="@style/CLightwhiteColorButtonRippleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_above="@+id/c_credit_home_footer"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginRight="40px"
+                        android:layout_marginBottom="20px"
+                        android:background="@color/xd_blue"
+                        android:text="@string/c_borrow_quickly_repment"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/bodytextsize"
+                        android:visibility="gone" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/c_credit_home_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_bottom_bg"
+        >
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/v_center"
+                    android:layout_marginRight="60px"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:text="@string/instruction"
+                    android:textColor="@color/xd_blue"
+                    android:textSize="@dimen/contenttitletext"
+                    android:visibility="visible"
+                    />
+
+                <View
+                    android:id="@id/v_center"
+                    android:layout_width="1px"
+                    android:layout_height="42px"
+                    android:layout_centerInParent="true"
+                    android:background="@color/xd_blue"
+                    android:padding="17px"
+                    android:visibility="visible"
+                    />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/tv_problem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/v_center"
+                    android:layout_marginLeft="60px"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:text="@string/c_common_problem"
+                    android:textColor="@color/xd_blue"
+                    android:textSize="@dimen/contenttitletext"
+                    android:visibility="visible"
+                    />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25px"
+                android:layout_marginBottom="15px">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c_ruiqiaodai_tip2"
+                    android:textColor="@color/threeblack"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/bodylittletextsize" />
+                <TextView
+                    android:id="@+id/tv_service_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/c_service_mobile"
+                    android:textAlignment="center"
+                    android:textColor="@color/xd_blue"
+                    android:visibility="gone"
+                    android:textSize="12sp"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

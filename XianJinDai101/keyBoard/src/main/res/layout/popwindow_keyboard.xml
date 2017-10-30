@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/corner_bg_white_transprent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ITEM_DIVIDER" />
+			
+			 <LinearLayout
+                    android:id="@+id/keyboard_linearLayout4"
+                    android:layout_width="match_parent"
+                    android:background="@color/keytabNoselectBac"
+                    android:layout_height="45dip"
+                    android:weightSum="4"
+                     >
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:weightSum="3" >
+
+                        <Button
+                            android:id="@+id/btn_number"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:background="@color/keytabNoselectBac"
+                            android:text="@string/keyboard_digital"
+                            android:textColor="@color/keytabselectTextBc"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btn_character"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/keytabNoselectBac"
+                            android:text="@string/keyboard_character"
+                            android:textColor="@color/keytabNoselectTextBc"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/btn_symbol"
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:background="@color/keytabNoselectBac"
+                            android:text="@string/keyboard_flag"
+                            android:textColor="@color/keytabNoselectTextBc"
+                            android:gravity="center"
+                            android:textSize="18sp" />
+                       
+                    </LinearLayout>
+				 <Button
+                        android:id="@+id/btn_keyboard_ok"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/keytabNoselectBac"
+                        android:text="@string/button_ok"
+                        android:textColor="@color/BLACK"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+                    
+                </LinearLayout>
+			
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WHITE"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llkeyboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="162dip"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+               
+            </LinearLayout>
+        </LinearLayout>
+    </ViewFlipper>
+
+</ScrollView>

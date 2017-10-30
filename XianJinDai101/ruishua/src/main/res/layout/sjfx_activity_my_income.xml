@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/ryxpaytitle" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/nodatalayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_white"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:src="@drawable/noincomedetails"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textmsg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="暂无数据!"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/secondblack"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+   <!-- <com.cjj.MaterialRefreshLayout
+        android:id="@+id/materialRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:wave_color="#20ff2020"
+        app:progress_show_circle_backgroud="true"
+        app:overlay="false"
+        app:wave_show="true"
+        app:progress_backgroud_color="#FFFAFAFA"
+        app:progress_colors="@array/material_colors"
+        app:wave_height_type="normal"
+        app:progress_show_arrow="true"
+        app:isLoadMore="true"
+        >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_income"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </com.cjj.MaterialRefreshLayout>-->
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rv_income"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/GridBG"
+	android:orientation="vertical">
+	<include layout="@layout/ryxpaytitle"/>
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1">
+		<include
+			layout="@layout/include_more"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</android.support.v4.widget.NestedScrollView>
+	<com.rey.material.widget.Button
+		android:id="@+id/btn_more"
+		android:text="添加完成"
+		style="@style/LightRaiseColorButtonRippleStyle"
+		android:layout_marginTop="50px"
+		android:layout_marginBottom="50px"
+		android:layout_marginLeft="70px"
+		android:layout_marginRight="70px"
+		android:layout_width="match_parent"
+		android:gravity="center"
+		android:textSize="@dimen/contenttitletext"
+	/>
+</LinearLayout>

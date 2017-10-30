@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+>
+	<include layout="@layout/ryxpaytitle"></include>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dimen_90_dip"
+		android:layout_marginRight="@dimen/dimen_90_dip"
+		android:layout_marginTop="@dimen/dimen_110_dip"
+		android:orientation="vertical">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<EditText
+				android:id="@+id/et_mobile"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:cursorVisible="true"
+				android:ems="10"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:hint="请输入手机号码"
+				android:inputType="number"
+				android:maxLength="11"
+				android:textColorHint="#cccccc"
+				android:textCursorDrawable="@null"
+				android:textSize="16sp"/>
+			<ImageView
+				android:id="@+id/iv_select_contact"
+				android:layout_width="@dimen/dimen_70_dip"
+				android:layout_height="@dimen/dimen_70_dip"
+				android:layout_marginRight="@dimen/dimen_20_dip"
+				android:layout_alignParentRight="true"
+				android:src="@drawable/icon_recharge_contact"/>
+		</RelativeLayout>
+		<LinearLayout
+			android:id="@+id/layout_mobile"
+			android:layout_width="match_parent"
+			android:layout_height="1px"
+			android:layout_below="@id/et_mobile"
+			android:layout_marginTop="@dimen/dimen_20_dip"
+			android:background="@color/login_edt_getfocus"
+			android:orientation="horizontal"/>
+		<GridView
+			android:id="@+id/gv_amazon"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_marginTop="@dimen/dimen_60_dip"
+			android:numColumns="3"
+			android:verticalSpacing="@dimen/dimen_30_dip">
+		</GridView>
+		<com.rey.material.widget.Button
+			android:id="@+id/btn_recharge"
+			style="@style/LightRaiseColorButtonRippleStyle"
+			android:layout_marginTop="@dimen/dimen_60_dip"
+			android:layout_width="match_parent"
+			android:gravity="center"
+			android:text="充值"
+			android:textSize="@dimen/contenttitletext" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<include layout="@layout/ryxpaytitle"></include>
+	<ImageView
+		android:id="@+id/iv_update"
+		android:layout_width="96dp"
+		android:layout_height="96dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="@dimen/dimen_60_dip"
+		android:scaleType="centerInside"/>
+	<!--版本信息-->
+	<RelativeLayout
+		android:id="@+id/rl_version_info"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_147_dip"
+		android:layout_marginTop="@dimen/dimen_60_dip"
+		android:background="@drawable/selector_user_action_bg"
+		android:clickable="true"
+	>
+		<TextView
+			android:id="@+id/tv_version_info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="@dimen/dimen_60_dip"
+			android:text="@string/tv_update_info"
+			android:textColor="#000000"
+			android:textSize="16sp"/>
+		<TextView
+			android:id="@+id/tv_version_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="@dimen/dimen_60_dip"
+			android:textColor="#999999"
+			android:textSize="16sp"/>
+	</RelativeLayout>
+	<com.rey.material.widget.Button
+		android:id="@+id/btn_update"
+		style="@style/LightRaiseColorButtonRippleStyle"
+		android:layout_width="match_parent"
+		android:layout_gravity="center"
+		android:layout_marginLeft="@dimen/dimen_60_dip"
+		android:layout_marginRight="@dimen/dimen_60_dip"
+		android:layout_marginTop="@dimen/dimen_60_dip"
+		android:gravity="center"
+		android:text="@string/btn_update"
+		android:textSize="@dimen/contenttitletext"
+	/>
+</LinearLayout>

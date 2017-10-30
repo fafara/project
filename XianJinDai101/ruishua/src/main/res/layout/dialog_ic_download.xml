@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menulayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_dialog"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="刷卡器数据同步中"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_text" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  首次使用IC卡刷卡器设备需与您的手机进行数据同步，请耐心等待。"
+        android:textColor="@color/paygrytext"
+        android:textSize="@dimen/text_common" />
+
+    <ProgressBar
+        android:id="@+id/pro_state"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:maxHeight="20dip"
+        android:minHeight="20dip"
+        android:mirrorForRtl="true"
+        android:background="@drawable/first_loading1"
+        android:progressDrawable="@drawable/progress_download" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="已完成"
+        android:textColor="@color/text_a"
+        android:textSize="@dimen/bodytextsize" />
+
+</com.zhy.autolayout.AutoLinearLayout>

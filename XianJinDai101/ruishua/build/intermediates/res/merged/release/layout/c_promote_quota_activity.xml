@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<include
+		android:id="@+id/title"
+		layout="@layout/c_widget_title"></include>
+
+	<com.ryx.ryxcredit.views.LeadingDotsViews
+		android:id="@+id/ldv_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/title"
+		android:visibility="visible">
+	</com.ryx.ryxcredit.views.LeadingDotsViews>
+
+	<include
+		android:id="@+id/footer"
+		layout="@layout/c_view_common_footer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"/>
+
+	<com.zhy.autolayout.AutoLinearLayout
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_above="@id/footer"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/ldv_content"
+		android:orientation="vertical">
+		<FrameLayout
+			android:id="@+id/c_fl_base_info"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</FrameLayout>
+	</com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,43 @@
+{
+    "desc": "icon功能列表",
+    "getIconList": [
+        {
+            "flag": "invitation_code",
+            "id": "MyInvitationCodeActivity_",
+            "idx": "1",
+            "name": "我的邀请码",
+            "res": "sjfx_invitation_code",
+            "show": "0",
+            "permission":"01"
+        },
+         {
+            "flag": "income_guide",
+            "id": "IncomeGuideActivity_",
+            "idx": "2",
+            "name": "收益指南",
+            "res": "sjfx_revenue_guide",
+            "show": "0",
+            "permission":"0"
+        },
+        {
+            "flag": "device_apply",
+            "id": "DevPurchaseActivity_",
+            "idx": "3",
+            "name": "机具申购",
+            "res": "sjfx_device_apply",
+            "show": "0",
+            "permission":"01"
+         },
+        {
+            "flag": "income_detail",
+            "id": "IncomeDetailsActivity_",
+            "idx": "4",
+            "name": "收益明细",
+            "res": "sjfx_income_detail",
+            "show": "0",
+            "permission":"01"
+        }
+    ],
+    "result": "0",
+    "serviceid": "getIconlist"
+}

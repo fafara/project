@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/GridBG">
+    <include layout="@layout/ryxpaytitle"></include>
+
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60px"
+    android:layout_marginLeft="40px"
+    android:layout_marginRight="40px">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textColor="@color/threeblack"
+        android:textSize="@dimen/bodylittletextsize"
+        android:text="瑞豆数量"/>
+    <TextView
+        android:id="@+id/ruibean_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/blue_main"
+        android:textSize="@dimen/bodytextsize"/>
+</com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45px"
+        android:layout_marginLeft="40px"
+        android:layout_marginBottom="60px"
+        android:layout_marginRight="40px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="订单金额"/>
+        <TextView
+            android:id="@+id/ruibean_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodytextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/white"
+        android:layout_marginTop="20px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="选择支付方式"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/cardswiper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/bodylittletextsize"
+            android:layout_alignParentLeft="true"
+            android:text="刷卡支付"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_25_dip"
+            android:layout_height="@dimen/dimen_54_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_user_jiantou"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="40px"/>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/quickpay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:visibility="gone"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/bodylittletextsize"
+            android:layout_alignParentLeft="true"
+            android:text="快捷支付"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_25_dip"
+            android:layout_height="@dimen/dimen_54_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_user_jiantou"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="40px"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/qrcodepay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:visibility="gone"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/bodylittletextsize"
+            android:layout_alignParentLeft="true"
+            android:text="银联二维码支付"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_25_dip"
+            android:layout_height="@dimen/dimen_54_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_user_jiantou"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="40px"/>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,214 @@
+[
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\trm_popup_exit.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\bae6441fa63dae40676c9361950fe74d425e17f2\\output\\res\\anim\\trm_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\anim_scale_in.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\anim_scale_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\htjc_in_from_left.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\anim\\htjc_in_from_left.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\anim_marquee_out.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\anim_marquee_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\delete_btn_show.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\delete_btn_show.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\pop_alpha_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\bae6441fa63dae40676c9361950fe74d425e17f2\\output\\res\\anim\\pop_alpha_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\ctid_right_to_left_in.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\anim\\ctid_right_to_left_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\anim\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\trm_popup_enter.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\bae6441fa63dae40676c9361950fe74d425e17f2\\output\\res\\anim\\trm_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\htjc_in_from_right.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\anim\\htjc_in_from_right.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\htjc_out_from_left.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\anim\\htjc_out_from_left.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_left_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\push_left_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\delete_btn_hide.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\delete_btn_hide.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\sobot_popupwindow_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\sobot_popupwindow_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\slide_right_in.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\slide_right_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\slide_left_out.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\slide_left_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_up_in.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\push_up_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_left_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\push_left_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\ebdbfcd4fb9d9279a28316df22b90d226e0ba7f6\\output\\res\\anim\\push_bottom_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_bottom_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\ebdbfcd4fb9d9279a28316df22b90d226e0ba7f6\\output\\res\\anim\\push_bottom_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\slide_right_out.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\slide_right_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a8fa12802d81ebdc03704ffec5637033abca8143\\output\\res\\anim\\slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\ctid_scale.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\anim\\ctid_scale.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\ctid_alpha.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\anim\\ctid_alpha.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\anim_marquee_in.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\anim_marquee_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\ctid_myanim.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\anim\\ctid_myanim.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_right_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\push_right_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\htjc_out_from_right.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\anim\\htjc_out_from_right.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_right_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\push_right_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\ctid_cycle.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\anim\\ctid_cycle.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\ctid_right_to_left_out.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\anim\\ctid_right_to_left_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\pop_alpha_out.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\bae6441fa63dae40676c9361950fe74d425e17f2\\output\\res\\anim\\pop_alpha_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\anim_alpha.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\anim_alpha.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\sobot_popupwindow_in.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\anim\\sobot_popupwindow_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\slide_left_in.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\slide_left_in.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\push_up_out.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\push_up_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\anim_scale_out.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\anim\\anim_scale_out.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a8fa12802d81ebdc03704ffec5637033abca8143\\output\\res\\anim\\slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\anim\\abc_slide_in_top.xml"
+    }
+]

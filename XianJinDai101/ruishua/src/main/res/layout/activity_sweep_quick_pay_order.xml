@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/ryxpaytitle" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/white"
+        >
+        <com.ryx.payment.ruishua.view.SweepCreateOrderView
+            android:id="@+id/createorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

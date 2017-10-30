@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eef1f3"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+    >
+
+    <include layout="@layout/c_widget_title"></include>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <com.rey.material.widget.LinearLayout
+                android:id="@+id/lLay_base_info"
+                style="@style/CLightColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="24dp"
+                android:onClick="baseInfoAction"
+             
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/c_promote_quota_base_info_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="01"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btntext"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/c_common_base_info"
+                            android:textColor="@color/secondblack"
+                            android:textSize="@dimen/btntext"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/c_common_must_input_tip"
+                            android:textColor="@color/threeblack"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/c_dot_base_info_corners"
+                        />
+                </LinearLayout>
+            </com.rey.material.widget.LinearLayout>
+
+            <com.rey.material.widget.LinearLayout
+                android:visibility="gone"
+                style="@style/CLightColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="16dp"
+             
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/c_promote_quota_gongjijin_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="02"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btntext"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/c_common_gongjijin_renzheng"
+                            android:textColor="@color/secondblack"
+                            android:textSize="@dimen/btntext"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/c_common_option_input_tip"
+                            android:textColor="@color/threeblack"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/c_dot_gongjijin_corners"
+                        />
+                </LinearLayout>
+            </com.rey.material.widget.LinearLayout>
+
+            <com.rey.material.widget.LinearLayout
+                android:visibility="gone"
+                style="@style/CLightColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="16dp"
+             
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/c_promote_quota_shebao_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="03"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btntext"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/c_common_shebao_renzheng"
+                            android:textColor="@color/secondblack"
+                            android:textSize="@dimen/btntext"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/c_common_option_input_tip"
+                            android:textColor="@color/threeblack"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/c_dot_shebao_corners"
+                        />
+                </LinearLayout>
+            </com.rey.material.widget.LinearLayout>
+            <com.rey.material.widget.LinearLayout
+                android:visibility="gone"
+                style="@style/CLightColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="16dp"
+             
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/c_promote_quota_nashui_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="04"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btntext"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/c_common_taxes_renzheng"
+                            android:textColor="@color/secondblack"
+                            android:textSize="@dimen/btntext"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/c_common_option_input_tip"
+                            android:textColor="@color/threeblack"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/c_dot_taxes_corners"
+                        />
+                </LinearLayout>
+            </com.rey.material.widget.LinearLayout>
+            <com.rey.material.widget.LinearLayout
+                style="@style/CLightColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="16dp"
+             
+                android:orientation="horizontal"
+                android:layout_below="@id/lLay_base_info"
+                >
+
+                <TextView
+                    android:id="@+id/c_promote_quota_yanghangxinzheng_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="22dp"
+                    android:text="02"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btntext"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/c_common_yanghang_renzheng"
+                            android:textColor="@color/secondblack"
+                            android:textSize="@dimen/btntext"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/c_common_option_input_tip"
+                            android:textColor="@color/threeblack"
+                            android:textSize="12sp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/c_dot_yanghangxinzheng_corners"
+                        />
+                    <!-- android:src="@drawable/c_dot_yanghangxinzheng_corners"-->
+                </LinearLayout>
+            </com.rey.material.widget.LinearLayout>
+
+            <com.rey.material.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/CLightRaiseColorButtonRippleStyle"
+                android:text="@string/c_sure_apply"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+</LinearLayout>

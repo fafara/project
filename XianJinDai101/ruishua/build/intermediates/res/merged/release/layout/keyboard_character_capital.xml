@@ -1,0 +1,245 @@
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rlframe"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="54dip"
+                >
+
+                <Button
+                    android:id="@+id/btn_character17"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="Q" android:textStyle="normal" android:background="@drawable/keybtnbg" android:layout_weight="1"  android:tag="17" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character23"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="W" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="23" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="E" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="5" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character18"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="R" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="18" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character20"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="T" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="20" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character25"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="Y" android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="25" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character21"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="U" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="21" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character9"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="I"
+                    android:textSize="20sp"
+                    android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="9" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character16"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="O"
+                    android:textSize="20sp"
+                    android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="16" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character15"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="P"
+                    android:textSize="20sp"
+                    android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="15" android:textColor="@color/BLACK"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="54dip">
+
+                <Button
+                    android:id="@+id/btn_character1"
+                  android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="A" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="1" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character19"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="S" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="19" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character4"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="D" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="4" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="F" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="6" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="G" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="7" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character8"
+                   android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="H" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="8" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character10"
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="J" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="10" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="K" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="11" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character12"
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="L" android:textStyle="normal" android:background="@drawable/keybtnbg" android:tag="12" android:textColor="@color/BLACK"/>
+                    <Button
+                    android:id="@+id/btn_character26"
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="Z" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:textColor="@color/BLACK"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="53dip"
+                android:weightSum="10" >
+				<ImageButton 
+				    android:id="@+id/btn_shift"
+				    android:layout_weight="2"
+				    android:scaleType="center"
+				    android:layout_height="match_parent"
+				    android:layout_width="0dp"
+				    android:src="@drawable/keycasebtnbg2"
+				    android:background="@drawable/keybtnbg"
+				    />
+                <Button
+                    android:id="@+id/btn_character24"
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="X" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="24" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character3"
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="C" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="3" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="V" android:layout_weight="1" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="22" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="B" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="2" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="N" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="14" android:textColor="@color/BLACK"/>
+
+                <Button
+                    android:id="@+id/btn_character13"
+                     android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="M" android:textStyle="normal" android:background="@drawable/keybtnbg"  android:tag="13" android:textColor="@color/BLACK"/>
+				<ImageButton 
+				    android:id="@+id/btn_clear"
+				    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                      android:layout_weight="2"
+                      android:background="@drawable/keybtnbg"
+                      android:src="@drawable/delbtnbg"
+				    />
+            </LinearLayout>
+
+        </LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/qrcodelayoutview"
+    android:background="#eef1f3">
+    <include layout="@layout/ryxpaytitle"></include>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10px"
+        android:background="@color/white">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/layout1"
+            android:layout_height="126px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/drakblack"
+                android:text="商品名称"/>
+            <TextView
+                android:id="@+id/tv_productname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/drakblack"
+                android:layout_marginRight="47px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:layout_marginLeft="70px"
+            android:background="@color/payhorizontalline" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="126px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/drakblack"
+                android:text="手机号"/>
+            <TextView
+                android:id="@+id/tv_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/drakblack"
+                android:layout_marginRight="47px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:layout_marginLeft="70px"
+            android:background="@color/payhorizontalline" />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="126px"
+            android:layout_marginLeft="70px"
+            android:layout_width="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/drakblack"
+                android:text="订单金额"/>
+            <TextView
+                android:id="@+id/tv_ordermoney"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/drakblack"
+                android:layout_marginRight="47px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:layout_marginLeft="70px"
+            android:background="@color/payhorizontalline" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+<ImageView
+    android:id="@+id/qrcodeimg"
+    android:layout_width="603px"
+    android:layout_height="600px"
+    android:src="@drawable/qrcodefail"
+    android:layout_gravity="center"
+    android:layout_marginTop="200px"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="120px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_height="wrap_content">
+        <com.rey.material.widget.Button
+            android:id="@+id/saveviewBtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="保存到手机"/>
+
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

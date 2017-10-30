@@ -1,0 +1,150 @@
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_bg"
+    >
+
+    <!--    <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/c_ryx_credit_header_title"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/xd_blue"
+            android:fitsSystemWindows="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="110px"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:src="@drawable/c_titleback_bg" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/htjc_main_title"
+                android:textColor="#fff"
+                android:textSize="19sp" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_remind"
+            android:layout_width="match_parent"
+            android:layout_height="700px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="60px"
+            android:background="@drawable/htic_blue_bg">
+
+            <ImageView
+                android:layout_width="368px"
+                android:layout_height="510px"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/htic_face" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_remind1"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/htic_white_bg"
+            android:orientation="vertical"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="40px"
+                android:text="@string/htjc_main_remind1"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="19px"
+                android:text="@string/htjc_main_remind2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="19px"
+                android:text="@string/htjc_main_remind3"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="19px"
+                android:text="@string/htjc_main_remind4"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60px"
+                android:layout_marginTop="19px"
+                android:text="@string/htjc_main_remind5"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_remind2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/iv_start"
+                style="@style/CLightwhiteColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="100px"
+                android:layout_marginTop="90px"
+                android:background="@color/xd_blue"
+                android:text="开始检测"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btntext"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <include
+            layout="@layout/htjc_activity_fail"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_suc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <include
+            layout="@layout/htjc_activity_success"
+            />
+    </com.zhy.autolayout.AutoLinearLayout></com.zhy.autolayout.AutoLinearLayout>

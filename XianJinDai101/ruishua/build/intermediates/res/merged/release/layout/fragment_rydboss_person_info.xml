@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/c_sv_baseinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@color/grey_bg"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/c_person_info_tips"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_person_info"
+                        android:textColor="@color/xd_blue"
+                        android:textSize="@dimen/contenttitletext"/>
+
+                </TableRow>
+
+                <View style="@style/BlackHorizontalLine"></View>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_marital_status"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bodytextsize"
+                        android:visibility="visible"/>
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/c_base_info_marital_status_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_marital_status_tip"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/bodytextsize">
+
+                    </com.rey.material.widget.TextView>
+                </TableRow>
+
+                <View style="@style/BlackHorizontalLine"></View>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_apply_education_level"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/bodytextsize"
+                        android:visibility="visible"/>
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/c_base_info_home_education_level_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_apply_education_level_tip"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/bodytextsize">
+
+                    </com.rey.material.widget.TextView>
+                </TableRow>
+                <View style="@style/BlackHorizontalLine"
+                    android:layout_height="30px"
+                    ></View>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:layout_gravity="left"
+                        android:text="@string/c_relationship_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/c_base_info_relationship_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:gravity="center_vertical"
+                        android:hint="@string/c_relationship_name_tip"
+                        android:textColorHint="@color/fourblack"
+                        android:textColor="@color/secondblack"
+                        android:textSize="@dimen/commontextsize">
+
+                    </TextView>
+                </TableRow>
+
+                <View style="@style/BlackHorizontalLine"></View>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_relationship"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"/>
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/c_base_info_relationship_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_relationship_tip"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize">
+
+                    </com.rey.material.widget.TextView>
+                </TableRow>
+
+                <View style="@style/BlackHorizontalLine"></View>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/c_tv_relation_mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_relationship_mobile"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <EditText
+                        android:id="@+id/c_base_info_relationship_phone_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:hint="@string/c_relationship_mobile_tip"
+                        android:inputType="phone"
+                        android:focusable="false"
+                        android:textColor="@color/secondblack"
+                        android:gravity="left|center_vertical"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+                    </EditText>
+
+                    <ImageView
+                        android:id="@+id/c_ib_select_phone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="60px"
+                        android:background="@drawable/icon_recharge_contact"
+                        />
+
+                </TableRow>
+
+                <View style="@style/BlackHorizontalLine"></View>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/c_tv_legal_person_shareholder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_legal_person_shareholder"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+                    <RadioGroup
+                        android:id="@+id/rg_legal_person_shareholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <com.rey.material.widget.RadioButton
+                            android:id="@+id/rb_legalperson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="30px"
+                            android:layout_marginLeft="80px"
+                            android:text="法人"/>
+                        <com.rey.material.widget.RadioButton
+                            android:id="@+id/rb_share_holder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="30px"
+                            android:layout_marginLeft="80px"
+                            android:text="股东"/>
+                    </RadioGroup>
+                </TableRow>
+                <View style="@style/BlackHorizontalLine"></View>
+            </TableLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/c_btn_baseinfo_next"
+                style="@style/CLightRaiseColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:text="@string/c_next"
+                android:textSize="@dimen/contenttitletext"/>
+
+            <!--		<com.rey.material.widget.Button
+                        android:id="@+id/c_btn_personinfo_next"
+                        style="@style/CLightRaiseColorButtonRippleStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="24dp"
+                        android:text="@string/c_next"
+                        android:textSize="@dimen/commontextsize">
+                    </com.rey.material.widget.Button>-->
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/c_widget_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scoll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px"
+                android:layout_marginTop="60px"
+                android:gravity="center_horizontal"
+                android:text="还款金额"
+                android:textAlignment="center"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/bodylittletextsize" />
+
+            <TextView
+                android:id="@+id/tv_repay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="116px"
+                android:gravity="center_horizontal"
+                android:text="¥0.00"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_36" />
+
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="30px" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="42px"
+                    android:layout_marginTop="42px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="期数"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="42px"
+                    android:layout_marginTop="42px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="还款金额"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="42px"
+                    android:layout_marginTop="42px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="本金"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="42px"
+                    android:layout_marginTop="42px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="利息"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="42px"
+                    android:layout_marginTop="42px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="服务费"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_repay_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:scrollbars="none" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_e6e6e6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_repay_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="42px"
+                    android:layout_marginTop="42px"
+                    android:text="@string/repay_plan_tip"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

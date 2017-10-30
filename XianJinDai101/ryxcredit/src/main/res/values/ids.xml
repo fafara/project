@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  <item name="v_center" type="id"></item>
+    <item name="c_ryx_credit_header_title" type="id"></item>
+    <item name="c_btn_promote_quota" type="id"></item>
+    <item name="c_fl_base_info" type="id"></item>
+
+    <item name="c_btn_next" type="id"></item>
+    <item name="c_btn_pre" type="id"></item>
+    <item name="c_btn_complete" type="id"></item>
+    <item name="c_sv_baseinfo" type="id"></item>
+
+    &lt;!&ndash;基本信息&ndash;&gt;
+
+    &lt;!&ndash;个人信息&ndash;&gt;
+    <item name="c_base_info_home_city_select" type="id"></item>
+    <item name="c_base_info_home_info_et" type="id"></item>
+    <item name="c_base_info_marital_status_tv" type="id"></item>
+    <item name="c_base_info_relationship_tv" type="id"></item>
+    <item name="c_base_info_relationship_name_et" type="id"></item>
+    <item name="c_base_info_relationship_phone_et" type="id"></item>
+
+    &lt;!&ndash;工作信息&ndash;&gt;
+    <item name="c_base_info_work_address_city_select" type="id"> </item>
+    <item name="c_base_info_work_address_et" type="id"> </item>
+    <item name="c_base_info_work_company_name_et" type="id"> </item>
+    <item name="c_base_info_work_company_phone_et" type="id"> </item>
+    <item name="c_base_info_work_profession_et" type="id"> </item>
+    <item name="c_base_info_work_position_et" type="id"> </item>
+    &lt;!&ndash;申请信息&ndash;&gt;
+    <item name="c_base_info_apply_education_level_select" type="id"></item>
+    <item name="c_base_info_apply_mail_et" type="id"></item>
+    <item name="c_base_info_apply_weixin_et" type="id"></item>
+    <item name="c_base_info_apply_month_money_et" type="id"></item>
+    <item name="c_base_info_apply_id_address_et" type="id"></item>
+
+    &lt;!&ndash;其他信息&ndash;&gt;
+    <item name="c_base_info_other_car_model_et" type="id"></item>
+    <item name="c_base_info_other_car_brand_et" type="id"></item>
+    <item name="c_base_info_other_car_no_et" type="id"></item>
+    <item name="c_base_info_other_car_zhima_credit_et" type="id"></item>
+
+    &lt;!&ndash;借款&ndash;&gt;
+    <item name="c_borrow_money_total_interest_tv" type="id"></item>
+    <item name="c_borrow_money_counter_fee_tv" type="id"></item>
+    <item name="c_borrow_money_amount_slibar" type="id"></item>
+    <item name="c_borrow_money_calculate_fee_slibar" type="id"></item>
+    <item name="c_borrow_money_amout_tv" type="id"></item>
+    <item name="c_borrow_money_range_days_tv" type="id"></item>
+    <item name="c_borrow_money_btn" type="id"></item>
+
+    &lt;!&ndash;确认借款&ndash;&gt;
+    <item name="c_sure_borrow_item_left" type="id"></item>
+    <item name="c_sure_borrow_item_right" type="id"></item>
+    <item name="c_sure_borrow_item_center" type="id"></item>
+
+    <item name="c_sure_borrow_input_verify_code_tv" type="id"></item>
+    &lt;!&ndash;提高额度&ndash;&gt;
+    <item name="c_promote_quota_base_info_tv" type="id"></item>
+    <item name="c_promote_quota_gongjijin_tv" type="id"></item>
+    <item name="c_promote_quota_shebao_tv" type="id"></item>
+    <item name="c_promote_quota_nashui_tv" type="id"></item>
+    <item name="c_promote_quota_yanghangxinzheng_tv" type="id"></item>
+    <item name="c_promote_quota_sure_apply_btn" type="id"></item>
+
+    &lt;!&ndash;我要还款&ndash;&gt;
+    <item name="c_repayment_btn" type="id"></item>
+    <item name="c_auto_layout" type="id"></item>
+    <item name="c_swiper_layout" type="id"></item>
+    <item name="c_rcv_repayment_list" type="id"></item>
+    <item name="c_repayment_sum_tv" type="id"></item>-->
+</resources>

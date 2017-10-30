@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/selector_user_action_bg"
+    android:layout_height="180px">
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/type_coupons_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textSize="@dimen/bodytextsize"
+    android:textColor="@color/black"/>
+<TextView
+    android:id="@+id/content_coupons_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:textSize="@dimen/leasttextsize"
+    android:textColor="@color/threeblack"
+    android:text="满1000可用;30天内有效"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
+ <!--<TextView
+     android:id="@+id/coupon_count_tv"
+     android:layout_width="wrap_content"
+     android:layout_height="match_parent"
+     android:layout_alignParentRight="true"
+     android:gravity="center"
+     android:textSize="@dimen/bodylittletextsize"
+     android:textColor="@color/black"
+     android:text="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/coupon_count_tv"
+        android:layout_marginRight="10px"
+        android:textColor="@color/black"
+        android:textSize="@dimen/bodylittletextsize"
+        android:gravity="center"
+        android:text="x"/>-->
+    <ImageView
+        android:id="@+id/iv_checked"
+        android:layout_width="50px"
+        android:layout_height="50px"
+       android:layout_centerVertical="true"
+        android:src="@drawable/selected"
+        android:visibility="invisible"
+        android:layout_marginRight="47px"
+        android:layout_alignParentRight="true"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>

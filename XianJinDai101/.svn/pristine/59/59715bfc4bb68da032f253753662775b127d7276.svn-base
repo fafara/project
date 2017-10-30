@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eef1f3"
+              android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_240_dip"
+		android:background="#ffffff"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="3">
+
+			<RelativeLayout
+				android:id="@+id/userinfo_rl"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageView
+					android:id="@+id/iv_user_photo"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/dimen_40_dip"
+					android:scaleType="centerInside"
+					android:src="@drawable/icon_user_photo"/>
+
+				<TextView
+					android:id="@+id/tv_login_register"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/dimen_40_dip"
+					android:layout_toRightOf="@id/iv_user_photo"
+					android:text="@string/tv_loginorregister"
+					android:textColor="@color/colorPrimary"
+					android:textSize="15sp"
+					android:visibility="gone"/>
+
+				<TextView
+					android:id="@+id/tv_user_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignTop="@id/iv_user_photo"
+					android:layout_marginLeft="@dimen/dimen_30_dip"
+					android:layout_toRightOf="@id/iv_user_photo"
+					android:text="瑞刷用户"
+					android:textColor="#000000"
+					android:textSize="@dimen/main_user_size"/>
+
+				<TextView
+					android:id="@+id/tv_user_phonenumber"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignBottom="@id/iv_user_photo"
+					android:layout_alignLeft="@id/tv_user_name"
+					android:layout_below="@id/tv_user_name"
+					android:layout_marginTop="@dimen/dimen_30_dip"
+					android:layout_toRightOf="@id/iv_user_photo"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="@dimen/main_user_size"/>
+
+				<TextView
+					android:id="@+id/tv_user_level"
+					android:layout_width="@dimen/dimen_80_dip"
+					android:layout_height="@dimen/dimen_50_dip"
+					android:layout_alignBottom="@id/tv_user_name"
+					android:layout_marginBottom="2dp"
+					android:layout_marginLeft="@dimen/dimen_20_dip"
+					android:layout_toRightOf="@id/tv_user_name"
+					android:background="@drawable/auth_creditcard_user_level"
+					android:gravity="center"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/bodylittletextsize"
+					android:visibility="gone"
+				/>
+				<ImageView
+					android:id="@+id/iv_right_jiantou"
+					android:layout_width="90px"
+					android:layout_height="90px"
+					android:src="@drawable/icon_user_jiantou"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="40px"
+					android:layout_alignParentRight="true"/>
+				<TextView
+					android:id="@+id/tv_userinfomsg"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:gravity="center"
+					android:textColor="#000000"
+					android:textSize="@dimen/main_user_size"
+					android:layout_marginRight="20px"
+					android:layout_toLeftOf="@id/iv_right_jiantou"
+					/>
+
+			</RelativeLayout>
+		</LinearLayout>
+
+
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/dayTradeAllayout"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_150_dip"
+		android:layout_marginTop="@dimen/dimen_20_dip"
+		android:orientation="horizontal">
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:background="@drawable/selector_user_action_bg"
+			android:layout_marginRight="1px"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:text="当日已收款"
+				android:textColor="#b3b3b3"
+				android:textSize="@dimen/bodylittletextsize"
+				android:gravity="bottom|center_horizontal"/>
+			<TextView
+				android:id="@+id/tv_drysk"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="*******"
+				android:textColor="#000000"
+				android:textSize="@dimen/main_user_size"
+				android:layout_weight="1"
+				android:gravity="center"/>
+
+			
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="0dp"
+			android:background="@drawable/selector_user_action_bg"
+			android:layout_marginLeft="1px"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:textColor="#b3b3b3"
+				android:textSize="@dimen/bodylittletextsize"
+				android:text="可清算金额"
+				android:gravity="bottom|center_horizontal"/>
+			<TextView
+				android:id="@+id/tv_balance"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:text="*******"
+				android:layout_weight="1"
+				android:textColor="#000000"
+				android:textSize="@dimen/main_user_size"
+				android:gravity="center"/>
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_marginTop="@dimen/dimen_20_dip"
+		android:layout_weight="1">
+
+		<include
+			layout="@layout/include_user_middle_action"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

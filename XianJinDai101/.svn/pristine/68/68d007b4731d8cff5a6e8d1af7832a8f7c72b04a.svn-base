@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+apply plugin:'android-apt'
+def AAVersion='3.3.2'
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
+
+    defaultConfig {
+        applicationId "com.ryx.ryxpay"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:design:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+    //Px适配
+    compile 'com.zhy:autolayout:1.4.3'
+    //重写okhttp,兼容https特殊需求
+    compile project(':ryxhttp')
+    //AA注解
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+
+    compile 'com.github.ybq:Android-SpinKit:1.0.4'
+    //框架侧滑 先不用了，不符合需求
+//    compile 'com.mikepenz:crossfadedrawerlayout:0.3.4@aar'
+//    compile('com.mikepenz:materialdrawer:5.2.0@aar') {
+//        transitive = true
+//    }
+
+//material组件
+    compile 'com.github.rey5137:material:1.2.2'
+}
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0]?.processResources?.manifestFile
+        // if you have multiple outputs (when using splits), you may want to have other index than 0
+
+        // you should set your package name here if you are using different application IDs
+        // resourcePackageName "your.package.name"
+
+        // You can set optional annotation processing options here, like these commented options:
+        // logLevel 'INFO'
+        // logFile '/var/log/aa.log'
+    }
+}

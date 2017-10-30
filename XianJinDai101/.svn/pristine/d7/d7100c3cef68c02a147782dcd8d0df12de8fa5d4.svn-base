@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:state_pressed="true">
+		<shape android:shape="rectangle">
+			<stroke android:width="@dimen/dimen_1_dip" android:color="@color/grid_line"/>
+
+			<gradient android:angle="270.0" android:endColor="#ffe8ecef"
+			          android:startColor="#ffe8ecef"/>
+		</shape>
+	</item>
+	<item android:state_focused="true">
+		<shape android:shape="rectangle">
+			<gradient android:angle="270.0" android:endColor="#ffe8ecef"
+			          android:startColor="#ffe8ecef"/>
+
+			<stroke android:width="@dimen/dimen_1_dip" android:color="@color/grid_line"/>
+		</shape>
+	</item>
+
+<item>
+	<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+		<!-- 连框颜色值 -->
+		<item>
+			<shape>
+				<solid android:color="@color/grid_line" />
+			</shape>
+		</item>
+		<!-- 主体背景颜色值 -->
+		<item
+			android:right="1dp"
+			android:top="1dp"
+			android:bottom="1dp">
+			<!--边框里面背景颜色 白色-->
+			<shape>
+				<solid android:color="#ffffff" />
+			</shape>
+		</item>
+	</layer-list>
+</item>
+</selector>

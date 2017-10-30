@@ -1,0 +1,83 @@
+package com.ryx.ryxcredit.beans.bussiness.activateline;
+
+import com.ryx.ryxcredit.beans.bussiness.CbaseResponse;
+import com.ryx.ryxcredit.beans.pojo.CCard;
+import com.ryx.ryxcredit.beans.pojo.Customer;
+
+import java.util.List;
+
+/**
+ * Created by DIY on 2016/9/12.
+ * 激活额度查询响应
+ */
+public class CActivateLineSearchResponse extends CbaseResponse {
+
+    private  ResultBean result;
+
+    public ResultBean getResult() {
+        return result;
+    }
+
+    public void setResult(ResultBean result) {
+        this.result = result;
+    }
+
+    public static  class ResultBean{
+        public int getCard_floor_count() {
+            return card_floor_count;
+        }
+
+        public void setCard_floor_count(int card_floor_count) {
+            this.card_floor_count = card_floor_count;
+        }
+
+        private int  card_floor_count;
+        private Customer customer;
+        private List<CCard> cards;
+
+        public String getProvince() {
+            return province;
+        }
+
+        public void setProvince(String province) {
+            this.province = province;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public String getRegion() {
+            return region;
+        }
+
+        public void setRegion(String region) {
+            this.region = region;
+        }
+
+        private String province;
+        private String city;
+        private String region;
+        public Customer getCustomer() {
+            return customer;
+        }
+
+        public void setCustomer(Customer customerInfo) {
+            this.customer = customerInfo;
+        }
+
+        public List<CCard> getCards() {
+            return cards;
+        }
+
+        public void setCards(List<CCard> cards) {
+            this.cards = cards;
+        }
+    }
+
+
+}

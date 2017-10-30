@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@color/white"
+        android:layout_marginTop="20px"
+        android:scrollbars="vertical">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!--姓名-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="70px"
+                android:layout_marginTop="52px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="姓  名"
+                    android:textSize="@dimen/action_button_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100px"
+                    android:textSize="@dimen/action_button_text_size" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onepx"
+                android:layout_marginTop="52px"
+                android:background="@color/grey_bg" />
+            <!--卡类型-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_cardno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="70px"
+                android:layout_marginRight="70px"
+                android:layout_marginTop="52px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/card_type"
+                    android:textSize="@dimen/action_button_text_size" />
+
+                <EditText
+                    android:id="@+id/et_card_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint=""
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:layout_marginLeft="60px"
+                    android:textColorHint="#cccccc"
+                    android:textCursorDrawable="@null"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/action_button_text_size" />
+                <!--<TextView
+                    android:id="@+id/tv_cardno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:maxLines="1"
+                    android:gravity="right"
+                    android:textSize="@dimen/contenttitletext" />-->
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onepx"
+                android:layout_marginTop="52px"
+                android:background="@color/grey_bg" />
+            <!--手机号-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_userphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70px"
+                android:layout_marginRight="70px"
+                android:layout_marginTop="52px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/phone_no"
+                    android:textSize="@dimen/action_button_text_size" />
+                <EditText
+                    android:id="@+id/edt_phoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:background="@null"
+                    android:gravity="left"
+                    android:hint="请输入银行预留手机号码"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:focusable="true"
+                    android:textColorHint="#cccccc"
+                    android:textSize="@dimen/action_button_text_size" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onepx"
+                android:layout_marginTop="52px"
+                android:background="@color/grey_bg" />
+            <!-- 验证码-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_checkNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_marginLeft="70px"
+                android:layout_marginRight="70px"
+                android:layout_marginTop="52px">
+
+                <TextView
+                    android:id="@+id/tv_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="验证码"
+                    android:textSize="@dimen/action_button_text_size" />
+
+                <EditText
+                    android:id="@+id/edt_checkNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginLeft="90px"
+                    android:hint="请输入验证码"
+                    android:layout_toRightOf="@+id/tv_mac"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColorHint="#cccccc"
+                    android:textSize="@dimen/action_button_text_size" />
+
+
+                <TextView
+                    android:id="@+id/tv_again_mac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="发送验证码"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+            <View
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onepx"
+                android:layout_marginTop="52px"
+                android:background="@color/grey_bg" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_bg">
+
+                <com.rey.material.widget.Button
+                    android:id="@+id/btn_next"
+                    style="@style/LightRaiseColorButtonRippleStyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="90px"
+                    android:layout_marginRight="90px"
+                    android:layout_marginTop="96px"
+                    android:layout_gravity="center_horizontal"
+                    android:text="绑定"
+                    android:textSize="@dimen/contenttitletext" />
+            </RelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

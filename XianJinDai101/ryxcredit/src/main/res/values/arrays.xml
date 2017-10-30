@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!---此文件里面数组的顺序不能变动,每个顺序对应自己的key-->
+<resources>
+    <!--婚姻状况-->
+    <array name="marital_status_array">
+        <item>未婚</item>
+        <item>已婚</item>
+        <item>离异</item>
+        <item>其他</item>
+    </array>
+    <!--教育程度-->
+    <array name="education_status_array">
+        <item>大学本科及以上</item>
+        <item>大学专科和专科学校 </item>
+        <item>中等专业学校或中等技术学校</item>
+        <item>技术学校</item>
+        <item>高中及以下</item>
+    </array>
+    <!--收入水平-->
+    <array name="income_status_array">
+        <item>50000元及以上</item>
+        <item>30000-50000元</item>
+        <item>20000-30000元</item>
+        <item>12000-20000元</item>
+	    <item>8000-12000元</item>
+        <item>8000以下</item>
+    </array>
+    <!--联系人关系-->
+    <array name="relationship_status_array">
+	    <item>父母</item>
+	    <item>朋友</item>
+	    <item>同事</item>
+	    <item>配偶</item>
+	    <item>其他亲属</item>
+    </array>
+    <!--职业类型-->
+    <array name="profession_status_array">
+        <item>银行及证券业</item>
+        <item>政府机关及事业单位</item>
+        <item>保险及其它金融业</item>
+        <item>电信、电力、烟草</item>
+        <item>IT行业、互联网行业</item>
+        <item>社会组织、行业协会</item>
+        <item>批发、零售及商业贸易</item>
+        <item>制造业、建筑业及房地产</item>
+        <item>住宿、餐饮、旅游及其他服务业</item>
+        <item>农林牧渔</item>
+        <item>现役军人、警察</item>
+        <item>娱乐业及其他</item>
+    </array>
+
+    <!--职业分类-->
+    <array name="occupational_classification_array">
+        <item>一线操作类人员</item>
+        <item>技工类人员</item>
+        <item>销售类人员</item>
+        <item>行政办事类人员</item>
+        <item>专业技术类人员</item>
+        <item>其他类人员</item>
+    </array>
+
+</resources>

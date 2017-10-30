@@ -1,0 +1,2118 @@
+[
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_creditclub_html.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_creditclub_html.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_activity_photo_picker.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_activity_photo_picker.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ruibean_usefrg_detailslist_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\ruibean_usefrg_detailslist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_tao_bao_phonenumber.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_tao_bao_phonenumber.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_enlargetext_bottom.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_enlargetext_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_bank_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_bank_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_promote_quota_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_promote_quota_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_xjd_borrow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_xjd_borrow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_amazonrecharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_amazonrecharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mobile_recharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_mobile_recharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_cash_flow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_cash_flow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_authenticate_signature_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_user_authenticate_signature_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_msg_list_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_msg_list_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bind_debit_card_select_povince.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\bind_debit_card_select_povince.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpagefouthll.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpagefouthll.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_binded_card_debit_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_binded_card_debit_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_six_choose_one.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_six_choose_one.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_de_vice_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_de_vice_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_popwindow_sms_check.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_popwindow_sms_check.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_activity_post_msg.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_activity_post_msg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sjfx_adapter_income_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\sjfx_adapter_income_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_choose_bankcard.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_choose_bankcard.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_credit_card.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_my_credit_card.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scanning_code.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_scanning_code.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_credit_new.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_credit_new.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\pop_popwindow_layout.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\pop_popwindow_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_clear_history_dialog.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_clear_history_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_cash.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_cash.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_quickpay_guide.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_quickpay_guide.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_swiping_card.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_swiping_card.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_payment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_payment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_date_choose.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_date_choose.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_view_dots_jhsuccess.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_view_dots_jhsuccess.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rydboss_base_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_rydboss_base_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_unused.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_unused.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_ruiqiaobao_pruduct.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_ruiqiaobao_pruduct.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_sxichooseone_fragment_tao_bao_account.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_sxichooseone_fragment_tao_bao_account.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_agreement_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_agreement_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\scanningcode_hightlightbak.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\scanningcode_hightlightbak.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\authedapp_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\authedapp_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\pop_citypicker.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\ebdbfcd4fb9d9279a28316df22b90d226e0ba7f6\\output\\res\\layout\\pop_citypicker.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_ic_succed.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_ic_succed.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_progress_dialog.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_progress_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer_card_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_transfer_card_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_repay_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_repay_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_layout_chat_loading.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_layout_chat_loading.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_repayment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_repayment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ctid_countdown_dialog.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\layout\\ctid_countdown_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_binded_debit_card_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_binded_debit_card_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_to_merchant.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_user_to_merchant.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\widget_del_or_bound_listview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\widget_del_or_bound_listview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_data_management.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_data_management.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bank_card_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_bank_card_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_picture_popup.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_picture_popup.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\cashflow_banklistview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\cashflow_banklistview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_splash.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_splash.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_credit_ryd.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_credit_ryd.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_fragment_baseinfo_call_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_fragment_baseinfo_call_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_payment_successful.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_payment_successful.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_repayment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_repayment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_de_vice_list_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_de_vice_list_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_jdrecharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_jdrecharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rui_bean_buy_record.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_rui_bean_buy_record.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_appdownload.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_appdownload.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gy_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_gy_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\more_item_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\more_item_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_xjd_sure_borrow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_xjd_sure_borrow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rui_bean_buy_record_main_frg.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_rui_bean_buy_record_main_frg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_swiper.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_swiper.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_order.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_create_order.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_xjd_borrowdetail_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_xjd_borrowdetail_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reg_referrer.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_reg_referrer.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bind_card_bank_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\bind_card_bank_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_activity_success.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_activity_success.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_activity_webview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_activity_webview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_auth_step1.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_auth_step1.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_binded_card_open_quick_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_binded_card_open_quick_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_authenticate_agreement.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_authenticate_agreement.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\coupon_adapter_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\coupon_adapter_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_borrow_records_payed.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_borrow_records_payed.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_quick_payment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_quick_payment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\frag_main_home.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\frag_main_home.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard_qwerty.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\keyboard_qwerty.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_credit_enter.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_credit_enter.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_xjd_borrow_detail.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_xjd_borrow_detail.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_sure_borrow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_sure_borrow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryxpaytitle.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\ryxpaytitle.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sjfx_advertisement.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sjfx_advertisement.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_creditcard_vertify_fail.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_creditcard_vertify_fail.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryxpayplug_swiper.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\ryxpayplug_swiper.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_activate_credit.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_activate_credit.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_ryd_quick_repayment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_ryd_quick_repayment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_heap_dump_toast.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a741efdd987edf6b31390e545ded2f33c31c11a3\\output\\res\\layout\\leak_canary_heap_dump_toast.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard_character.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\keyboard_character.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_us.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_about_us.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sd_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sd_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_alarm_ui.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\ebdbfcd4fb9d9279a28316df22b90d226e0ba7f6\\output\\res\\layout\\dialog_alarm_ui.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_uion_qrcode_data_replenish.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_uion_qrcode_data_replenish.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scan_pay_qrcode_dis_paly.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_scan_pay_qrcode_dis_paly.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_auth_step2.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_auth_step2.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_suningrecharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_suningrecharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_call_records_auth.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_call_records_auth.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_view_borrow_records_pay_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_view_borrow_records_pay_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_view_common_footer.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_view_common_footer.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_swiper_msg_upload.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_swiper_msg_upload.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_fund_web_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_fund_web_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_tao_bao_account.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_tao_bao_account.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scanning_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_scanning_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\include_toolbar.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\include_toolbar.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_refuel_recharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_refuel_recharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\popwindow_keyboard.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\popwindow_keyboard.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_resend_message_dialog.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_resend_message_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail_trade_adapter.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_detail_trade_adapter.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\mybndcardserveritem_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\mybndcardserveritem_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_quickpay_bank_list_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_quickpay_bank_list_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydboss_call_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydboss_call_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_fragment_base_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_fragment_base_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_call_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_call_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydboss_person_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydboss_person_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_impay_bottomsheet.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_impay_bottomsheet.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_login_applist_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_login_applist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bind_card_bank_listitem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\bind_card_bank_listitem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_gridview_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_gridview_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_ryd_com_problem_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_ryd_com_problem_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_ref_top_row.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a741efdd987edf6b31390e545ded2f33c31c11a3\\output\\res\\layout\\leak_canary_ref_top_row.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_coupons.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_choose_coupons.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_six_choose_one.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_six_choose_one.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_black_photo_msg.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_black_photo_msg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bind_debit_card_info_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_bind_debit_card_info_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpagetwo_ryxfxb.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpagetwo_ryxfxb.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\widget_fingerpaint.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\widget_fingerpaint.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_bill_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_bill_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_htjc_fragment_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_htjc_fragment_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_check_fail.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_check_fail.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wm_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_wm_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_al_photo_picker_preview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_al_photo_picker_preview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_order_signature.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_order_signature.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_leak_row.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a741efdd987edf6b31390e545ded2f33c31c11a3\\output\\res\\layout\\leak_canary_leak_row.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_c_activity_six_choose_one.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\513762dade19e0be9ee62c3905af32c402c3c053\\output\\res\\layout\\xjd_c_activity_six_choose_one.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_message_public_content.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_message_public_content.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sjfx_adapter_income_guide_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\sjfx_adapter_income_guide_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\view_scancode_bottom.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\view_scancode_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\impay_bottomsheet.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\impay_bottomsheet.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_pw_photo_folder.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_pw_photo_folder.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_ref_row.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a741efdd987edf6b31390e545ded2f33c31c11a3\\output\\res\\layout\\leak_canary_ref_row.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_choose_borrow_longest_time.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\dialog_choose_borrow_longest_time.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_baseinfo__call_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_baseinfo__call_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_layout_chat_bottom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_layout_chat_bottom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\pop_popwindow_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\pop_popwindow_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_newauth_result.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_newauth_result.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_view_card_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_view_card_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_frag.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_main_frag.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_details_tab_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_details_tab_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sweep_creatorder.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\sweep_creatorder.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_emoticon_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_emoticon_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\expiryhelppopview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\expiryhelppopview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\layout_basepickerview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a8fa12802d81ebdc03704ffec5637033abca8143\\output\\res\\layout\\layout_basepickerview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_member.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_member.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\main_home_xrecycle_header.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\main_home_xrecycle_header.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_view_dots.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_view_dots.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_circlefriends.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_circlefriends.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_ad.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_ad.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qrcode.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_qrcode.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryxpaynointernetlyout.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\ryxpaynointernetlyout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\popupview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\f375ddefae6821cf68f614a58095732fb523306f\\output\\res\\layout\\popupview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_middle.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_middle.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_userauthsuccess.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_userauthsuccess.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_popview_borrow_help.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_popview_borrow_help.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_title_activity.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_title_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_credit_common_h5.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_credit_common_h5.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rkdquota.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_rkdquota.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_imgt_r.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_imgt_r.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_union_qrcode_pay_show.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_union_qrcode_pay_show.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\listview_footer.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\c014409c098e240ff08b98873858f866f368ac49\\output\\res\\layout\\listview_footer.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_layout_net_error.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_layout_net_error.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_auth_debit_card.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_auth_debit_card.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_xjd_quick_repayment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_xjd_quick_repayment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_rich.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_rich.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_xjd_repay_plan.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_xjd_repay_plan.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_login_applist.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_login_applist.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\device_name.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\device_name.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_view_null.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_view_null.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_adapter_com_problem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_adapter_com_problem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sjfx_home_page.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_sjfx_home_page.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_activity_photo_preview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_activity_photo_preview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_used.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_used.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_password.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_set_password.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_inquiry_inpwd.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\dialog_inquiry_inpwd.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpagetwoll.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpagetwoll.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_flow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_flow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_quick_pay_open.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_quick_pay_open.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_ryxsimpleconfirm.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_ryxsimpleconfirm.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard_character_capital.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\keyboard_character_capital.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_txt_r.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_txt_r.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_delete_picture_popup.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_delete_picture_popup.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_merchant_credentials_upload.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_merchant_credentials_upload.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_listview_date_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_listview_date_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_splash.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_details_content.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_details_content.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\impay_bottom_listitem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\impay_bottom_listitem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_ruibean_recyview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_ruibean_recyview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_credit_treat.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_credit_treat.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_sixchooseone_fragment_jing_dong.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_sixchooseone_fragment_jing_dong.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_ryd_activity_repay_plan.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_ryd_activity_repay_plan.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpageonell.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpageonell.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_fragmment_base_innfo_2.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_fragmment_base_innfo_2.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_screen.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_message_screen.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_zfb_qrcode.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_zfb_qrcode.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\include_more.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\include_more.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rydbank_select.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_rydbank_select.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_verification_code.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_verification_code.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_adapter_item_databinding_dummy.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\575f17c88a1d8c4bb8e36c51e732f0187ec9643b\\output\\res\\layout\\bga_adapter_item_databinding_dummy.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_agreement.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_register_agreement.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_auth_creditcard_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_auth_creditcard_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_de_vice_list_child_item_table.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_de_vice_list_child_item_table.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_payment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_payment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_base_info_success.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_base_info_success.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_view_dots.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_view_dots.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_borrowrecord_tabitem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_borrowrecord_tabitem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_more_increate.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_more_increate.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_ic_download.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_ic_download.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_credit_ok.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_credit_ok.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_swipe_card_ic.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_swipe_card_ic.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_center_bank_credit.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_center_bank_credit.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_other_pruduct.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_other_pruduct.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_middle_rkd.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_middle_rkd.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_html_message.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_html_message.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_bank_select.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_bank_select.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_sixchooseone_fragment_ao_bao_phonenumber.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_sixchooseone_fragment_ao_bao_phonenumber.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_union_qrcode_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_union_qrcode_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_activity_photo_list.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_activity_photo_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_tao_bao_phonenumber.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_tao_bao_phonenumber.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_consult.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_consult.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_alipay_gridview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_alipay_gridview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_bind_card_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_my_bind_card_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_activity_fail.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_activity_fail.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_evaluate.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_evaluate.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydboss_cent_bank.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydboss_cent_bank.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_pop_chat_room_long_press.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_pop_chat_room_long_press.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_xjd_borrow_help_popview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_xjd_borrow_help_popview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_ryd_borrow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_ryd_borrow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_black_sign.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_black_sign.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dev_purchase.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_dev_purchase.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_countdown_dialog.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_countdown_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_imgt_l.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_imgt_l.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gesture_pawd_check.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_gesture_pawd_check.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_fragment_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_fragment_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_list_item_skill.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_list_item_skill.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\pickerview_time.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a8fa12802d81ebdc03704ffec5637033abca8143\\output\\res\\layout\\pickerview_time.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_mobile_gridview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_mobile_gridview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_widget_slideunlock.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_widget_slideunlock.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_auth_photo_upload.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_user_auth_photo_upload.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bind_debit_card.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_bind_debit_card.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydboss_face_collect.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydboss_face_collect.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\home_ad_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\home_ad_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog__bottom_get_cardno.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog__bottom_get_cardno.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_base_info_1.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_base_info_1.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_piclist_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_piclist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_custom_toast_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_custom_toast_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_thank_dialog_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_thank_dialog_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_borrow_records_unpay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_borrow_records_unpay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_message_personal_content.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_message_personal_content.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_refuel_gridview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_refuel_gridview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\act_login_verification_code.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\act_login_verification_code.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_choose_repay_style.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_choose_repay_style.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_repayment_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_repayment_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_home_message.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_home_message.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_activity_photo_picker_preview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_activity_photo_picker_preview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_ryd_borrow_detail.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_ryd_borrow_detail.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ali_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_ali_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feed_back.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_feed_back.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_auth_result.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_auth_result.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_auth_card_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_auth_card_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\creatorder.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\creatorder.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\frag_main_user.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\frag_main_user.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_binded_card_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_binded_card_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\impay_coupons_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\impay_coupons_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bind_debit_card_province_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\bind_debit_card_province_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_quick_repayment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_quick_repayment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sweep_quick_pay_data_replenish.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sweep_quick_pay_data_replenish.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_auth_step3.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_auth_step3.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_activity_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_activity_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_merchant_info_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_merchant_info_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_list_item_emoticon.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_list_item_emoticon.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_more.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_more.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_six_choose_one.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_six_choose_one.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\row_spn_dropdown.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\row_spn_dropdown.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\layout_material_dialog.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\layout_material_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_repayment_plan_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_repayment_plan_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_item_photo_camera.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_item_photo_camera.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\unionqrcode_paytype_bottom_listitem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\unionqrcode_paytype_bottom_listitem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bank_card_balance_inquiry.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_bank_card_balance_inquiry.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_black_check_msg.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_black_check_msg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_upload_layout.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_upload_layout.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\row_spn.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\row_spn.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_base_infosuccess.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_base_infosuccess.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sortlistview_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\ebdbfcd4fb9d9279a28316df22b90d226e0ba7f6\\output\\res\\layout\\sortlistview_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_listview_repay_record.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_listview_repay_record.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_authenticate.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_authenticate.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_center_bank_credit.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_center_bank_credit.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_card_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_card_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_sweepcode.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_sweepcode.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_fragment_base_info_jssuccessed.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_fragment_base_info_jssuccessed.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_credit_card_auth.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_my_credit_card_auth.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_com_problem_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_com_problem_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_enter_phone_number.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_register_enter_phone_number.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_qqcoin_gridview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_qqcoin_gridview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pay_result.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_pay_result.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_dialog_loading.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_dialog_loading.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_fund_web_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_fund_web_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_transfer_card_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_transfer_card_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_ryd_sure_borrow.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_ryd_sure_borrow.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_senior_succed.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_senior_succed.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_withdrawl.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_withdrawl.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_audiot_r.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_audiot_r.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main_setting.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_main_setting.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_al_photo_picker.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_al_photo_picker.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_guide.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_guide.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\idcardpreview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\345bf1a1623ef6525c750b0168c7e64ffca81978\\output\\res\\layout\\idcardpreview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_item_nine_photo.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_item_nine_photo.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_id_card_msg.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_id_card_msg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_withdraw_list_im.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_withdraw_list_im.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_main_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\gridview_main_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_item_photo_folder.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_item_photo_folder.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_enter_mobile_mac.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_register_enter_mobile_mac.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_impay_bottom_listitem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_impay_bottom_listitem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_credit_products.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_credit_products.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_dev_purchase_qrcode.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_dev_purchase_qrcode.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_withdraw_show_bankcard.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_withdraw_show_bankcard.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sweep_quick_pay_order.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sweep_quick_pay_order.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_ruibean_use_record.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_ruibean_use_record.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expenditure.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_expenditure.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rui_bean_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_rui_bean_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_employee_fragment_credit_card_bill.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_employee_fragment_credit_card_bill.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bk_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_bk_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\pickerview_options.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a8fa12802d81ebdc03704ffec5637033abca8143\\output\\res\\layout\\pickerview_options.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_toolbar_viewstub.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_toolbar_viewstub.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_repaylist_item_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_repaylist_item_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_update_paswd.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_update_paswd.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_xjd_quick_repayment_record.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_xjd_quick_repayment_record.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\listview_header.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\listview_header.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_info_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_user_info_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_change_pass_word.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_change_pass_word.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\banner_img.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\banner_img.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_loadingstate.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_loadingstate.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\detailslist_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\detailslist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tc_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_tc_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_mycoupon.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_mycoupon.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_layout_titlebar.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_layout_titlebar.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_borrow_detail.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_borrow_detail.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_no1recharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_no1recharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pay_success.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_pay_success.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_friendlytip_dialog.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_friendlytip_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sixchooseone_fragment_web_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\sixchooseone_fragment_web_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_ryd_activity_instruction.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_ryd_activity_instruction.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_activity_livedetect.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_activity_livedetect.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryxcredititle.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryxcredititle.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_repay_record.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_repay_record.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydboss_base_work_info_fragment_jhsuccess.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydboss_base_work_info_fragment_jhsuccess.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_tip.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_tip.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\branch_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\branch_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\impay_coupons_bootomsheet.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\impay_coupons_bootomsheet.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_quota.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_quota.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\banner_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\banner_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_sixchooseone_fragment_tao_bao_account.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_sixchooseone_fragment_tao_bao_account.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_ryd_fragment_base_work_info_fragment_jhsuccess.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_ryd_fragment_base_work_info_fragment_jhsuccess.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpagethrdll.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpagethrdll.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\usercenter_device.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\usercenter_device.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_credit_add_phone_msg.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_credit_add_phone_msg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_login_account_list_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_login_account_list_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_borrowrecord_tabitem_new.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_borrowrecord_tabitem_new.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ctid_activity_livedetect.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\layout\\ctid_activity_livedetect.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\leak_canary_display_leak.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a741efdd987edf6b31390e545ded2f33c31c11a3\\output\\res\\layout\\leak_canary_display_leak.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_card_balance_result.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_card_balance_result.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpageitem_rhb.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpageitem_rhb.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_my_invitation_code.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_my_invitation_code.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_sixchooseone_fragment_tao_bao_phonenumber.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_sixchooseone_fragment_tao_bao_phonenumber.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign_requisitions.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sign_requisitions.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_im_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_im_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog__bottom_qrcodelongclick.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog__bottom_qrcodelongclick.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_wei_xin_qrcode_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_wei_xin_qrcode_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog__bottom_take_photo.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog__bottom_take_photo.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_reset_password.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_reset_password.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_repay_plan.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_repay_plan.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_call_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_call_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_choose_repay_style_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_choose_repay_style_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\item_branch_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\item_branch_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\audiotypes.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\audiotypes.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_qq_coin_recharge.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_qq_coin_recharge.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\unionqrcodepay_paytype_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\unionqrcodepay_paytype_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_take_pic_pop.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_take_pic_pop.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_base_info_2.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_base_info_2.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sjfx_home_page_header.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\sjfx_home_page_header.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_jing_dong.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_jing_dong.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_middle_problem.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_middle_problem.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bmincome_and_expenditure_details2.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_bmincome_and_expenditure_details2.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sjfx_activity_income_detail_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\sjfx_activity_income_detail_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\pull_to_refresh_head.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\c014409c098e240ff08b98873858f866f368ac49\\output\\res\\layout\\pull_to_refresh_head.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_id_card_upload.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_id_card_upload.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_term_pledge_rule.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_term_pledge_rule.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\314fd5f98cac117d4cfd8b9814e55e927df6b6ea\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_promote_quota.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_promote_quota.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_income_guide.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_income_guide.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_sjfx_main_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\gridview_sjfx_main_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\widget_ryxloading.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\widget_ryxloading.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_borrow_records_new.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_borrow_records_new.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_binded_card_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_binded_card_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\creditaddbootsheet_item_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\creditaddbootsheet_item_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_msg.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\listitem_msg.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_layout_evaluate.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_layout_evaluate.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\include_user_middle_action.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\include_user_middle_action.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_item_photo_picker.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_item_photo_picker.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\union_qrcode_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\union_qrcode_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sweep_quick_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sweep_quick_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_view_borrow_records_un_pay_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_view_borrow_records_un_pay_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_rkd_com_problem_activity.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_rkd_com_problem_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_item_emoticonpage.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_item_emoticonpage.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_update.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_update.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_expired.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\fragment_expired.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bga_pp_al_photo_preview.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\434c4a79e1050959d80e3b02fc3104cbdbaa3933\\output\\res\\layout\\bga_pp_al_photo_preview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_rkdboss_base_info_success.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_rkdboss_base_info_success.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ryx_pay_order_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_ryx_pay_order_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_city_list_select.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\ebdbfcd4fb9d9279a28316df22b90d226e0ba7f6\\output\\res\\layout\\activity_city_list_select.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_debit_card_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_debit_card_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_photo_activity.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_photo_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_widget_title.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_widget_title.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_sjfx_advertisement.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_sjfx_advertisement.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_detail_activiy.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_message_detail_activiy.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ctid_activity_main.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\facelivedetecttwonodlib\\build\\intermediates\\bundles\\default\\res\\layout\\ctid_activity_main.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\htjc_resume_dialog.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\htjc_resume_dialog.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\xjd_employee_fragment_tao_bao.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\xjd_employee_fragment_tao_bao.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_promote_amount.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_promote_amount.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\unionpay_paytype_bottomsheet.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\unionpay_paytype_bottomsheet.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_home_message_viewpage_webview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_home_message_viewpage_webview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_new_base_facecollect_fragment.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_new_base_facecollect_fragment.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_widget_ryxloading.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_widget_ryxloading.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_credit_enter.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_credit_enter.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_fragment_base_work_info_fragment_jhsuccess.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_fragment_base_work_info_fragment_jhsuccess.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_web_view.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_web_view.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_permissions.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\activity_permissions.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_gesture.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_create_gesture.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_borrow_records.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_borrow_records.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ruibean.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_ruibean.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_activity_skill_group.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_activity_skill_group.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard_digitals.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\keyboard_digitals.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_credit.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_credit.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sjfx_activity_my_income.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\sjfx_activity_my_income.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_swipe_card.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_swipe_card.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\creditcardadd_bottomsheet.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\creditcardadd_bottomsheet.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\viewpageonell_ryxfxb.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\viewpageonell_ryxfxb.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_msg_item_txt_l.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_msg_item_txt_l.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sjfx_dev_pay_quick_pay.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_sjfx_dev_pay_quick_pay.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\53a9134d603f6db97ceff85563faaf7f5ee3a9bb\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bluedevice.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\bluedevice.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_dialog_credit_error.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_dialog_credit_error.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard_symbol_all.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\keyboard_symbol_all.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydbase_personal_info_fragment_jhsuccessed.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydbase_personal_info_fragment_jhsuccessed.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_chat_activity.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_chat_activity.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\sobot_dropdown_lv_head.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\layout\\sobot_dropdown_lv_head.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\authedapplist_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\authedapplist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_instruction.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_instruction.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\include_pickerview_topbar.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\a8fa12802d81ebdc03704ffec5637033abca8143\\output\\res\\layout\\include_pickerview_topbar.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\devslist_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\devslist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_rydboss_work_info.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\fragment_rydboss_work_info.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\adapter_paytype_gridview.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\adapter_paytype_gridview.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_credit_card.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\dialog_credit_card.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\bind_card_branch_bank_list.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\bind_card_branch_bank_list.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_creditcardnumber_add.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_creditcardnumber_add.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ryd_fragment_tao_bao.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\ryd_fragment_tao_bao.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_call_records_sms_check.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_call_records_sms_check.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register_success.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\activity_register_success.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard_symbol.xml",
+        "source": "C:\\Users\\RYX\\.android\\build-cache\\529426750857de9dfd5e46a2e392f9ed07e18afa\\output\\res\\layout\\keyboard_symbol.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\ruibean_buyfrg_detailslist_item.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\layout\\ruibean_buyfrg_detailslist_item.xml"
+    },
+    {
+        "merged": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\res\\merged\\debug\\layout\\c_activity_borrowing_money.xml",
+        "source": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\layout\\c_activity_borrowing_money.xml"
+    }
+]

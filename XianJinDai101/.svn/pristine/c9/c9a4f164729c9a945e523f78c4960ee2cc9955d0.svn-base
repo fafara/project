@@ -1,0 +1,75 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="c_oval_diameter">120dp</dimen>
+
+    <dimen name="c_dot_diameter">25dp</dimen>
+    <dimen name="c_dot_1_diameter">8dp</dimen>
+    <!--公共大小字体,内容字体-->
+    <dimen name="commontextsize">14sp</dimen>
+    <dimen name="titletextsize">24sp</dimen>
+    <dimen name="biggertitletextsize">36sp</dimen>
+    <!--页面内容标题字体-->
+    <dimen name="contenttitletext">16sp</dimen>
+    <!--小标题字体-->
+    <dimen name="mediumtitletext">17sp</dimen>
+    <!-- 最大标题96px-->
+    <dimen name="maxtitletext">38sp</dimen>
+    <!-- 按钮字体-->
+    <dimen name="btntext">18sp</dimen>
+    <!-- 标头字体-->
+    <dimen name="titletext">19sp</dimen>
+    <!-- 正文小一号字体-->
+    <dimen name="bodylittletextsize">12sp</dimen>
+    <!-- 标头字体-->
+    <dimen name="verysmallsize">11sp</dimen>
+    <dimen name="textsize_9">9sp</dimen>
+    <!-- 横线1px-->
+    <dimen name="onepx">1px</dimen>
+    <!--选择器文字大小-->
+    <dimen name="pickerview_textsize">18sp</dimen>
+    <dimen name="large_textsize">29sp</dimen>
+    <dimen name="three_grid_unit">24dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+    <dimen name="textsize_36">36sp</dimen>
+
+    <!-- 标头字体top字体-->
+    <dimen name="maxtextsize">18sp</dimen>
+    <!-- 正文字体-->
+    <dimen name="bodytextsize">14sp</dimen>
+    <!-- 最小字体-->
+    <!--  <dimen name="instruction_textsize">10sp</dimen>-->
+    <dimen name="leasttextsize">10sp</dimen>
+
+    <!--活体采集-->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="htjc_activity_horizontal_margin">16dp</dimen>
+    <dimen name="htjc_activity_vertical_margin">16dp</dimen>
+
+    <dimen name="htjc_title_margintop">40dp</dimen>
+    <dimen name="htjc_title_textsize">18sp</dimen>
+    <dimen name="htjc_img_marginleft">5dp</dimen>
+
+    <dimen name="htjc_img_start_margintop">50dp</dimen>
+    <dimen name="htjc_img_start_size">210dp</dimen>
+
+    <dimen name="htjc_remind_textsize">17sp</dimen>
+    <dimen name="htjc_btn_start">60dp</dimen>
+
+    <dimen name="htjc_img_success_size">30dp</dimen>
+    <dimen name="htjc_btn_back">50dp</dimen>
+
+    <dimen name="htjc_ll_margintop">75dp</dimen>
+
+    <dimen name="htjc_live_detect_main_title_height">44dp</dimen>
+    <dimen name="htjc_img_range_bg_layout_width">214dp</dimen>
+    <dimen name="htjc_img_range_bg_layout_height">214dp</dimen>
+    <dimen name="htjc_img_range_bg_layout_margin_left">73dp</dimen>
+    <dimen name="htjc_img_range_bg_layout_margin_top">29dp</dimen>
+    <dimen name="htjc_img_range_bg_layout_margin_right">72dp</dimen>
+
+
+    <dimen name="margin_40">40px</dimen>
+
+</resources>

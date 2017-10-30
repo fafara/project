@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="信用俱乐部服务协议"
+        android:textSize="24sp"/>
+
+    <WebView
+        android:id="@+id/c_wv_agree"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"></WebView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <com.ryx.ryxcredit.widget.CRyxSlideUnlock
+            android:id="@+id/c_slide_unlock"
+            android:layout_marginLeft="-18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></com.ryx.ryxcredit.widget.CRyxSlideUnlock>
+    </LinearLayout>
+</LinearLayout>

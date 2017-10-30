@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/c_widget_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <com.rey.material.widget.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:text="你有预期记录，请尽快处理！" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/c_rcv_repayment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/c_recyclerview_divide"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                style="@style/LightCheckBoxDrawable"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:background="@drawable/c_checkbox_bg"
+               />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/contenttitletext"
+                android:textColor="@color/black"
+                android:layout_marginLeft="18dp"
+                android:text="全选"
+                />
+            <com.rey.material.widget.TextView
+                android:id="@+id/c_repayment_sum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应还金额：14444.00"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/commontextsize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/c_swiper_layout"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:background="@drawable/c_repayment_type_bg"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/c_swiper_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c_repayment_swiper"
+                android:textSize="16sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/c_swiper_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/c_repayment_swiper_comment"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/c_auto_layout"
+            android:layout_width="120dp"
+            android:layout_height="72dp"
+            android:background="@drawable/c_repayment_type_bg"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/c_auto_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c_repayment_auto"
+                android:textSize="16sp" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/c_auto_comment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/c_repayment_auto_comment"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@id/c_borrow_money_btn"
+        style="@style/CLightRaiseColorButtonRippleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/c_repayment_sure"
+        android:textSize="@dimen/btntext" />
+</LinearLayout>

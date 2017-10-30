@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="小贷开通协议"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1231231231123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊123123123123测试二是丹佛啊23测试二是丹佛啊" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <com.ryx.ryxcredit.widget.CRyxSlideUnlock
+            android:id="@+id/slide_unlock"
+            android:layout_marginLeft="-18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             ></com.ryx.ryxcredit.widget.CRyxSlideUnlock>
+    </LinearLayout>
+</LinearLayout>

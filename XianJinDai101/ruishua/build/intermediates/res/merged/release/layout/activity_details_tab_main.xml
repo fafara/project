@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/GridBG">
+    <include layout="@layout/ryxpaytitle"></include>
+   <!-- <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/commonTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        tl:tl_textsize="@dimen/bodytextsize"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_color="@color/blue"
+        tl:tl_textSelectColor="@color/blue"
+        tl:tl_textUnselectColor="#66000000"
+        tl:tl_underline_color="#DDDDDD"
+        tl:tl_underline_height="1dp"
+        />-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/commonTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabTextColor="@color/threeblack"
+
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            >
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易明细"
+                android:onClick="unPayAction"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="资金动态"
+                android:onClick="payAction"
+                />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30px"
+    android:scrollbars="none">
+    <FrameLayout
+        android:id="@+id/tabfragemetcomtent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</ScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

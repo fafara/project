@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="50px"
+        android:scrollbars="none">
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="77px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="33px"
+            android:text="@string/auth_user"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/contenttitletext" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_auth"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="@dimen/little_btn_width"
+            android:layout_height="@dimen/little_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/reauth"
+            android:textSize="@dimen/bodylittletextsize"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/lay1"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="36px"
+        android:background="@color/payhorizontalline" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/user_name"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/lay2"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="42px"
+        android:background="@color/payhorizontalline" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/user_id"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/lay3"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="42px"
+        android:background="@color/payhorizontalline" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:id="@+id/tv_shenhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/id_check"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/lay_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_authmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/bodylittletextsize" />
+
+            <ImageView
+                android:id="@+id/img_right"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/tv_authmsg"
+                android:src="@drawable/help_btn" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/lay4"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="42px"
+        android:background="@color/payhorizontalline" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay_user_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/user_level"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_user_level"
+            android:layout_width="150px"
+            android:layout_height="60px"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/auth_creditcard_user_level"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/lay_user_level"
+        android:layout_marginTop="42px"
+        android:layout_marginLeft="70px"
+        android:background="@color/payhorizontalline" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/businessLicencelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line5"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="营业执照号"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/businessLicencenumber_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:lines="1"
+            android:ems="15"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:id="@+id/line9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_marginTop="42px"
+        android:layout_marginLeft="70px"
+        android:layout_below="@+id/businessLicencelayout"
+        android:background="@color/payhorizontalline" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/merchantNamelyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line9"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="商户名称"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/merchantName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:lines="1"
+            android:ems="15"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:id="@+id/line10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_marginTop="42px"
+        android:layout_marginLeft="70px"
+        android:layout_below="@+id/merchantNamelyout"
+        android:background="@color/payhorizontalline" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/merchantAddreslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line10"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="商户地址"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/merchantAddres_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:lines="1"
+            android:ems="15"
+            android:gravity="right"
+            android:ellipsize="end"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:id="@+id/line11"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_marginTop="42px"
+        android:layout_marginLeft="70px"
+        android:layout_below="@+id/merchantAddreslayout"
+        android:background="@color/payhorizontalline" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/merchtstatelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line11"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="52px">
+
+        <TextView
+            android:id="@+id/tv_merchtshenhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="商户审核"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/mercht_linelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_merchtauthmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/bodylittletextsize" />
+
+            <ImageView
+                android:id="@+id/img_merchtauthmsg_right"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30px"
+                android:layout_marginLeft="20px"
+                android:layout_toRightOf="@+id/tv_authmsg"
+                android:src="@drawable/help_btn" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:id="@+id/line12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/merchtstatelayout"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="42px"
+        android:background="@color/payhorizontalline" />
+
+
+    <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="27px"
+        android:layout_below="@+id/line12"
+        android:background="@color/orderbackground" />
+
+    <View
+        android:id="@+id/line7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/line6"
+        android:background="@color/payhorizontalline" />
+
+    <RelativeLayout
+        android:id="@+id/lay7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line7"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="47px"
+        android:layout_marginTop="43px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20px"
+            android:text="@string/senior_credit_card"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/contenttitletext" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_credit_auth"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="@dimen/little_btn_width"
+            android:layout_height="@dimen/little_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/add_a_creditcard"
+            android:textSize="@dimen/bodylittletextsize" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:layout_below="@+id/lay7"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="36px"
+        android:background="@color/payhorizontalline" />
+
+    <ListView
+        android:id="@+id/lv_creditcard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line8"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="45px"
+        android:divider="@null"
+        android:dividerHeight="32px"
+        android:layout_marginBottom="100px"/>
+</com.zhy.autolayout.AutoRelativeLayout>
+    </ScrollView>
+</com.zhy.autolayout.AutoRelativeLayout>

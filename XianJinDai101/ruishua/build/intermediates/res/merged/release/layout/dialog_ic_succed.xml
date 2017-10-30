@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menulayout"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:src="@drawable/succeed_tick" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="交易成功，请移出卡片"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_common" />
+
+</com.zhy.autolayout.AutoLinearLayout>

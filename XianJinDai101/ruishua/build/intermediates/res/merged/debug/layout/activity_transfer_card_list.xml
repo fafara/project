@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lay_title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+    <ImageView
+        android:layout_width="183px"
+        android:layout_height="226px"
+        android:layout_gravity="center"
+        android:layout_marginTop="148px"
+        android:src="@drawable/transfer_noitem_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/bodytextsize"
+        android:textColor="@color/graytexts"
+        android:text="@string/no_transfer_person"/>
+</com.zhy.autolayout.AutoLinearLayout>

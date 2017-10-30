@@ -1,0 +1,129 @@
+package com.ryx.ryxcredit.newfragment.baseinfo;
+
+
+import android.graphics.Bitmap;
+import android.net.http.SslError;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.SslErrorHandler;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+import com.ryx.ryxcredit.R;
+import com.ryx.ryxcredit.beans.ReqAction;
+import com.ryx.ryxcredit.services.ICallback;
+import com.ryx.ryxcredit.services.UICallBack;
+import com.ryx.ryxcredit.utils.CLogUtil;
+import com.ryx.ryxcredit.utils.CPreferenceUtil;
+import com.ryx.ryxcredit.utils.HttpUtil;
+import com.ryx.ryxcredit.xjd.BaseInfoSuccesActivity;
+import com.ryx.ryxcredit.xjd.bean.ProvidentFund.ProvidentFundRequest;
+import com.ryx.ryxcredit.xjd.bean.ProvidentFund.ProvidentFundResponse;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class FundWebViewFragment extends Fragment  {
+    private String OCTOPUS_URL_STR = "&cb=http://taskid";
+   // String fundFnformationCertificationUrl = "https://open.shujumohe.com/box/gjj?box_token=14F98932A59D4802AA7A17B7920B44CF&cb=" + OCTOPUS_URL_STR;
+   String fundFnformationCertificationUrl ;
+    private BaseInfoSuccesActivity baseInfoActivity;
+    private BaseInfoSuccesActivity callback;
+    private CPreferenceUtil preferenceUtil;
+    private View rootView;
+    private WebView wv_credit_common;
+    private String interceptionUrl;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        baseInfoActivity = (BaseInfoSuccesActivity) getActivity();
+        callback = (BaseInfoSuccesActivity) getActivity();
+        preferenceUtil = CPreferenceUtil.getInstance(getActivity().getApplication());
+        rootView = inflater.inflate(R.layout.fragment_fund_web_view, container, false);
+        submitData();
+        return rootView;
+    }
+
+    private void initView() {
+        wv_credit_common = (WebView) rootView.findViewById(R.id.wv_sixchooseone);
+        // fundFnformationCertificationUrl = datas.getString("url_address");
+        wv_credit_common.loadUrl(interceptionUrl);
+        initSetings(wv_credit_common);
+        wv_credit_common.setWebViewClient(new WebViewClient(){
+
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                Log.e("onPageStarted", "onPageStarted" + url);
+            }
+
+            @Override
+            public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+                super.onReceivedSslError(view, handler, error);
+                handler.proceed();
+            }
+
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                if(interceptionUrl!= null && interceptionUrl.endsWith(OCTOPUS_URL_STR)){
+                    // 拦截后做处理
+                  //  CLogUtil.showToast(getActivity(),"拦截成功");
+                    Log.i("taowuhua","============hahah"+url);
+                    callback.setFaceCollectInfo();
+                    return false;
+                }else
+                //    CLogUtil.showToast(getActivity(), "拦截失败");
+                Log.i("taowuhua", "============hahah" + url);
+                return true;
+            }
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+            }
+        });
+    }
+    private void initSetings(WebView wv) {
+        wv.getSettings().setJavaScriptEnabled(true);
+        wv.getSettings().setDomStorageEnabled(true);
+        wv.getSettings().setAllowFileAccess(true);
+        wv.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+    }
+    /*
+        *公积金接口
+        * */
+    private void submitData() {
+        ProvidentFundRequest providentFundRequest = new ProvidentFundRequest();
+        HttpUtil.getInstance(getActivity()).httpsPost(providentFundRequest, ReqAction.API_SOCIALSECURITY, ProvidentFundResponse.class, new ICallback<ProvidentFundResponse>() {
+            @Override
+            public void success(ProvidentFundResponse providentFundResponse) {
+                int providentFundCode = providentFundResponse.getCode();
+                if (providentFundCode==5031) {
+                    baseInfoActivity.showMaintainDialog();
+                } else {
+                    fundFnformationCertificationUrl = providentFundResponse.getResult().getResult();
+                    interceptionUrl = fundFnformationCertificationUrl + OCTOPUS_URL_STR;
+                    if (fundFnformationCertificationUrl != null && !"".equalsIgnoreCase(fundFnformationCertificationUrl)) {
+                        initView();
+                    }
+                }
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(getActivity(), tips);
+
+            }
+        }, new UICallBack() {
+            @Override
+            public void complete() {
+
+            }
+        });
+    }
+}

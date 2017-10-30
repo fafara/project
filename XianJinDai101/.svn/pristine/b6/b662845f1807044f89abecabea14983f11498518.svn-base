@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/c_ll_ruiqiaodai_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@drawable/c_orange_half_corner"
+                android:gravity="center"
+                android:text="瑞卡贷"
+                android:textColor="@color/white"
+                android:textSize="@dimen/contenttitletext" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_orange_edge_half_corner"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150px"
+                    android:layout_marginRight="150px"
+                    android:layout_marginTop="30px"
+                    android:background="@color/orange_three"
+                    android:gravity="center"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:text="简便：线上申请，无需面签"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/commontextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150px"
+                    android:layout_marginRight="150px"
+                    android:layout_marginTop="30px"
+                    android:background="@color/orange_three"
+                    android:gravity="center"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:text="灵活：短期高额，随用随借"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/commontextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150px"
+                    android:layout_marginRight="150px"
+                    android:layout_marginTop="30px"
+                    android:background="@color/orange_three"
+                    android:gravity="center"
+                    android:paddingBottom="27px"
+                    android:paddingTop="27px"
+                    android:text="安全：实名认证，数据加密"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/commontextsize" />
+
+                <View
+                    style="@style/BlackHorizontalLine"
+                    android:layout_marginTop="30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72px"
+                    android:layout_marginRight="72px"
+                    android:layout_marginTop="30px"
+                    android:text="瑞卡贷说明："
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/commontextsize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72px"
+                    android:layout_marginRight="72px"
+                    android:layout_marginTop="5dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/c_ruiqiaodai_tip"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/commontextsize" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="72px"
+                    android:background="@drawable/c_orange_edge_half_corner"
+                    android:orientation="horizontal">
+
+                    <com.rey.material.widget.CheckBox
+                        android:id="@+id/cb_agree"
+                        style="@style/LightCheckBox"
+                        android:checked="false"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tv_contract"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="72px"
+                        android:layout_marginLeft="20px"
+                        android:text="@string/c_ruikadai_tip2"
+                        android:textColor="@color/xd_blue"
+                        android:visibility="gone"
+                        android:textSize="@dimen/commontextsize" />
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/onepx"
+                    android:layout_marginTop="30px"
+                    android:background="#ffab2e" />
+
+                <TextView
+                    android:id="@+id/tv_enter_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="35px"
+                    android:paddingTop="35px"
+                    android:text="猛戳进入"
+                    android:textColor="#ffab2e"
+                    android:textSize="18sp" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,35 @@
+{
+    "desc": "icon功能列表",
+    "getIconList": [
+        {
+            "flag": "scanpay",
+            "id": "ScanningCodeActivity_",
+            "idx": "0",
+            "name": "扫一扫",
+            "res": "scan_selector_rhb",
+            "show": "0",
+            "permission":"012"
+        },
+        {
+            "flag": "orcode",
+            "id": "UnionQrcodePayActivity_",
+            "idx": "1",
+            "name": "二维码收款",
+            "res": "scan_code_selector_rhb",
+            "show": "0",
+            "permission":"012"
+        },
+        {
+            "flag": "impay",
+            "id": "ImPayActivity_",
+            "idx": "2",
+            "name": "刷卡收款",
+            "res": "pay_selector_rhb",
+            "show":"0",
+            "permission":"012"
+        }
+    ],
+    "result": "0",
+    "serviceid": "getIconlist",
+    "mainbg":"rhb_main_bc"
+}

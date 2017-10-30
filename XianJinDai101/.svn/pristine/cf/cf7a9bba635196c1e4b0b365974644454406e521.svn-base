@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="170px">
+    <ImageView
+        android:id="@+id/income_item_img"
+        android:layout_width="18px"
+        android:layout_height="18px"
+        android:layout_marginLeft="47px"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sjfx_income_icon"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/income_item_img"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20px"
+            android:gravity="bottom"
+            android:layout_marginRight="47px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/secondblack"
+                android:textSize="@dimen/bodylittletextsize"
+                android:gravity="bottom"
+                android:text="收益"
+             />
+            <TextView
+                android:id="@+id/pay_income_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/secondblack"
+                android:textSize="@dimen/bodylittletextsize"
+                android:gravity="bottom"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="47px">
+            <TextView
+
+                android:id="@+id/date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/threeblack"
+                android:gravity="center"
+                android:textSize="@dimen/bodylittletextsize"/>
+            <TextView
+
+                android:id="@+id/states_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/threeblack"
+                android:gravity="center"
+                android:textSize="@dimen/bodylittletextsize"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+       </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>

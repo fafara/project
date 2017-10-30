@@ -1,0 +1,239 @@
+package com.ryx.ryxcredit;
+
+import android.content.Context;
+
+import com.ryx.ryxcredit.utils.CPreferenceUtil;
+
+/**
+ * Created by laomao on 16/6/16.
+ * 提供给集成APP设置
+ */
+public class RyxcreditConfig {
+    public static final long lockTime=300000;//1分钟60000 5分钟300000
+    //生产url444
+    public static final String ORIGNAL_URL = "https://mposprepo.ruiyinxin.com:444/";
+    /**
+     * 配置基础访问URL
+     */
+       public static String BASE_URL = "https://mposprepo.ruiyinxin.com:443/ryx-xiaodai/";
+/*
+* 测试sit
+*/
+//    public static final String BASE_URL = "https://mpostest.ruiyinxin.com:443/ryx-xiaodai/";
+   // 运营商商地址
+    public static String CALL_RECORDS_URL="https://credit.ruiyinxin.com/creditcenter/";
+    //庆超测试运营商商地址
+    //   public static String CALL_RECORDS_URL ="https://mpostest.ruiyinxin.com/creditcenter/";
+    /**
+     * 对接前置配置的上下文
+     */
+    public static String CONTENT = "ryx-xiaodai-aid/";
+    public static String CONTENT_LOGIN = "";
+
+    public static String CONTENT_CREDIT = "com.ryx.ryxcredit.activity";
+
+    public static String CONTENT_SWIPER = "";
+    public static Context context;
+    public static final String CLIENTVERSION = "4.6.4";
+
+    public static String xjd_procudtId="3007";//瑞卡贷
+    public static String rkd_procudtid="8007";//瑞易贷
+    public static String ryd_procudtid="8007";//瑞易贷
+
+    /**
+     * 返回网络请求URL
+     *
+     * @return
+     */
+    public static String getBaseUrl() {
+        return BASE_URL + CONTENT;
+    }
+
+
+    /**
+     * 信贷需要刷卡支付调用的action
+     */
+    public static String SWIPER_ACTION = "com.ryx.credit.swiper";
+
+    /**
+     * 参数来自宿主
+     */
+//    public static Map<String, Object> baseParams = new HashMap<String, Object>();
+
+    /**
+     * token失效清空参数
+     */
+    public static void clearParams() {
+        if (context == null)
+            return;
+        CPreferenceUtil preferenceUtil = CPreferenceUtil.getInstance(context.getApplicationContext());
+        preferenceUtil.saveString("c_appUser","");
+        preferenceUtil.saveString("c_cardId","");
+        preferenceUtil.saveString("c_version","");
+        preferenceUtil.saveString("c_bankimg_url", "");
+    }
+
+    /**
+     * 获取宿主手机号
+     *
+     * @return
+     */
+    public static String getPhoneNo() {
+        String phoneno = "";
+        if (context != null)
+            phoneno = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("qtpaymobileno", "");
+        return phoneno;
+    }
+
+    /**
+     * 获取宿主身份证号
+     *
+     * @return
+     */
+    public static String getCardId(Context context) {
+        String cardId = "";
+        if (context != null)
+            cardId = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("c_cardId", "");
+        return cardId;
+    }
+
+    /**
+     * 获取宿主姓名
+     *
+     * @return
+     */
+    public static String getRealName() {
+        String realName = "";
+        if (context != null)
+            realName = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("qtpayrealname", "");
+        return realName;
+    }
+
+    /**
+     * 获取宿主token
+     *
+     * @return
+     */
+    public static String getToken() {
+        String token = "";
+        if (context != null)
+            token = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("qtpaytoken", "0000");
+        return token;
+    }
+
+    /**
+     * 获取宿主appuser
+     *
+     * @return
+     */
+    public static String getAppuser() {
+        String appuser = "";
+        if (context != null)
+            appuser = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("c_appUser", "");
+        return appuser;
+    }
+
+    /**
+     * 获取宿主appuser
+     *
+     * @return
+     */
+    public static String getAccountNo() {
+        String appuser = "";
+        if (context != null)
+            appuser = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("qtpaymobileno", "");
+        return appuser;
+    }
+
+    /**
+     * 获取宿主bankimg_url
+     *
+     * @return
+     */
+    public static String getBankImgUrl() {
+        String bankUrl = "";
+        if (context != null)
+            bankUrl = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("c_bankimg_url", "");
+        return bankUrl;
+    }
+
+    /**
+     * 获取宿主version
+     */
+    public static String getVersion() {
+        String version = "";
+        if (context != null)
+            version = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("c_version", "");
+        String[] arr = version.split("\\.");
+        String result = "";
+        if (arr.length == 2) {
+            result = version;
+        } else if (arr.length > 2) {
+            result = arr[0] + "." + arr[1];
+        }
+        return result;
+    }
+
+    /**
+     * 获取宿主version
+     */
+    public static String getAppVersion() {
+        String version = "";
+        if (context != null)
+            version = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("c_version", "");
+        return version;
+    }
+
+    /**
+     * 获取宿主customerId
+     *
+     * @return
+     */
+    public static String getCustomerId() {
+        String customerId = "";
+        if (context != null)
+            customerId = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("qtpaycustomerid", "0000");
+        return customerId;
+    }
+
+    /**
+     * 获取宿主customerId
+     *
+     * @return
+     */
+    public static String getCurrentBranchName() {
+        String customerId = "";
+        if (context != null)
+            customerId = CPreferenceUtil.getInstance(context.getApplicationContext())
+                    .getString("branchName", "瑞刷");
+        return customerId;
+    }
+
+    /**
+     * 重置手势密码时间值
+     */
+    public static void  resetTime(Context context){
+        long exitTime =System.currentTimeMillis();
+        CPreferenceUtil.getInstance(context).saveLong("exitTime",exitTime);
+    }
+
+    /**
+     * 获取手势密码时间值
+     * @param context
+     * @return
+     */
+    public static long getExitTime(Context context){
+        return CPreferenceUtil.getInstance(context).getLong("exitTime",0);
+    }
+}
+

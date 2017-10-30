@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/GridBG"
+    android:layout_height="150px">
+<TextView
+    android:id="@+id/titlename_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/bodytextsize"
+    android:textColor="@color/black"
+    android:text="优惠券"/>
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="取消使用"
+        android:layout_marginRight="5px"
+        android:textColor="@color/blue_main"
+        android:gravity="center"
+        android:layout_alignParentRight="true"/>
+</com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/onepx"
+        android:background="@color/payhorizontalline" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/coupons_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="800px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px">
+        <com.rey.material.widget.Button
+            android:id="@+id/coupons_closebtn"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/bodytextsize"
+            android:text="关闭"/>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

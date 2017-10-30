@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_144_dip"
+    android:background="@color/blue_main"
+    android:minHeight="?attr/actionBarSize"
+    app:layout_collapseMode="pin"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:title="">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/dimen_60_dip"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_gravity="start"
+        android:layout_marginLeft="@dimen/dimen_30_dip"
+        android:src="@drawable/home_kefu_btn"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="@string/tv_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/maxtextsize" />
+
+    <RelativeLayout
+        android:id="@+id/rel_msg"
+        android:layout_width="65dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dip">
+
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="@dimen/dimen_60_dip"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_30_dip"
+            android:src="@drawable/icon_toolbar_msg" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="2dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/icon_user_bg_msg_number"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/verysmallsize" />
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

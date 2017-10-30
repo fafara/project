@@ -1,0 +1,499 @@
+package com.ryx.ryxcredit.ryd.activity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.rey.material.widget.Button;
+import com.ryx.quickadapter.inter.NoDoubleClickListener;
+import com.ryx.ryxcredit.R;
+import com.ryx.ryxcredit.RyxcreditConfig;
+import com.ryx.ryxcredit.activity.AgreementActivity;
+import com.ryx.ryxcredit.activity.BaseActivity;
+import com.ryx.ryxcredit.beans.ReqAction;
+import com.ryx.ryxcredit.beans.bussiness.borrowdetail.BorrowRecordDetailRequest;
+import com.ryx.ryxcredit.beans.bussiness.borrowdetail.ChangeDkCardRequest;
+import com.ryx.ryxcredit.beans.bussiness.cardrepayment.CcardRepaymentResponse;
+import com.ryx.ryxcredit.beans.bussiness.loanrepay.LoanRepayResponse;
+import com.ryx.ryxcredit.services.ICallback;
+import com.ryx.ryxcredit.utils.CBanksUtils;
+import com.ryx.ryxcredit.utils.CDateUtil;
+import com.ryx.ryxcredit.utils.CLogUtil;
+import com.ryx.ryxcredit.utils.CMoneyEncoder;
+import com.ryx.ryxcredit.utils.CNummberConvertUtil;
+import com.ryx.ryxcredit.utils.CNummberUtil;
+import com.ryx.ryxcredit.utils.CStringUnit;
+import com.ryx.ryxcredit.xjd.BankSelectActivity;
+import com.ryx.ryxcredit.xjd.MultiRYDRepayRecordActivity;
+import com.ryx.ryxcredit.xjd.bean.borrowrecord.MultiBorrowRecordDetailReponse;
+import com.zhy.autolayout.AutoRelativeLayout;
+
+import java.io.Serializable;
+import java.io.UnsupportedEncodingException;
+import java.math.BigDecimal;
+import java.net.URLEncoder;
+import java.text.DecimalFormat;
+
+
+/*
+* 现金贷借还详情页面
+* */
+public class RYDMultiBorrowDetailActivity extends BaseActivity {
+
+    private String contract_id;
+
+    //借款金额
+    private TextView c_tv_borrow_amount;
+    //收款账户（储蓄卡）
+    private TextView c_sure_borrow_shoukuan_account;
+    private ImageView c_sure_borrow_shoukuan_iv;
+
+    //还款账户（储蓄卡）
+    private TextView c_sure_borrow_huankuan_account;
+    private ImageView c_sure_borrow_huankuan_iv;
+    //    起止日期
+    private TextView c_start_dead_date_tv;
+    //    借款期限
+    private TextView tv_borrowterm;
+    // 还款日期
+  //  private TextView c_tv_repay_date;
+    // 借款协议
+    private TextView tv_contact;
+    private AutoRelativeLayout lay_contract;
+    //    更换还款卡
+    private ImageView c_changed_huankuan_iv;
+    private TextView tv_change_hkcardNo;
+    private TextView tv_changeCard;
+
+ //   private TextView tv_repayPlan;
+     private TextView tv_show_repaylist;
+
+    private MultiBorrowRecordDetailReponse.ResultBean detailResponse;
+    private String[] beginDateSplit = new String[]{"", "", ""};
+    private String[] endDateSplit = new String[]{"", "", ""};
+
+    private int repayStatus;
+    private String agreementUrl;
+    private String spanUnitStr = "";
+
+    private String repaymentBankCode;
+
+    private Button c_reapy_btn;
+    private AutoRelativeLayout lay_changerepay_card;
+    private boolean isPayed;//true:已结清 false：待还款
+    private String product_descr;//产品名称
+    private double other_cost_rate;
+    private boolean is_opened;
+    private double interest_rate;
+    private  TextView pendingAmountTv;
+    private double term_repay_amount;
+    private String term_repay_amount_double;
+    private TextView c_sure_borrow_shoukuan_account_cardtype;
+    DecimalFormat df = new DecimalFormat("#0.00");
+    Object other_cost_rate_contact;
+    private String payment_card_type;
+
+    @Override
+    protected void  onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.c_activity_ryd_borrow_detail);
+        setTitleLayout("借款详情", true, false);
+        if (getIntent() != null) {
+            if(getIntent().hasExtra("contract_id"))
+            contract_id = getIntent().getStringExtra("contract_id");
+            if(getIntent().hasExtra("isPayed"))
+                isPayed = getIntent().getBooleanExtra("isPayed",false);
+            if(getIntent().hasExtra("product_descr"))
+                product_descr = getIntent().getStringExtra("product_descr");
+            CLogUtil.showLog("product_descr---",product_descr+"---");
+            if(getIntent().hasExtra("is_opened"))
+                is_opened = getIntent().getBooleanExtra("is_opened",false);
+        }
+        getDetailData();
+    }
+
+    private void getDetailData() {
+        BorrowRecordDetailRequest request = new BorrowRecordDetailRequest();
+        request.setContract_id(contract_id);
+        request.setProduct_id("8007");
+         request.setSub_product_id("600101");
+        httpsPost(this, request, ReqAction.APPLICATION_BORROW_RECORD_DETAIL, MultiBorrowRecordDetailReponse.class, new ICallback<MultiBorrowRecordDetailReponse>() {
+            @Override
+            public void success(MultiBorrowRecordDetailReponse borrowRecordDetailResponse) {
+                detailResponse = borrowRecordDetailResponse.getResult();
+                int borrowRecordDetailCode = borrowRecordDetailResponse.getCode();
+                if (borrowRecordDetailCode==5031) {
+                    showMaintainDialog();
+                } else {
+                    if (detailResponse != null) {
+                        repayStatus = detailResponse.getStatus();
+                        other_cost_rate = detailResponse.getOther_cost_rate();
+                        agreementUrl = detailResponse.getAgreement_url();
+                        interest_rate = detailResponse.getInterest_rate();
+                        term_repay_amount = detailResponse.getTerm_repay_amount();
+                        payment_card_type = detailResponse.getPayment_card_type();
+                        term_repay_amount_double = df.format(term_repay_amount);//转换后的待会金额
+                        bindView(detailResponse);
+                    }
+                }
+
+            }
+
+            @Override
+            public void failture(String tips) {
+
+            }
+        });
+    }
+
+    private String repayBankNum;
+    private String loanDateTime, expiredDateTime;
+
+    private void bindView(MultiBorrowRecordDetailReponse.ResultBean borrowRecordDetailResponse) {
+        initViews();
+        if(borrowRecordDetailResponse==null)
+            return;
+        //状态
+        String loanStatus = borrowRecordDetailResponse.getLoan_status();
+        //已逾期
+        if ("B".equals(loanStatus)) {
+            c_reapy_btn.setVisibility(View.VISIBLE);
+            lay_changerepay_card.setVisibility(View.VISIBLE);
+            lay_contract.setVisibility(View.VISIBLE);
+        }
+        //已结清
+        else if ("A".equals(loanStatus)) {
+            c_reapy_btn.setVisibility(View.GONE);
+            lay_changerepay_card.setVisibility(View.GONE);
+            lay_contract.setVisibility(View.VISIBLE);
+        }
+        //放款中
+        else if ("F".equals(loanStatus) || "G".equals(loanStatus) || "H".equals(loanStatus)) {
+            c_reapy_btn.setVisibility(View.GONE);
+            lay_contract.setVisibility(View.VISIBLE);
+            lay_changerepay_card.setVisibility(View.GONE);
+        }
+        //使用中
+        else {
+            c_reapy_btn.setVisibility(View.VISIBLE);
+            lay_contract.setVisibility(View.VISIBLE);
+            lay_changerepay_card.setVisibility(View.VISIBLE);
+        }
+//        statusTv.setText(CConstants.getLoanStatus(loanStatus));
+        //借款金额
+        c_tv_borrow_amount.setText(CMoneyEncoder.EncodeFormat(String.valueOf(borrowRecordDetailResponse.getTotal_amount())));
+//        double loanAmout = borrowRecordDetailResponse.getTotal_amount() - borrowRecordDetailResponse.getCurrent_cost_amount();
+        repayBankNum = borrowRecordDetailResponse.getRepayment_card_num();
+        //还款账户
+        c_sure_borrow_huankuan_account.setText(CStringUnit.cardJiaMi(borrowRecordDetailResponse.getRepayment_card_num()));
+        //收款账户
+        c_sure_borrow_shoukuan_account.setText(CStringUnit.cardJiaMi(borrowRecordDetailResponse.getPayment_card_num()));
+        //起止日期
+        loanDateTime = CDateUtil.DateToStrForRecord(
+                CDateUtil.parseDate(borrowRecordDetailResponse.getLoan_date(), "yyyyMMdd"));
+        expiredDateTime = CDateUtil.DateToStrForRecord(
+                CDateUtil.parseDate(borrowRecordDetailResponse.getExpired_date(), "yyyyMMdd"));
+        c_start_dead_date_tv.setText(loanDateTime + " - " + expiredDateTime);
+        //借款期限
+        tv_borrowterm.setText(borrowRecordDetailResponse.getTerm_spans()
+                + getSpanUnitStr(borrowRecordDetailResponse.getSpan_unit()));
+        //收款银行图标
+        String paymentTBankCode = borrowRecordDetailResponse.getPayment_title_code();
+        CBanksUtils.selectIcoidToImgView(this, paymentTBankCode, c_sure_borrow_shoukuan_iv);
+        //还款银行图标
+        repaymentBankCode = borrowRecordDetailResponse.getRepayment_title_code();
+        CBanksUtils.selectIcoidToImgView(this, repaymentBankCode, c_sure_borrow_huankuan_iv);
+        //
+/*        if(borrowRecordDetailResponse.getExpired_date()!=null&&borrowRecordDetailResponse.getExpired_date().length()>6)
+       c_tv_repay_date.setText("每月"+borrowRecordDetailResponse.getExpired_date().substring(6)+"日22:00前");*/
+    }
+
+    private String getSpanUnitStr(String str) {
+        switch (str) {
+            case "D":
+                spanUnitStr = "天";
+                break;
+            case "W":
+                spanUnitStr = "周";
+                break;
+            case "H":
+                spanUnitStr = "半月";
+                break;
+            case "M":
+                spanUnitStr = "月";
+                break;
+            case "Q":
+                spanUnitStr = "季";
+                break;
+            case "Y":
+                spanUnitStr = "年";
+                break;
+        }
+        return spanUnitStr;
+    }
+
+    private void initViews() {
+//        c_tv_repay_date = (TextView) findViewById(c_tv_repay_date);
+        c_tv_borrow_amount = (TextView) findViewById(R.id.c_tv_borrow_amount);
+//        tv_repayPlan = (TextView) findViewById(tv_repayPlan);
+ //       tv_repayPlan.setOnClickListener(clickListener);
+        tv_show_repaylist = (TextView) findViewById(R.id.tv_show_repaylist);
+        tv_show_repaylist.setOnClickListener(clickListener);
+        pendingAmountTv = (TextView) findViewById(R.id.c_ryd_tv_pending_amount);
+        pendingAmountTv.setText("¥" + term_repay_amount_double );//待还金额
+        //收款账户文字
+        c_sure_borrow_shoukuan_account_cardtype = (TextView) findViewById(R.id.c_sure_borrow_shoukuan_account_cardtype);
+        //判断是信用卡还是储蓄卡
+        if ( "01".equalsIgnoreCase(payment_card_type)){
+            c_sure_borrow_shoukuan_account_cardtype.setText("收款账户(储蓄卡)");
+        }else if ( "03".equalsIgnoreCase(payment_card_type) ){
+            c_sure_borrow_shoukuan_account_cardtype.setText("收款账户(信用卡)");
+        }
+        //收款账户
+        c_sure_borrow_shoukuan_account = (TextView) findViewById(R.id.c_sure_borrow_shoukuan_account);
+        c_sure_borrow_shoukuan_iv = (ImageView) findViewById(R.id.c_sure_borrow_shoukuan_iv);
+
+        //还款账户
+        c_sure_borrow_huankuan_account = (TextView) findViewById(R.id.c_sure_borrow_huankuan_account);
+        c_sure_borrow_huankuan_iv = (ImageView) findViewById(R.id.c_sure_borrow_huankuan_iv);
+
+        c_start_dead_date_tv = (TextView) findViewById(R.id.c_start_dead_date_tv);
+        tv_borrowterm = (TextView) findViewById(R.id.tv_borrowterm);
+
+        //还款计划
+        c_reapy_btn = (Button) findViewById(R.id.c_reapy_btn);
+        c_reapy_btn.setOnClickListener(clickListener);
+
+        //更换还款卡
+        lay_changerepay_card = (AutoRelativeLayout) findViewById(R.id.lay_changerepay_card);
+        lay_changerepay_card.setOnClickListener(clickListener);
+        //是否已还清，已还清，不显示还款和更换银行卡按钮
+        if(isPayed){
+            lay_changerepay_card.setVisibility(View.GONE);
+            c_reapy_btn.setVisibility(View.GONE);
+        }else{
+            lay_changerepay_card.setVisibility(View.VISIBLE);
+            c_reapy_btn.setVisibility(View.VISIBLE);
+        }
+        tv_changeCard = (TextView) findViewById(R.id.tv_changeCard);
+        lay_contract = (AutoRelativeLayout) findViewById(R.id.lay_contract);
+        tv_contact = (TextView) findViewById(R.id.tv_contact);
+        tv_contact.setOnClickListener(clickListener);
+    }
+
+    NoDoubleClickListener clickListener = new NoDoubleClickListener() {
+        @Override
+        protected void onNoDoubleClick(View view) {
+            int id = view.getId();
+            if (id == R.id.c_reapy_btn) {
+                jumpPage();
+            }
+/*            else if (id == tv_repayPlan) {
+                Intent intent = new Intent(RYDMultiBorrowDetailActivity.this, XJDRepayPlanActivity.class);
+                intent.putExtra("contract_id", contract_id);
+                startActivity(intent);
+            }*/
+            else if (id == R.id.tv_show_repaylist) {
+                //还款记录
+                Intent intent = new Intent(RYDMultiBorrowDetailActivity.this,MultiRYDRepayRecordActivity.class);
+                if (detailResponse != null){
+                    CLogUtil.showLog("detailResponse----",detailResponse.toString());
+                intent.putExtra("repayment_data", detailResponse);}
+                intent.putExtra("contract_id", contract_id);
+                startActivity(intent);
+            }
+            else if(id==R.id.lay_changerepay_card){
+                Intent intent = new Intent(RYDMultiBorrowDetailActivity.this, BankSelectActivity.class);
+                intent.putExtra("is_hk", true);
+                if(detailResponse!=null){
+                    intent.putExtra("paid_cash_card",detailResponse.getRepaid_cash_card()+"");
+                }
+                startActivityForResult(intent,994);
+            }else if (id==R.id.tv_contact){
+                //借款协议
+                try {
+                    if (!TextUtils.isEmpty(loanDateTime)) {
+                        beginDateSplit = loanDateTime.split("/");
+                    }
+                    if (!TextUtils.isEmpty(expiredDateTime)) {
+                        endDateSplit = expiredDateTime.split("/");
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                Intent intent = new Intent(RYDMultiBorrowDetailActivity.this, AgreementActivity.class);
+                intent.putExtra("productId",RyxcreditConfig.ryd_procudtid);
+                intent.putExtra("contract_url", appendContractUrl(detailResponse.getContract_url()));
+                intent.putExtra("money_manage_url", appendManagerUrl(detailResponse.getMoney_manage_url()));
+                startActivity(intent);
+            }
+        }
+    };
+    private static final int REQUEST_QUICK_PAYMENT_CODE = 0x0011;
+
+    private String changed_dfCardNo,hkBankCode,hkBankName;//还款卡
+
+    //信用咨询及管理服务协议
+    private String appendManagerUrl(String url) {
+        String finalUrl = "";
+        BigDecimal b2 = new BigDecimal(100);
+        BigDecimal b3 = new BigDecimal(1000);
+        DecimalFormat df = new DecimalFormat("#0.00");
+        //服务费率
+        String other_cost_rate = String.valueOf(detailResponse.getOther_cost_rate());
+        if (other_cost_rate!=null&& !other_cost_rate.equals("")){
+             other_cost_rate_contact = CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getOther_cost_rate())).multiply(b2);
+        }else{
+             other_cost_rate_contact=0.00;
+        }
+
+        try {
+            finalUrl = url + "?name=" + URLEncoder.encode(RyxcreditConfig.getRealName(),
+                    "UTF-8")
+                    + "&idNo=" + RyxcreditConfig.getCardId(getApplicationContext())
+                    + "&year=" + beginDateSplit[0] +
+                    "&month=" + beginDateSplit[1]
+                    + "&day=" + beginDateSplit[2]
+                    //服务费率
+                    + "&service_rate="+df.format(other_cost_rate_contact)
+                   // + "&service_rate="+ subZeroAndDot(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getOther_cost_rate())).multiply(b2).toString())
+                    //服务费人民币
+                    + "&service_amount=" + df.format(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getOther_cost_amount())))
+                    //逾期服务费
+                    + "&breach_contract_fee=" +df.format(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getOther_overdue_interest_rate())));
+                    //+ "&breach_contract_fee=" +  subZeroAndDot(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getOther_overdue_interest_rate())).toString());
+            CLogUtil.showLog("other_cost_amount", other_cost_rate+"");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return finalUrl;
+    }
+
+    //借款协议参数
+    private String appendContractUrl(String url) {
+        String finalUrl = "";
+        try {
+            BigDecimal b2 = new BigDecimal(100);
+            BigDecimal b3 = new BigDecimal(1000);
+            DecimalFormat df = new DecimalFormat("#0.00");
+            finalUrl = url + "?name=" + URLEncoder.encode(RyxcreditConfig.getRealName(),
+                    "UTF-8")
+                    + "&idNo=" + RyxcreditConfig.getCardId(getApplicationContext())
+                    + "&year=" + beginDateSplit[0] +
+                    "&month=" + beginDateSplit[1]
+                    + "&day=" + beginDateSplit[2]
+                    + "&loanInitPrin=" + detailResponse.getTotal_amount()
+                    + "&arrAmount=" + df.format(detailResponse.getLoan_amount())
+                    + "&beheadFee=" + detailResponse.getCost_amount()
+                    + "&stmtDay=" + detailResponse.getTerm_spans()
+                    + "&yearR=" + endDateSplit[0]
+                    + "&monthR=" + endDateSplit[1] +
+                    "&dayR=" + endDateSplit[2]
+                    + "&contrNbr="+ contract_id
+                    + "&contract=0"
+                    +"&promiseMoney=" + detailResponse.getSub_cost_amount()
+                    + "&arrAmountBig="
+                    + CNummberConvertUtil.convert(String.valueOf(detailResponse.getLoan_amount()))
+                    +"&brinterest= "+df.format(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getSub_cost_amount())))
+                   // +"&brinterest= "+ subZeroAndDot(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getInterest_rate())).multiply(b2).toString())
+                    //+"&overdue_rate="+(CNummberUtil.getStrFromBigDecimal(String.valueOf(detailResponse.getSub_overdue_interest_rate())).toString())
+                    +"&overdue_rate="+df.format(detailResponse.getSub_overdue_interest_rate())
+                 //借款利率
+                 +"&brinterestrate= "+df.format(CNummberUtil.getStrFromBigDecimal(String.valueOf(interest_rate)).multiply(b2));
+            CLogUtil.showLog("finalUrl", finalUrl+"");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return finalUrl;
+    }
+    /**
+     * 还款银行卡信息
+     */
+    private void getHuanKuanBank(CcardRepaymentResponse.ResultBean dkCardInfo) {
+        if (dkCardInfo == null) {
+            return;
+        }
+        changed_dfCardNo = dkCardInfo.getCard_num();
+        hkBankCode = dkCardInfo.getBank_title_code();
+        hkBankName = dkCardInfo.getBank_name();
+        change_dkCard();
+    }
+
+    private void change_dkCard() {
+        //如果更换后的银行卡不为空，并且和代扣卡相同则不更换
+        if (!TextUtils.isEmpty(changed_dfCardNo) && changed_dfCardNo.equals(repayBankNum)) {
+            CLogUtil.showToast(this,"请选择另一张银行卡！");
+            return;
+        }
+        ChangeDkCardRequest request = new ChangeDkCardRequest();
+        request.setCard_num(changed_dfCardNo);
+        request.setRepayment_card_num(repayBankNum);
+        request.setContract_id(contract_id);
+        httpsPost(this, request, ReqAction.APPLICATION_CHANGE_DKCARD, LoanRepayResponse.class, new ICallback<LoanRepayResponse>() {
+            @Override
+            public void success(LoanRepayResponse loanRepayResponse) {
+                int loanRepayCode = loanRepayResponse.getCode();
+                if (loanRepayCode==5031) {
+                    showMaintainDialog();
+                } else {
+                    initViewSattus();
+                }
+            }
+
+            @Override
+            public void failture(String tips) {
+            CLogUtil.showToast(RYDMultiBorrowDetailActivity.this,tips);
+            }
+        });
+    }
+
+    //还款卡内容显示
+    private void initViewSattus() {
+        repayBankNum = changed_dfCardNo;
+        repaymentBankCode = hkBankCode;
+        tv_changeCard.setVisibility(View.GONE);
+        tv_change_hkcardNo = (TextView)findViewById(R.id.tv_change_hkcardNo);
+        tv_change_hkcardNo.setVisibility(View.VISIBLE);
+        tv_change_hkcardNo.setText(CStringUnit.cardJiaMi(changed_dfCardNo));
+        tv_change_hkcardNo.setVisibility(View.VISIBLE);
+        c_changed_huankuan_iv = (ImageView)findViewById(R.id.c_changed_huankuan_iv);
+        c_changed_huankuan_iv.setVisibility(View.VISIBLE);
+        CBanksUtils.selectIcoidToImgView(RYDMultiBorrowDetailActivity.this, hkBankCode, c_changed_huankuan_iv);
+    }
+
+    private void jumpPage() {
+        Intent intent = new Intent(RYDMultiBorrowDetailActivity.this, RYDRepaymentAcitivity.class);
+        if (detailResponse != null) {
+            intent.putExtra("repaymentBankCode", repaymentBankCode);
+            intent.putExtra("repayBankNum", repayBankNum);
+            intent.putExtra("detailResponse", (Serializable) detailResponse);
+            intent.putExtra("product_descr",product_descr);
+            intent.putExtra("is_opened", is_opened);
+            intent.putExtra("repayStatus",repayStatus);
+            startActivityForResult(intent, REQUEST_QUICK_PAYMENT_CODE);
+        }
+    }
+    public static final int RESPONSE_QUICK_PAYMENT_CODE = 0x0012;
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        CLogUtil.showLog("onActivityResult---",requestCode+"---"+resultCode+"----"+data);
+        if(requestCode==994&&resultCode==995){
+            if(data!=null)
+            getHuanKuanBank((CcardRepaymentResponse.ResultBean)data.getSerializableExtra("hkCardInfo"));
+        }else if(resultCode==RESPONSE_QUICK_PAYMENT_CODE){
+            setResult(RESPONSE_QUICK_PAYMENT_CODE);
+            finish();
+        }
+    }
+    public static String subZeroAndDot(String s){
+        if(s.indexOf(".") > 0){
+            s = s.replaceAll("0+?$", "");//去掉多余的0
+            s = s.replaceAll("[.]$", "");//如最后一位是.则去掉
+        }
+        return s;
+    }
+}

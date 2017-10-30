@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <ListView
+        android:id="@+id/c_longest_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:scrollbars="vertical"/>
+    <com.rey.material.widget.Button
+        android:id="@+id/c_close"
+        android:layout_below="@+id/c_longest_list"
+        style="@style/CLightRaiseColorButtonRippleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="54px"
+        android:paddingBottom="54px"
+        android:text="关  闭"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/commontextsize" />
+</com.zhy.autolayout.AutoRelativeLayout>

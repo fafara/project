@@ -1,0 +1,465 @@
+<resources>
+    <string name="app_name">瑞易贷</string>
+    <!--小额贷首页-->
+    <string name="c_availbale_credit">可用额度</string>
+    <string name="c_daily_interest_rate">日利率%1$s</string>
+    <string name="c_interest_tip_1">1千元借用1天利息仅%1$s为</string>
+    <string name="c_promote_quota">我要提额</string>
+    <string name="c_borrowing_records">借还记录</string>
+    <string name="c_borrowing_money">我要借款</string>
+    <string name="c_repayment">我要还款</string>
+    <string name="c_newer_guide">新 手 指 引</string>
+    <string name="c_common_problem">常见问题</string>
+    <string name="c_credit_opening">信用额度陆续开放中...</string>
+    <string name="c_limit_of_credit">请您稍后,正在为您处理中~</string>
+    <string name="c_estimate_not_gone">对不起，您的额度审核未通过</string>
+    <string name="c_estimate_not_gone_tip">为了提高您的信用等级，请合理使用瑞银信手刷业务</string>
+    <string name="c_authorization_RuiFuXiaoDai_info">授权瑞蚨小贷访问您的手机运营商获取信息</string>
+    <!--基本信息-->
+    <string name="c_person_info">个人信息</string>
+    <string name="c_work_info">工作信息</string>
+    <string name="c_callRecords_info">运营商信息</string>
+    <string name="c_facerecognition_info">人脸识别</string>
+    <string name="c_pedestrianletter_info">人行征信报告 </string>
+    <string name="c_apply_info">申请信息</string>
+    <string name="c_other_info">其他信息</string>
+    <string name="c_next">下一步</string>
+    <string name="c_pre">上一步</string>
+    <string name="c_complete">完成</string>
+    <!--个人信息-->
+    <string name="c_person_info_tips">为确保您的申请通过，请如实填写并仔细核对。</string>
+    <string name="c_person_home_address">家庭住址</string>
+    <string name="c_person_home_address_tip_1">选择家所在城市</string>
+    <string name="c_person_home_address_tip_2">填写详细住址</string>
+    <string name="c_marital_status">婚姻状况</string>
+    <string name="c_marital_status_tip">请选择婚姻状况</string>
+    <string name="c_relationship">联系人关系</string>
+    <string name="c_relationship_tip">请选择联系人关系</string>
+    <string name="c_relationship_name">紧急联系人姓名</string>
+    <string name="c_relationship_name_tip">请填写联系人姓名</string>
+    <string name="c_relationship_mobile">联系人电话</string>
+    <string name="c_legal_person_shareholder">是否法人或股东</string>
+    <string name="c_relationship_mobile_tip">填写联系人手机号码</string>
+
+    <!--工作信息-->
+    <string name="c_work_address">工作地址</string>
+    <string name="c_work_address_tip1">选择公司所在城市</string>
+    <string name="c_work_address_tip2">请输入经营地址</string>
+    <string name="c_work_detailaddress_tip2">详细地址</string>
+    <string name="c_work_detailaddress">请输入公司详细地址</string>
+    <string name="c_work_company_name">公司名称</string>
+    <string name="c_work_company_name_tip">请输入公司全称</string>
+    <string name="c_work_company_telephone">公司电话</string>
+    <string name="c_work_company_address">公司地址</string>
+    <string name="c_work_operating_address">经营地址</string>
+    <string name="c_unified_social_credit_code">社会信用码\n或营业执照注册号</string>
+    <string name="c_monthly_turnover">月营业额(万)</string>
+    <string name="c_work_company_detailaddress">公司详细地址</string>
+    <string name="c_work_company_telephone_tip">公司电话</string>
+    <string name="c_work_profession">行业分类</string>
+    <string name="c_work_profession_tips">请选择行业分类</string>
+    <string name="c_monthly_turnover_tips">请输入月营业额</string>
+    <string name="c_unified_social_credit_code_tips">请输入社会信用码或营业执照注册号</string>
+    <string name="c_work_position">职位</string>
+    <string name="c_work_position_tip">填写所担任职位</string>
+    <string name="c_work_month_money">月收入</string>
+    <string name="c_work_month_money_tip">请选择月收入范围</string>
+    <!--申请信息-->
+    <string name="c_apply_education_level">教育程度</string>
+    <string name="c_apply_education_level_tip">请选择教育信息</string>
+    <string name="c_apply_email">电子邮箱</string>
+    <string name="c_apply_email_tip">填写信用卡账单地址</string>
+    <string name="c_apply_weixin">微信号</string>
+    <string name="c_apply_weixin_tip">填写微信号</string>
+    <string name="c_apply_month_money">月收入</string>
+    <string name="c_apply_month_money_tip">填写月收入</string>
+    <string name="c_apply_id_address">证件地址</string>
+    <string name="c_apply_id_address_tip">填写证件地址</string>
+    <!--其他信息-->
+    <string name="c_other_car_model">车辆型号</string>
+    <string name="c_other_car_model_tip">填写车辆型号</string>
+    <string name="c_other_car_brand">车辆品牌</string>
+    <string name="c_other_car_brand_tip">填写车辆品牌</string>
+    <string name="c_other_zhima_credit">芝麻信用</string>
+    <string name="c_other_zhima_credit_tip">填写淘宝号</string>
+    <string name="c_other_car_no">车牌号</string>
+    <string name="c_other_car_no_tip">填写车牌号</string>
+
+    <!--我要还款-->
+    <string name="c_repayment_money">还款记录</string>
+    <string name="c_repayment_contract">还款合同</string>
+    <string name="c_repayment_overdue">逾期罚息</string>
+    <string name="c_repayment_swiper">刷卡支付</string>
+    <string name="c_repayment_swiper_comment">(只支持借记卡)</string>
+    <string name="c_repayment_auto">协议代扣</string>
+    <string name="c_repayment_auto_comment">(代扣卡还款)</string>
+    <string name="c_repayment_sure">确认还款</string>
+    <string name="c_repayment_sum_interest">
+		<![CDATA[应还金额 <font color=\"#1db7f0\"> %1$s</font>]]></string>
+    <!--我要借款-->
+
+    <string name="c_borrow_money_deadline">借款期限</string>
+    <string name="c_borrow_money_amount">借款到账金额：</string>
+    <string name="c_borrow_money_range">1-21天</string>
+    <string name="c_borrow_money_calculate_costs">费用计算</string>
+    <string name="c_borrow_money_total_interest">
+		<![CDATA[总利息 <font color=\"#1db7f0\"> %1$s</font>]]></string>
+    <string name="c_borrow_money_counter_fee">
+		<![CDATA[手续费 <font color=\"#1db7f0\"> %1$s</font>]]></string>
+    <string name="c_borrow_choose_bank_no">选择收款账户（信用卡）</string>
+    <string name="c_return_choose_bank_no">选择还款账户（储蓄卡）</string>
+    <string name="c_borrow_bank_no">收款账户</string>
+    <string name="c_df_card_no">选择收款账户（储蓄卡）</string>
+    <string name="c_borrow_change">更换</string>
+    <string name="c_borrow_tip1">到期自动扣款，可主动还款</string>
+    <string name="c_borrow_tip2">查看支持还款银行列表</string>
+    <string name="df_bank_list">查看支持收款银行列表</string>
+    <string name="see_bank_list">查看支持银行列表</string>
+    <string name="c_borrow_loan">借款</string>
+    <!--确认借款-->
+    <string name="c_sure_borrow">确认借款</string>
+    <string name="c_repay_plan">还款计划</string>
+    <string name="c_view_detail">查看详情</string>
+    <string name="c_sure_borrow_amount">借款本金</string>
+    <string name="c_ryd_pending_amount">待还金额</string>
+    <string name="c_sure_borrow_receive_bank_no">收款账户（信用卡）</string>
+    <string name="c_sure_borrow_huankuan_bank_no">还款账户（储蓄卡）</string>
+    <string name="c_sure_borrow_total_interest">总利息</string>
+    <string name="c_sure_borrow_day_rate">日利率</string>
+    <string name="c_sure_borrow_start_end_time">起止日期</string>
+    <string name="c_sure_borrow_longest_time">借款期限</string>
+    <string name="c_sure_borrow_repay_bank_no">还款账户</string>
+    <string name="c_sure_borrow_repayment_metod">还款方式</string>
+    <string name="c_sure_borrow_lenders">贷款发放人</string>
+    <string name="c_sure_borrow_borrower">借款人</string>
+    <string name="c_sure_borrow_borrower_id">借款人身份证</string>
+
+    <string name="c_common_mobile">我们给您的手机号</string>
+    <string name="c_common_checkno">发送了一条验证码</string>
+    <string name="c_common_input_verify_code">输入验证码</string>
+    <string name="c_common_send_verify_code">发送验证码</string>
+    <string name="c_sure_borrow_tip1">
+		<![CDATA[请您仔细核对好借款信息，点击确认借款按钮表示同意 <font color=\"#1db7f0\"> 《瑞商贷借款服务协议》</font>]]></string>
+    <string name="c_sure_borrow_tipryd">
+		<![CDATA[请您仔细核对好借款信息，点击确认借款按钮表示同意 <font color=\"#1db7f0\"> 《瑞易贷借款服务协议》</font>]]></string>
+    <string name="c_sure_borrow_tiprkd">
+		<![CDATA[请您仔细核对好借款信息，点击确认借款按钮表示同意 <font color=\"#1db7f0\"> 《瑞卡贷借款服务协议》</font>]]></string>
+    <string name="c_sure_borrow_tip2">逾期信息将写入您的信征报告中，请珍惜您的个人信用记录</string>
+
+    <string name="c_common_base_info">基本信息</string>
+    <string name="c_common_contact_info">运营商信息</string>
+    <string name="c_common_must_input_tip">必填项，获取基本额度</string>
+
+    <string name="c_common_gongjijin_renzheng">公积金认证</string>
+    <string name="c_common_option_input_tip">选填项，获取更高额度</string>
+    <string name="c_common_shebao_renzheng">社保认证</string>
+    <string name="c_common_taxes_renzheng">纳税认证</string>
+    <string name="c_common_yanghang_renzheng">央行征信认证</string>
+
+    <string name="c_sure_apply">确认申请</string>
+    <!--借款记录-->
+    <string name="c_borrow_record_apply">申请中</string>
+    <string name="c_borrow_record_unpayment">待还款</string>
+    <string name="c_borrow_record_haspayed">已结清</string>
+    <string name="c_borrow_quickly_repment">快速还款</string>
+    <string name="c_borrow_record_current_payment">
+		<![CDATA[<font color=\"#1db7f0\">当期应还金额 %1$s</font>]]></string>
+    <string name="c_repay_total_owe_amount">
+		<![CDATA[<font color=\"#1db7f0\">剩余应还总额 %1$s</font>]]></string>
+    <string name="c_borrow_record_current_remaining_payment">
+		<![CDATA[<font color=\"#1db7f0\">本期应还金额 %1$s</font>]]></string>
+    <string name="c_ruikadai_tip2">《瑞卡贷产品服务协议》</string>
+    <string name="c_ruiyidai_tip2">《瑞易贷产品服务协议》</string>
+    <string name="c_borrow_record_current_payment_tip"><![CDATA[逾期手续费=未还合同金额*<font>%1$s</font>*逾期天数]]></string>
+    <string name="c_be_using">使用中</string>
+    <string name="c_repayment_date">还款日</string>
+    <string name="c_pay_account">收款账户</string>
+    <string name="c_month_rate">月利率</string>
+    <string name="c_all_interest">总利息</string>
+    <string name="c_start_and_end_date">起止日期</string>
+    <string name="c_borrow_term">借款期限</string>
+    <string name="c_repayment_account">还款账户</string>
+    <string name="c_repayment_style">还款方式</string>
+    <string name="c_show_repayment">查看还款记录</string>
+    <string name="c_quik_repayment">快速还款</string>
+    <string name="c_borrow_record">借款详情</string>
+    <!--激活额度-->
+    <string name="c_activate_credit_line_tip">激活信用额度，急速放款</string>
+    <string name="c_activate_credit_line_tip_1">补充信息及3张信用卡资料，快速激活</string>
+    <string name="c_activate_credit_line_tip_2">添加更多信用卡将有助于提高您的额度</string>
+    <string name="c_credit_card">信用卡</string>
+    <string name="c_add_more">添加更多</string>
+    <string name="c_activate">激活</string>
+    <string name="c_cash_loan">现金贷</string>
+    <string name="c_service_mobile">400 117 7777</string>
+
+    <string name="c_ruiqiaodai_tip">
+		瑞卡贷是广州市瑞蚨互联网小额贷款有限公司（简称：瑞蚨小贷）推出的个人小额、短期信用贷款产品。用户通过在线填写个人信息，提交后由瑞蚨小贷进行贷款额度审核，审核通过后用户可以通过手机客户端完成借款和还款业务。
+	</string>
+    <string name="c_ruiqiaodai_tip1">该服务由广州市瑞蚨互联网小额贷款有限公司提供</string>
+    <string name="c_ruiqiaodai_tip2">本贷款由广州市瑞蚨互联网小额贷款有限公司提供</string>
+    <string name="edt_info">填写资料</string>
+    <string name="finish_time">24小时内完成审批</string>
+    <string name="get_quota">获取额度</string>
+    <string name="arrive_time">最快一秒到账</string>
+    <string name="borrowing_successful">借款成功</string>
+    <string name="ryd_instruction">瑞易贷使用说明</string>
+    <string name="rkd_instruction">瑞卡贷使用说明</string>
+    <string name="problem">常见问题</string>
+    <string name="payback_warnning">您的借款已经逾期，为了不影响您的信用及额度，请您及时还款</string>
+    <string name="credited_amount">最低金额1000元</string>
+    <string name="content_amount">金额构成：到账金额、利息、服务费</string>
+    <string name="arrive_amount">到账金额:</string>
+    <string name="interest_fee">利   息:</string>
+    <string name="service_fee">借款服务费：</string>
+    <string name="contacts_waring_msg">请在设置里,打开应用的通讯录权限,否则将无法正常使用</string>
+    <string name="quit">退出</string>
+    <string name="settings">设置</string>
+    <string name="perfect_info">完善信用卡信息</string>
+    <string name="tv_overdue_day"><![CDATA[已逾期<font>%1$s</font>天]]></string>
+    <string name="tv_overdue_pay"><![CDATA[逾期手续费<font>%1$s</font>]]></string>
+    <string name="instruction">使用说明</string>
+    <string name="tv_ryd_how_activate">瑞易贷使用说明</string>
+    <string name="tv_rkd_how_activate">瑞卡贷使用说明</string>
+    <string name="tv_ryd_problem_activate">瑞易贷常见问题</string>
+    <string name="tv_rkd_problem_activate">瑞卡贷常见问题</string>
+    <string name="tv_sharing_quota">产品额度共享问题</string>
+    <string name="tv_how_activate">如何激活瑞易贷</string>
+    <string name="tv_how_borrow">如何进行瑞易贷借款</string>
+    <string name="tv_how_repayment">如何进行瑞易贷还款</string>
+    <string name="tv_middle_rkd_how_activate">如何激活瑞卡贷</string>
+    <string name="tv_middle_rkd_how_borrow">如何进行瑞卡贷借款</string>
+    <string name="tv_middle_rkd_how_repayment">如何进行瑞卡贷还款</string>
+    <string name="tv_about_rqd">关于瑞卡贷</string>
+    <string name="tv_about_ryd">关于瑞易贷</string>
+    <string name="tv_edu_problem">额度问题</string>
+    <string name="tv_borrow_problem">借款问题</string>
+    <string name="tv_repayment_problem">还款问题</string>
+    <string name="tv_parameter_problem">瑞卡贷还款参数</string>
+    <string name="resend_verification_code">重新发送验证码</string>
+    <string name="resend">重新发送</string>
+    <string name="tv_overdue_tip"><![CDATA[您已逾期<font>%1$s</font>天，逾期罚息为<font>%2$s</font>]]></string>
+    <string name="tv_repayment_tip">3、为保证扣款成功，请确认您协议代扣银行卡内余额充足</string>
+    <string name="service_phone">400 117 7777</string>
+    <string name="bank_phone_nummber">借款需要开通代扣服务，请填写银行预留手机号开通</string>
+    <string name="commissioned_agreement">《委托扣款服务协议》</string>
+    <string name="agree">同意</string>
+    <string name="sure">确认</string>
+    <string name="tv_borrow_state_tip">2、您的借款状态会在当日24:00后变更</string>
+    <string name="open_withhold_service">开通代扣服务</string>
+    <string name="tv_bank_list">
+		工商银行、农业银行、中国银行、建设银行、交通银行、招商银行、兴业银行、光大银行、中信银行、平安银行、浦发银行、邮储银行、广发银行、华夏银行、渤海银行
+	</string>
+    <string name="go_bing_card">去绑定</string>
+    <string name="tv_creditmain_tips">温馨提示：22:00-5:00为非交易时间，请不要操作借款及还款</string>
+    <string name="tv_repayment_tips">1、借款成功后第二个自然日开始可进行还款</string>
+    <string name="change_dfBankcard">更换自动还款账户</string>
+    <string name="change_dfBankcard_tip">如您到期还款账户中余额不足，可点击下方进行更换</string>
+    <string name="borrow_repayment_tips">温馨提示：借款成功后第二个自然日开始可进行还款</string>
+    <string name="contact_info1"><![CDATA[<font color="black">点击拨打%1$s</font><font color="#1db7f0">%2$s</font><font color="black">转人工服务获取服务密码</font>]]></string>
+    <string name="contact_info2"><![CDATA[<font color="black">访问%1$s网上营业厅</font><font color="#1db7f0">%2$s</font><font color="black">,然后输入手机号，进行重置密码服务</font>]]></string>
+
+
+    <!--活体检测-->
+    <string name="htjc_app_name">活体检测</string>
+    <string name="htjc_hello_world">Hello world!</string>
+    <string name="htjc_app_name_overlight">人像活体检测</string>
+    <string name="htjc_app_name_picquality">人像质量判断</string>
+    <string name="htjc_str_main">活体检测</string>
+    <string name="htjc_str_main_btn_quality_judge">质量判断</string>
+    <string name="htjc_str_main_btn_start_check">开始检测</string>
+    <string name="htjc_str_main_btn_setting">设        置</string>
+    <string name="htjc_str_main_btn_tip">左看：头向左偏，朝着卡通图看\n右看：头向右偏，朝着卡通图看</string>
+
+    <string name="htjc_str_live_txt_title">请将脸置于提示框内</string>
+
+
+    <string name="htjc_str_exit">很抱歉,程序出现异常,即将退出！</string>
+
+    <!--现金贷-->
+    <string name="xjd_contact_amount">借款本金</string>
+    <string name="borrow_contract">借款协议</string>
+    <string name="xjd_df_card">收款账户(储蓄卡)</string>
+    <string name="repay_date">还款日期</string>
+    <string name="coming_repay_date">最近还款日</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="add_debit_card">添加储蓄卡</string>
+    <string name="repay_amout">还款金额</string>
+    <string name="c_huankuan_bank_no">还款账户(储蓄卡)</string>
+    <string name="overdue_fee">逾期手续费</string>
+    <string name="c_sjd_sure_borrow_tip1">
+		<![CDATA[请您仔细核对好借款信息，点击确认借款按钮表示同意 <font color=\"#1db7f0\"> 《借款协议》、《服务协议》</font>]]></string>
+    <string name="next_repay_date">下一还款日</string>
+    <string name="thisperiod_repay_date">本期还款日</string>
+    <string name="repay_card">还款卡</string>
+    <string name="center_bank_auth_tip1">央行征信认证</string>
+    <string name="center_bank_auth_tip2">输入查询码授权查阅个人征信资料</string>
+    <string name="providentfund_tip1">公积金认证</string>
+    <string name="providentfund_tip2">输入身份证和密码查询公积金账户</string>
+    <string name="mobile_manager_tip1">手机运营商认证</string>
+    <string name="mobile_manager_tip2">完成认证最高可提额5000元</string>
+    <string name="elect_shop_tip1">电商信息认证</string>
+    <string name="elect_shop_tip2">输入查询码授权查询个人资料</string>
+    <string name="please_enter_the_correct_id_number">请正确输入身份证号码！</string>
+    <string name="c_total_amount_credit">当前额度</string>
+    <string name="c_max_amount_credit">请完善信息，激活额度!</string>
+    <string name="xjd_content_amount">金额构成：三方数据查询费，人行征信查询费，活体认证费，身份证及银行卡验证费</string>
+    <string name="repay_plan_tip">还款日为每月号</string>
+    <string name="change_repaycard">更换还款卡</string>
+    <string name="swipe_repay">刷卡还款</string>
+    <string name="go_choose">去选择</string>
+    <string name="content_repayamount">金额构成：本金、利息、服务费、逾期罚息</string>
+    <string name="repayamount_periodamount">本期应还金额=本期应还总额-本期已还金额</string>
+    <string name="repayamount_periodtotal">本期应还总额：本期账单应还总金额，包含往期逾期金额</string>
+    <!--人脸识别-->
+    <string name="htjc_attention_not_shake">眼睛请盯着绿色圆圈，不要晃手机和头</string>
+
+    <string name="htjc_btn_inc">&#62;</string>
+    <string name="htjc_btn_dec">&#60;</string>
+    <string name="htjc_btn_return">返回</string>
+    <string name="htjc_btn_resume">重新开始(10s)</string>
+    <string name="htjc_friendly_tip_0">未采集到合格的人像,再试一次吧!</string>
+    <string name="htjc_friendly_tip_1">恭喜您,检测成功!</string>
+    <string name="htjc_friendly_tip_2">很遗憾,检测失败!</string>
+    <string name="htjc_friendly_tip_3">操作时间过长!</string>
+    <string name="htjc_look_at_me">看着我</string>
+    <string name="htjc_pic_decting">数据处理中</string>
+    <string name="htjc_no_face">没有检测到人脸</string>
+    <string name="htjc_multi_face">检测到多个人脸</string>
+    <string name="htjc_no_best_pic">未找到最佳采集照片</string>
+    <string name="htjc_camera_not_start">请开启您的摄像头</string>
+    <string name="htjc_no_SDCard">"未发现SD卡，请稍后重试或重新启动手机！"</string>
+    <string name="htjc_no_facing_front_camera">抱歉打开前置摄像头失败，请稍后再试</string>
+    <string name="htjc_no_pass_reason_no_face">没有检测到人脸</string>
+    <string name="htjc_no_pass_reason_multi_face">屏幕中存在多张人脸</string>
+    <string name="htjc_no_pass_reason_skew_face">请正面面对屏幕</string>
+    <string name="htjc_no_pass_reason_too_bright">环境光线过亮</string>
+    <string name="htjc_no_pass_reason_too_dark">环境光线过暗</string>
+    <string name="htjc_no_pass_reason_too_far">请靠近摄像头</string>
+    <string name="htjc_no_pass_reason_blur">图像过于模糊</string>
+    <string name="htjc_no_pass_reason_yawangle">左右姿态角度过大</string>
+    <string name="htjc_no_pass_reason_picangle">俯仰角度过大</string>
+    <string name="htjc_no_pass_reason_mouthclosed">嘴巴张开过大</string>
+
+    <string name="htjc_face_in_box">请将脸部置于提示框中</string>
+    <string name="htjc_memory_not_enough">内存不足！</string>
+    <string name="htjc_shake_head">请摇头</string>
+    <string name="htjc_timerdialog_return">返      回</string>
+    <string name="htjc_timerdialog_recheck">重新检测</string>
+    <string name="htjc_str_look_left_right">请调整脸部位置，并按提示左看右看</string>
+    <string name="htjc_main_title">人脸识别</string>
+    <string name="htjc_main_remind1">* 请在光线充足的地方认证</string>
+    <string name="htjc_main_remind2">* 请注意画面中的动作</string>
+    <string name="htjc_main_remind3">* 请在提示语音结束后做相应操作</string>
+    <string name="htjc_main_remind4">* 请小幅晃动手机</string>
+    <string name="htjc_main_remind5">* 为避免借款失败，请确保本人操作</string>
+
+    <string name="htjc_guide_time_out">未检测到人脸</string>
+    <string name="camerawaringmsg">请在设置里,打开{0}的拍照权限,否则将无法正常拍照</string>
+    <string name="dirwaringmsg">请在设置里,打开{0}的文件操作权限,否则将无法正常使用</string>
+
+    <string name="htjc_success_title">检测结果</string>
+    <string name="htjc_success_result">检测成功</string>
+    <string name="htjc_fail_title">检测结果</string>
+    <string name="htjc_fail_result">检测失败</string>
+    <string name="htjc_fail_reason">可能失败的原因：</string>
+
+    <string name="htjc_fail_remind_default">检测未通过</string>
+    <string name="htjc_fail_remind_noface">1.光线太明或太暗\n2.操作过程中有遮挡，未露出额头\n3.操作过程中幅度过大或非常规操作</string>
+    <string name="htjc_fail_remind_moreface">屏幕中出现多张人脸</string>
+    <string name="htjc_fail_remind_notlive">1.光线太明或太暗\n2.未将脸部置于屏幕正中间\n3.非常规操作</string>
+    <string name="htjc_fail_remind_badmovementtype">操作过程中幅度过大或非常规操作</string>
+    <string name="htjc_fail_camera_quanxian">你禁止了调用相机的权限</string>
+    <string name="htjc_fail_remind_timeout">检测超时</string>
+    <string name="htjc_fail_remind_pgp_fail">照片获取失败，请重新检测</string>
+    <string name="htjc_fail_remind_3d">非常规操作（3d错误）</string>
+    <string name="htjc_fail_remind_badcolor">非常规操作（肤色异常）</string>
+    <string name="htjc_fail_remind_badcontinuity">非常规操作(连续性错误)</string>
+    <string name="htjc_fail_remind_abnormality">非常规操作</string>
+
+    <string name="htjc_guide_remind_dark">光线过暗,请打开灯光</string>
+    <string name="htjc_guide_remind_bright">光线过亮,请避开逆光</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="choose_career">选择你的职业</string>
+    <string name="choose_career_work">我是上班族</string>
+    <string name="choose_career_boss">我是老板</string>
+    <string name="c_quota_activation">额度激活</string>
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

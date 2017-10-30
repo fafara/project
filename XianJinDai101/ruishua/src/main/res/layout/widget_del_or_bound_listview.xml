@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    
+    <Button
+        android:id="@+id/bound_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_listview_bound"
+        android:singleLine="true"
+        android:textColor="#ffffff" />
+    
+    <Button
+        android:id="@+id/del_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_listview_delete"
+        android:singleLine="true"
+        android:text="删除"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

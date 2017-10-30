@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef1f3">
+ <include
+     android:id="@+id/merchantinfo_title"
+     layout="@layout/ryxpaytitle"
+     android:layout_width="match_parent"
+     android:layout_height="56dp"></include>
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:id="@+id/merchant_username_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_marginTop="30px"
+     android:layout_below="@id/merchantinfo_title"
+     >
+<TextView
+    android:id="@+id/merchant_username_tv"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="150px"
+    android:text="法人名称"
+    android:gravity="center_vertical"
+    android:paddingLeft="60px"
+    android:textSize="@dimen/contenttitletext"
+    android:textColor="@color/secondblack"
+    />
+<EditText
+    android:id="@+id/merchant_customerUserName_et"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="请输入真实姓名"
+    android:gravity="center_vertical"
+    android:ems="10"
+    android:layout_weight="2"
+    android:background="@null"
+    android:cursorVisible="true"
+    android:textColor="@android:color/black"
+    android:textColorHint="@color/fourblack"
+    android:textSize="@dimen/contenttitletext"/>
+
+
+
+
+ </com.zhy.autolayout.AutoLinearLayout>
+ <View
+     android:id="@+id/merchant_username_blewview"
+     android:layout_below="@id/merchant_username_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/onepx"
+     android:background="@color/payhorizontalline" />
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:id="@+id/merchant_idcard_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_below="@id/merchant_username_blewview"
+     >
+  <TextView
+      android:id="@+id/merchant_idcard_tv"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="150px"
+      android:text="法人身份证"
+      android:gravity="center_vertical"
+      android:paddingLeft="60px"
+      android:textSize="@dimen/contenttitletext"
+      android:textColor="@color/secondblack"
+      />
+  <EditText
+      android:id="@+id/merchant_customerIdCard_et"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="请输入身份证号码"
+      android:gravity="center_vertical"
+      android:ems="10"
+      android:layout_weight="2"
+      android:background="@null"
+      android:cursorVisible="true"
+      android:digits = "0123456789x"
+      android:maxLength="18"
+      android:inputType="textVisiblePassword"
+      android:textColor="@android:color/black"
+      android:textColorHint="@color/fourblack"
+      android:textSize="@dimen/contenttitletext"/>
+
+ </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:id="@+id/merchant_customer_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_below="@id/merchant_idcard_layout"
+     android:layout_marginTop="30px"
+     >
+  <TextView
+      android:id="@+id/merchant_customername_tv"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="150px"
+      android:text="商户名称"
+      android:gravity="center_vertical"
+      android:paddingLeft="60px"
+      android:textSize="@dimen/contenttitletext"
+      android:textColor="@color/secondblack"
+      />
+  <EditText
+      android:id="@+id/merchant_customerName_et"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="请输入商户名称"
+      android:gravity="center_vertical"
+      android:ems="10"
+      android:layout_weight="2"
+      android:background="@null"
+      android:cursorVisible="true"
+      android:textColor="@android:color/black"
+      android:textColorHint="@color/fourblack"
+      android:textSize="@dimen/contenttitletext"/>
+
+ </com.zhy.autolayout.AutoLinearLayout>
+ <View
+     android:id="@+id/merchant_customer_layout_blewview"
+     android:layout_below="@id/merchant_customer_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/onepx"
+     android:background="@color/payhorizontalline" />
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:id="@+id/merchant_yyzz_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_below="@id/merchant_customer_layout_blewview"
+     >
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="150px"
+      android:text="营业执照"
+      android:gravity="center_vertical"
+      android:paddingLeft="60px"
+      android:textSize="@dimen/contenttitletext"
+      android:textColor="@color/secondblack"
+      />
+  <EditText
+      android:id="@+id/merchant_customerNumber_et"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="请输入营业执照号"
+      android:gravity="center_vertical"
+      android:ems="10"
+      android:layout_weight="2"
+      android:lines="1"
+      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      android:maxLength="20"
+      android:background="@null"
+      android:cursorVisible="true"
+      android:textColor="@android:color/black"
+      android:textColorHint="@color/fourblack"
+      android:textSize="@dimen/contenttitletext"/>
+
+ </com.zhy.autolayout.AutoLinearLayout>
+
+
+ <View
+     android:id="@+id/merchant_yyzz_layout_blewview"
+     android:layout_below="@id/merchant_yyzz_layout"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/onepx"
+     android:background="@color/payhorizontalline" />
+
+ <com.zhy.autolayout.AutoLinearLayout
+     android:id="@+id/merchant_yyaddress_layout"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/white"
+     android:layout_below="@id/merchant_yyzz_layout_blewview"
+     >
+  <TextView
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="150px"
+      android:text="营业地址"
+      android:gravity="center_vertical"
+      android:paddingLeft="60px"
+      android:textSize="@dimen/contenttitletext"
+      android:textColor="@color/secondblack"
+      />
+  <EditText
+      android:id="@+id/merchant_customerAddress_et"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="营业地址包含省、市、县"
+      android:gravity="center_vertical"
+      android:ems="10"
+      android:layout_weight="2"
+      android:background="@null"
+      android:cursorVisible="true"
+      android:textColor="@android:color/black"
+      android:textColorHint="@color/fourblack"
+      android:textSize="@dimen/contenttitletext"/>
+
+ </com.zhy.autolayout.AutoLinearLayout>
+
+ <TextView
+     android:id="@+id/merchant_message"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:text="此信息将进行加密保管,仅用于验证您的身份"
+     android:layout_marginTop="60px"
+     android:textSize="13sp"
+     android:textColor="#999999"
+     android:layout_below="@id/merchant_yyaddress_layout"/>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="90px"
+     android:layout_marginLeft="70px"
+     android:layout_marginRight="70px"
+     android:layout_below="@id/merchant_message">
+
+  <com.rey.material.widget.Button
+      android:id="@+id/btn_next"
+      style="@style/LightRaiseColorButtonRippleStyle"
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:text="下一步"
+      android:textSize="@dimen/contenttitletext" />
+ </LinearLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--三级分销主题信息-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/llay_sjfx_home_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/c_ll_common_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sjfx_top_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:text="当前收益(元)"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_textsize" />
+
+            <com.ryx.payment.ruishua.widget.CMoneyTextView
+                android:id="@+id/tv_ydIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80px"
+                android:layout_gravity="center_horizontal"
+                android:text="0.00"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/home_textsize" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="90px"
+                android:background="#2d95fa"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3082f4"
+            android:paddingTop="45px"
+            android:paddingBottom="40px"
+            android:orientation="horizontal">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/people_amount_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="圈友"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/smallersize" />
+
+                <TextView
+                    android:id="@+id/tv_people_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:layout_gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/maxtextsize" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/mv_tlIncome_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="累计收益(元)"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/smallersize" />
+
+                <com.ryx.payment.ruishua.widget.CMoneyTextView
+                    android:id="@+id/mv_tlIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/maxtextsize" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/mv_freeIncome_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="可提取(元)"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/text_blue"
+                    android:textSize="@dimen/smallersize" />
+
+                <com.ryx.payment.ruishua.widget.CMoneyTextView
+                    android:id="@+id/mv_freeIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:layout_gravity="center_horizontal"
+                    android:singleLine="true"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/maxtextsize" />
+
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv_sjfx_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llay_sjfx_home_head"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:background="@color/background_f0f3f5"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

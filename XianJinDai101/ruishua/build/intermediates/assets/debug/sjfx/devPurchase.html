@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>机具买买买买</title>
+</head>
+<body>
+
+<button type="button" onclick="UserMsg('收货地址选择1')">收货地址选择</button>
+<button type="button" onclick="termSaleListShow()">获取列表</button>
+<img id="imgid"  />
+<script type="text/javascript">
+    function loadDevData(dataArray){
+        <!--alert(dataArray[0].devName);-->
+        document.getElementById("imgid").src=dataArray[0].imgurl;
+    }
+    function addressselect(){
+        alert('回调执行');
+    }
+    function showToast(msg){
+        if(ios){
+            showToast(msg);
+        }else if(android){
+            ryx.showToast(msg);
+        }
+    }
+
+    function UserMsg(){
+        ryx.UserMsg();
+    }
+    function UserMsgback(msg){
+        alert("1111111");
+    }
+
+    <!--接口列表-->
+    <!--初始化完毕后请求termSaleListShow接口-->
+    function termSaleListShow(){
+        ryx.termSaleListShow();
+    }
+     <!--termSaleListShow接口回调-->
+    function termSaleListShowback(result){
+        <!--alert(JSON.stringify(result));-->
+        alert(result);
+    }
+
+
+
+
+</script>
+</body>

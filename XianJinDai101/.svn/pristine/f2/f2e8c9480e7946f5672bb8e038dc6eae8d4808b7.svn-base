@@ -1,0 +1,30 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>借款问题</title>
+	 <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+</head>
+<body>
+<div class="container">
+	<div class="section">
+		<h2>1.如何借款：</h2>
+		<p>额度激活后点击“我要借款”，选择借款金额、借款期限、收款账户和还款账户，即可提交借款申请。</p>
+	</div>
+	<div class="section">
+		<h2>2.借款打到哪里：</h2>
+		<p>借款将直接打进您选择的信用卡中。</p>
+	</div>
+	<div class="section">
+		<h2>3.借款发起后是否可以撤销：</h2>
+		<p>不能撤销。</p> 
+    </div>
+	<div class="section">
+		<h2>4.借款多久可以到账：</h2>
+		<p>借款申请提交后，最快1秒到账。</p>		
+	</div>
+</div>	
+</body>
+</html>

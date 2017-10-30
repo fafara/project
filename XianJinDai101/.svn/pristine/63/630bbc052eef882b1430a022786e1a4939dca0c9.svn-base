@@ -1,0 +1,180 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'android-apt'
+apply plugin: 'com.antfortune.freeline'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "kotlin-kapt"
+def AAVersion = '4.3.0'
+//def outputPathName = "/Users/liwei1/Desktop/ryx_rs_pay.apk"
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 453
+        versionName "4.5.3"
+        multiDexEnabled = true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    freeline {
+        hack true
+    }
+    signingConfigs {
+        ruishuaConfig {
+            storeFile file("doc/keystore/ruishua.jks")
+            storePassword "RS?f%lD*3oZqa#B7#@&*"
+            keyAlias "ruishua"
+            keyPassword "RS?f%lD*3oZqa#B7#@&*"
+        }
+        ruiyinxinConfig {
+            storeFile file("doc/keystore/ruiyinxin.jks")
+            storePassword "RS?f%lD*3oZqa#B7#@&*"
+            keyAlias "ruiyinxin"
+            keyPassword "RS?f%lD*3oZqa#B7#@&*"
+        }
+    }
+    buildTypes {
+        ruishua {
+            manifestPlaceholders = [AMAPKEY: "0ffe0b737bc0cadb24eeef1bc3b5b356"]
+            signingConfig signingConfigs.ruishuaConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        ruiyinxin {
+            manifestPlaceholders = [AMAPKEY: "5c0f58ee1e487164c4265c3f22fe0fae"]
+            signingConfig signingConfigs.ruiyinxinConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    //这是应用编译完成
+//    applicationVariants.all { variant ->
+//        variant.outputs.each  { output ->
+//            //开始输出
+//            output.outputFile = new File(outputPathName)
+//        }
+//    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildToolsVersion '25.0.0'
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
+    }
+
+}
+kapt {
+    arguments {
+        arg("androidManifestFile", variant.outputs[0].processResourcesTask.manifestFile)
+    }
+}
+
+repositories {
+    flatDir { dirs 'libs' }
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile project(':zbar')
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:design:${rootProject.ext.supportLibVersion}"
+    compile "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+    //Px适配
+    //重写okhttp,兼容https特殊需求
+    //AA注解
+    kapt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    //Ryx等待框
+    //material对话框
+    //ryx网络请求封装
+    compile project(':ryxhttp')
+    //快速adapter框架
+    compile project(':quickAdapter')
+    //人脸识别
+    compile project(':facelivedetecttwonodlib')
+    //小额贷款项目
+//    compile project(':ryxcredit')
+    //引用小贷aar
+    compile(name: 'ryxcredit-release', ext: 'aar')
+    //华丽首页Tab
+    //    compile 'me.majiajie:pager-bottom-tab-strip:1.0.0'
+    compile(name: 'pager-bottom-tab-strip-release', ext: 'aar')
+    //6.0权限管理
+    compile(name: 'PermissionUtils-release', ext: 'aar')
+    //通讯录
+    compile(name: 'contacts-release', ext: 'aar')
+    compile(name: 'qrcodecore-release', ext: 'aar')
+    compile(name: 'ExBankCardSDK', ext: 'aar')
+    compile(name: 'ExIDCardSDK', ext: 'aar')
+    //FlycoTabLayout
+    //    compile 'com.android.support:support-v4:23.1.1'
+    //    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.0.6@aar'
+//    compile project(':keyBoard')
+    compile(name: 'keyBoard-release', ext: 'aar')
+    //ryx手势密码
+//    compile project(':ryxgesturespswd')
+    compile(name: 'ryxgesturespswd-release', ext: 'aar')
+    //下拉刷新加载更多materialrefeshlayout
+    compile(name: 'materialrefesh_release', ext: 'aar')
+    //下载进度条库
+    compile(name: 'processbarlib-release', ext: 'aar')
+    //ryx设备适配代码
+    compile(name: 'ryxdevswiper170907', ext: 'aar')
+//    compile project(':ryxdevswiper')
+    //设备指纹
+    compile(name: 'libdevfp-release', ext: 'aar')
+    //时钟旋转等待框
+    compile(name: 'clock_anim_release', ext: 'aar')
+    //高亮显示
+    //图片加载框架
+    //友盟统计
+    //日志工具类
+    //    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    //-------以下为小贷aar内引用资源-----------
+    //右上角setting下拉POPWidow
+    compile(name: 'ryxpoplib', ext: 'aar')
+    //-------以上为小贷aar内引用资源-----------
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'com.isanwenyu.highlight:highlight:1.8.0'
+    compile 'com.alibaba:fastjson:latest.integration'
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.zhy:autolayout:1.4.3'
+    compile 'com.github.ybq:Android-SpinKit:1.0.4'
+    compile 'com.github.rey5137:material:1.2.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'cn.bingoogolapple:bga-zbar:1.1.6@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.6@aar'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.6@aar'
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'liji.library.dev:citypickerview:1.1.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    compile 'com.sobot.chat:sobotsdk:2.3.0'
+}
+//以下为发版时候需要的任务
+//def currentStyle='rs'
+//task differntiationAPK(type: Copy) {
+////    delete('src/main/res/values/colors.xml')
+//    from 'src/main/res/raw/colors_'+currentStyle+'.xml'
+//    into 'src/main/res/values/'
+//    rename('colors_'+currentStyle+'.xml', 'colors.xml')
+//}

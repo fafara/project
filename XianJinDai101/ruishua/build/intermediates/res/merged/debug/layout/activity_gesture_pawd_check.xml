@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/iv_logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/phone_messageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/iv_logo_layout"
+        android:textSize="@dimen/maxtextsize" />
+
+    <LinearLayout
+        android:layout_below="@id/phone_messageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <com.ryx.ryxgesturespswd.widget.LockPatternView
+            android:id="@+id/lockPatternView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/cancelokall"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp">
+        <com.rey.material.widget.Button
+            android:id="@+id/tologinact_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="使用密码登录"
+            android:textSize="@dimen/bodylittletextsize"
+            android:textColor="@color/threeblack"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            style="@style/LightFlatColorButtonRippleStyle"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

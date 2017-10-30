@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/grey_bg"
+	android:orientation="vertical">
+
+	<include layout="@layout/c_widget_title"/>
+
+	<android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollbars="none">
+
+		<com.zhy.autolayout.AutoLinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tv_overdue_tip"
+				android:layout_width="900px"
+				android:layout_marginTop="20px"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:gravity="center_horizontal"
+				android:textColor="@color/red_second"
+				android:textSize="12sp"
+				android:text="@string/tv_overdue_tip"
+			    android:visibility="gone"
+			/>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:layout_marginTop="60px"
+				android:visibility="gone"
+				android:background="@color/grey_line"/>
+<!--不显示-->
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:visibility="gone"
+				android:background="@color/grey_line"/>
+<!--借款金额（合同金额）-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+			>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="借款金额"/>
+
+				<TextView
+					android:id="@+id/tv_contract_amount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:textColor="@color/xd_blue"
+					style="@style/SureBorrow.ContentTitle"/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:background="@color/grey_line"/>
+<!--收款账户-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+			>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="@string/c_pay_account"/>
+
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_account"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:textColor="@color/black"/>
+
+				<ImageView
+					android:id="@+id/iv_payment_bank_icon"
+					android:layout_width="75px"
+					android:layout_height="75px"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="20px"
+					android:layout_toLeftOf="@id/tv_account"
+				/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:background="@color/grey_line"/>
+<!--还款账户-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+			>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="@string/c_repayment_account"/>
+
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_repayment_account"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:textColor="@color/black"/>
+
+				<ImageView
+					android:id="@+id/iv_repayment_bank_icon"
+					android:layout_width="75px"
+					android:layout_height="75px"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="20px"
+					android:layout_toLeftOf="@id/tv_repayment_account"
+				/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:background="@color/grey_line"/>
+<!--起止日期-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+			>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="@string/c_start_and_end_date"/>
+
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_start_end_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:textColor="@color/black"/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:background="@color/grey_line"/>
+<!--借款期限-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+			>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="@string/c_borrow_term"/>
+
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_borrow_term"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:textColor="@color/black"/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/onepx"
+				android:background="@color/grey_line"/>
+<!--还款日-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+				>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="还款日"/>
+
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_repay_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:textColor="@color/black"/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+			<View
+				android:layout_height="30px"
+				style="@style/BlackHorizontalLine"/>
+<!--借款协议-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:id="@+id/lay_showContract"
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+				android:visibility="gone"
+			>
+
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="借款协议"/>
+
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_repayment_contract"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:layout_toLeftOf="@+id/img_right1"
+					android:layout_marginRight="20px"
+					android:text="查看详情"
+					android:textColor="@color/black"/>
+				<ImageView
+					android:id="@+id/img_right1"
+					android:layout_width="66px"
+					android:layout_height="66px"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:background="@drawable/home_right_img"
+					android:scaleType="fitCenter" />
+				<View
+					android:layout_alignParentBottom="true"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/onepx"
+					android:background="@color/grey_line"/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+<!--更换自动还款卡-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:id="@+id/lay_change"
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+				android:visibility="gone"
+				>
+				<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:id="@+id/tv_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="@string/change_repaycard"/>
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_chaccount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="@dimen/margin_40"
+					android:text=""
+					android:visibility="gone"
+					android:textColor="@color/black"/>
+
+				<ImageView
+					android:id="@+id/iv_chbank_icon"
+					android:layout_width="75px"
+					android:layout_height="75px"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="20px"
+					android:visibility="gone"
+					android:layout_toLeftOf="@id/tv_chaccount"
+					/>
+				<TextView
+					android:id="@+id/c_dfbank_change"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_toLeftOf="@+id/img_right3"
+					android:layout_centerVertical="true"
+					android:layout_marginRight="20px"
+					android:background="@android:color/transparent"
+					android:gravity="right"
+					android:text="@string/c_borrow_change"
+					android:textColor="@color/black"
+					android:textSize="@dimen/bodytextsize" />
+				<ImageView
+					android:id="@+id/img_right3"
+					android:layout_width="66px"
+					android:layout_height="66px"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:background="@drawable/home_right_img"
+					android:scaleType="fitCenter" />
+				<View
+					android:layout_alignParentBottom="true"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/onepx"
+					android:background="@color/grey_line"/>
+			</com.zhy.autolayout.AutoRelativeLayout>
+<!--还款记录-->
+			<com.zhy.autolayout.AutoRelativeLayout
+				android:id="@+id/lay_show_repaylist"
+				android:layout_width="match_parent"
+				android:layout_height="150px"
+				android:background="@color/white"
+			    android:visibility="gone"
+			>
+			<TextView
+					style="@style/SureBorrow.ContentTitle"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:text="还款记录"/>
+				<TextView
+					style="@style/SureBorrow.Content"
+					android:id="@+id/tv_show_repaylist"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:layout_toLeftOf="@+id/img_right2"
+					android:layout_marginRight="20px"
+					android:text="@string/c_view_detail"/>
+				<ImageView
+					android:id="@+id/img_right2"
+					android:layout_width="66px"
+					android:layout_height="66px"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:background="@drawable/home_right_img"
+					android:scaleType="fitCenter" />
+			</com.zhy.autolayout.AutoRelativeLayout>
+
+<!--快速还款-->
+			<com.zhy.autolayout.AutoLinearLayout
+				android:id="@+id/lay_btn"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:visibility="gone">
+
+				<com.rey.material.widget.Button
+					android:id="@+id/btn_quikpay"
+					style="@style/CLightwhiteColorButtonRippleStyle"
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:layout_marginBottom="100px"
+					android:layout_marginLeft="@dimen/margin_40"
+					android:layout_marginRight="@dimen/margin_40"
+					android:layout_marginTop="90px"
+					android:background="@color/xd_blue"
+					android:text="@string/c_quik_repayment"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/btntext"/>
+			</com.zhy.autolayout.AutoLinearLayout>
+		</com.zhy.autolayout.AutoLinearLayout>
+	</android.support.v4.widget.NestedScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

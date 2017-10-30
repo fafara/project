@@ -1,0 +1,79 @@
+{
+    "desc": "icon功能列表",
+    "getIconList": [
+        {
+            "flag": "credit",
+            "id": "CreditSplashActivity_",
+            "idx": "1",
+            "name": "信用俱乐部",
+            "res": "icon_skin_petty_loan",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "creditcard_repayments",
+            "id": "CreditCardListActivity_",
+            "idx": "2",
+            "name": "信用卡还款",
+            "res": "icon_skin_credit",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "creditclub",
+            "id": "CreditClubActivity_",
+            "idx": "3",
+            "name": "在线办卡",
+            "res": "icon_skin_handlecard",
+            "show":"0",
+            "permission":"0"
+        },
+        {
+            "flag": "balance_query",
+            "id": "Swiper_",
+            "idx": "4",
+            "name": "银行卡余额",
+            "res": "icon_skin_balance",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "query_details",
+            "id": "BMIncomeAndExpenditureDetails2_",
+            "idx": "5",
+            "name": "查询明细",
+            "res": "icon_skin_query_details",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "ruibean",
+            "id": "RuibeanActivity",
+            "idx": "6",
+            "name": "瑞豆",
+            "res": "icon_skin_ruibean",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "banding_card",
+            "id": "BindedCardListActivity_",
+            "idx": "7",
+            "name": "卡管理",
+            "res": "icon_banding_card",
+            "show": "0",
+            "permission":"01"
+        },
+        {
+            "flag": "falg_more",
+            "id": "MoreIncreateActivity_",
+            "idx": "8",
+            "name": "更多",
+            "res": "icon_skin_more",
+            "show":"0",
+            "permission":"0"
+        }
+    ],
+    "result": "0",
+    "serviceid": "getIconlist"
+}

@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryx.payment.ruishua.fragment.MemberFragment">
+   <ImageView
+       android:id="@+id/memberfrg_imgview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@drawable/frg_member_bag"
+       android:scaleType="centerCrop"
+       android:visibility="visible"/>
+   <WebView
+       android:id="@+id/memberfrg_webview"
+       android:visibility="invisible"
+       android:layout_width="match_parent"
+       android:scrollbars="none"
+       android:layout_height="match_parent"/>
+
+</FrameLayout>

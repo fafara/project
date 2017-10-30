@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/ryxpaytitle"></include>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:id="@+id/tv_step2"
+                android:layout_height="wrap_content"
+                android:text="Step2: 刷卡验证"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dip"
+                android:visibility="gone"
+
+                android:textSize="@dimen/text_common" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pay_by_card_line1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_common" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/pay_by_card_line2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_common" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/pay_by_card_line3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_common" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/shuaka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

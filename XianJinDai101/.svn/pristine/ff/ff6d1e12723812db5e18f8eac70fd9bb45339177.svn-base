@@ -1,0 +1,732 @@
+package com.ryx.ryxcredit.ryd.activity;
+
+import android.content.Intent;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.Html;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.alibaba.fastjson.JSONObject;
+import com.jcodecraeer.xrecyclerview.XRecyclerView;
+import com.rey.material.app.BottomSheetDialog;
+import com.rey.material.app.Dialog;
+import com.rey.material.app.DialogFragment;
+import com.rey.material.app.SimpleDialog;
+import com.rey.material.app.ThemeManager;
+import com.rey.material.widget.Button;
+import com.ryx.quickadapter.inter.NoDoubleClickListener;
+import com.ryx.quickadapter.inter.OnListItemClickListener;
+import com.ryx.quickadapter.inter.RecyclerViewHelper;
+import com.ryx.ryxcredit.R;
+import com.ryx.ryxcredit.RyxcreditConfig;
+import com.ryx.ryxcredit.activity.BaseActivity;
+import com.ryx.ryxcredit.beans.ReqAction;
+import com.ryx.ryxcredit.beans.bussiness.borrowdetail.BorrowRecordDetailRequest;
+import com.ryx.ryxcredit.beans.bussiness.borrowdetail.ChangeDkCardRequest;
+import com.ryx.ryxcredit.beans.bussiness.cardrepayment.CcardRepaymentResponse;
+import com.ryx.ryxcredit.beans.bussiness.loanrepay.LoanRepayRequest;
+import com.ryx.ryxcredit.beans.bussiness.loanrepay.LoanRepayResponse;
+import com.ryx.ryxcredit.services.ICallback;
+import com.ryx.ryxcredit.utils.CBanksUtils;
+import com.ryx.ryxcredit.utils.CCommonDialog;
+import com.ryx.ryxcredit.utils.CConstants;
+import com.ryx.ryxcredit.utils.CDateUtil;
+import com.ryx.ryxcredit.utils.CDensityUtil;
+import com.ryx.ryxcredit.utils.CLogUtil;
+import com.ryx.ryxcredit.utils.CMoneyEncoder;
+import com.ryx.ryxcredit.utils.CNummberUtil;
+import com.ryx.ryxcredit.utils.CStringUnit;
+import com.ryx.ryxcredit.views.KeyboardChangeListener;
+import com.ryx.ryxcredit.widget.RyxSimpleConfirmDialog;
+import com.ryx.ryxcredit.xjd.BankSelectActivity;
+import com.ryx.ryxcredit.xjd.adapter.CRepayStyleAdapter;
+import com.ryx.ryxcredit.xjd.adapter.XjdRePayRecordsAdapter;
+import com.ryx.ryxcredit.xjd.bean.borrowrecord.MultiBorrowRecordDetailReponse;
+import com.ryx.ryxcredit.xjd.bean.repayment.CXJDRepayRecordResponse;
+import com.zhy.autolayout.AutoLinearLayout;
+import com.zhy.autolayout.AutoRelativeLayout;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.ryx.ryxcredit.RyxcreditConfig.context;
+import static com.ryx.ryxcredit.activity.QuickPaymentActivity.RESPONSE_QUICK_PAYMENT_CODE;
+
+/**
+ * 现金贷快速还款页面
+ */
+
+public class RYDRepaymentAcitivity extends BaseActivity implements KeyboardChangeListener.KeyBoardListener {
+
+    private MultiBorrowRecordDetailReponse.ResultBean detailResponse;
+    private String repaymentBankCode;
+    private String repayBankNum;
+    private AutoRelativeLayout lay_repaystyle;
+    private TextView tv_repay_style;
+    private boolean is_opened;//是否是业务时间
+    private String contract_id;
+    private String enteredPrice;
+    private AutoRelativeLayout lay_top;
+    private AutoRelativeLayout lay_change_hkcard;//更换还款银行卡
+    private TextView c_tv_show_record;//查看还款记录
+    //    private ImageView img_quest;//金额构成显示
+    private TextView text_xjd;
+    private String product_descr;//产品名称
+    private int repayStatus;
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.c_activity_ryd_quick_repayment);
+        setTitleLayout("快速还款", true, false);
+        if (getIntent() != null) {
+            if (getIntent().hasExtra("product_descr")) {
+                product_descr = getIntent().getStringExtra("product_descr");
+            }
+            if (getIntent().hasExtra("is_opened")) {
+                is_opened = getIntent().getBooleanExtra("is_opened",false);
+            }
+            if (getIntent().hasExtra("detailResponse")) {
+                detailResponse = (MultiBorrowRecordDetailReponse.ResultBean) getIntent().getSerializableExtra("detailResponse");
+                contract_id = detailResponse.getContract_id();
+                if (getIntent().hasExtra("repayBankNum")) {
+                    repayBankNum = getIntent().getStringExtra("repayBankNum");
+                }
+                if (getIntent().hasExtra("repaymentBankCode"))
+                    repaymentBankCode = getIntent().getStringExtra("repaymentBankCode");
+                initView();
+            } else {
+                contract_id = getIntent().getStringExtra("contract_id");
+                getDetailData();
+            }
+            if (getIntent().hasExtra("repayStatus")) {
+                repayStatus = getIntent().getIntExtra("repayStatus",0);
+            }
+
+        }
+
+    }
+
+    private void getDetailData() {
+        BorrowRecordDetailRequest request = new BorrowRecordDetailRequest();
+        request.setContract_id(contract_id);
+        request.setProduct_id("8007");
+        request.setSub_product_id("600101");
+        httpsPost(this, request, ReqAction.APPLICATION_BORROW_RECORD_DETAIL, MultiBorrowRecordDetailReponse.class, new ICallback<MultiBorrowRecordDetailReponse>() {
+            @Override
+            public void success(MultiBorrowRecordDetailReponse borrowRecordDetailResponse) {
+                detailResponse = borrowRecordDetailResponse.getResult();
+                if (detailResponse != null) {
+                    initView();
+                }
+
+            }
+
+            @Override
+            public void failture(String tips) {
+
+            }
+        });
+    }
+
+    private TextView tv_status;
+    private TextView tv_repay_amount;
+    private TextView tv_next_repay_date;
+    private EditText c_tv_repayment_money;
+    private TextView c_tv_hkbankNo;
+    private ImageView c_dfbank_iv;
+    private Button c_payback_money_btn;
+
+    private TextView tv_current_repay_amount;
+    private TextView text_next_repay_date;
+    private AutoLinearLayout lay_top_dark;
+    private KeyboardChangeListener mKeyboardChangeListener;
+
+    private void getRepayRecords() {
+        BorrowRecordDetailRequest request = new BorrowRecordDetailRequest();
+        request.setContract_id(contract_id);
+        httpsPost(this, request, ReqAction.LOAN_REPAYMENTS, CXJDRepayRecordResponse.class, new ICallback<CXJDRepayRecordResponse>() {
+            @Override
+            public void success(CXJDRepayRecordResponse borrowRecordDetailResponse) {
+                if (borrowRecordDetailResponse.getResult() != null)
+                    recordsList = borrowRecordDetailResponse.getResult().getRepayments();
+
+            }
+
+            @Override
+            public void failture(String tips) {
+
+            }
+        });
+    }
+
+    private void initView() {
+        getRepayRecords();
+        lay_top = (AutoRelativeLayout) findViewById(R.id.lay_top);
+        lay_top_dark = (AutoLinearLayout) findViewById(R.id.lay_top_dark);
+        lay_repaystyle = (AutoRelativeLayout) findViewById(R.id.lay_repaystyle);
+        lay_repaystyle.setOnClickListener(clickListener);
+        lay_change_hkcard = (AutoRelativeLayout) findViewById(R.id.lay_change_hkcard);
+        lay_change_hkcard.setOnClickListener(clickListener);
+        text_xjd = (TextView) findViewById(R.id.text_xjd);
+        text_xjd.setText(product_descr);
+        tv_repay_style = (TextView) findViewById(R.id.tv_repay_style);
+        text_next_repay_date = (TextView) findViewById(R.id.text_next_repay_date);
+        c_tv_hkbankNo = (TextView) findViewById(R.id.c_tv_hkbankNo);
+        c_tv_show_record = (TextView) findViewById(R.id.c_tv_show_record);
+        c_tv_show_record.setOnClickListener(clickListener);
+        //       img_quest = (ImageView) findViewById(img_quest);
+        //       img_quest.setOnClickListener(clickListener);
+        if (!TextUtils.isEmpty(repayBankNum)) {
+            c_tv_hkbankNo.setText(CStringUnit.cardJiaMi(repayBankNum));
+        } else {
+            c_tv_hkbankNo.setText(CStringUnit.cardJiaMi(detailResponse.getRepayment_card_num()));
+        }
+        tv_status = (TextView) findViewById(R.id.tv_status);
+        tv_status.setText(CConstants.getLoanStatus(detailResponse.getLoan_status()));
+        c_payback_money_btn = (Button) findViewById(R.id.c_payback_money_btn);
+        if ("A".equals(detailResponse.getLoan_status())) {
+            //已结清灰色 快速还款按钮隐藏
+            c_payback_money_btn.setVisibility(View.INVISIBLE);
+        } else if ("F".equals(detailResponse.getLoan_status())) {
+            //放款中蓝色 快速还款按钮隐藏
+            c_payback_money_btn.setVisibility(View.INVISIBLE);
+        }
+
+        c_payback_money_btn.setOnClickListener(clickListener);
+        tv_repay_amount = (TextView) findViewById(R.id.tv_repay_amount);
+        tv_repay_amount.setText(CMoneyEncoder.EncodeFormat(String.valueOf(detailResponse.getTerm_repay_amount())));
+        //还款日
+        tv_next_repay_date = (TextView) findViewById(R.id.tv_next_repay_date);
+        tv_next_repay_date.setText(CDateUtil.DateToStrForRecord(CDateUtil.parseDate(detailResponse.getTerm_date(), "yyyyMMdd")) + " 22:00");
+        c_tv_repayment_money = (EditText) findViewById(R.id.c_tv_repayment_money);
+        setRePaymentAmountListener(c_tv_repayment_money);
+        mKeyboardChangeListener = new KeyboardChangeListener(this);
+        mKeyboardChangeListener.setKeyBoardListener(this);
+        //当前应还金额，包括手续费
+        if (detailResponse.getOwed_amount() <= 0) {
+            c_tv_repayment_money.setText(CMoneyEncoder.EncodeFormat("0"));
+        } else {
+            c_tv_repayment_money.setText(CMoneyEncoder.EncodeFormat(String.valueOf(detailResponse.getOwed_amount())));
+        }
+        tv_current_repay_amount = (TextView) findViewById(R.id.tv_current_repay_amount);
+        if ("B".equals(detailResponse.getLoan_status())) {
+            //已逾期
+            setOverdueStatus(true);
+        } else {
+            setOverdueStatus(false);
+        }
+        //当前未应还金额
+//        tv_current_repay_amount.setText(CMoneyEncoder.EncodeFormat(String.valueOf(detailResponse.getRemain_total_amount())));
+        c_dfbank_iv = (ImageView) findViewById(R.id.c_dfbank_iv);
+        if (TextUtils.isEmpty(repaymentBankCode)) {
+            repaymentBankCode = detailResponse.getRepayment_title_code();
+        }
+        if (detailResponse.getStatus() == 0){
+            c_tv_repayment_money.setText("明日可进行还款操作");
+            c_tv_repayment_money.setBackgroundColor(Color.WHITE);
+            c_tv_repayment_money.setTextColor(Color.BLACK);
+        }
+        CBanksUtils.selectIcoidToImgView(RYDRepaymentAcitivity.this, repaymentBankCode, c_dfbank_iv);
+    }
+
+    @Override
+    public void onKeyboardChange(boolean isShow, int keyboardHeight) {
+        if (!isShow && c_tv_repayment_money.isFocused()) {
+            String money = c_tv_repayment_money.getText().toString().trim();
+            if (TextUtils.isEmpty(money)) {
+                return;
+            }
+            CLogUtil.showLog("c_tv_repayment_money---", c_tv_repayment_money + "---");
+            //格式化输入的还款额度
+            c_tv_repayment_money.setText(CMoneyEncoder.EncodeFormat(money));
+            c_tv_repayment_money.setSelection(c_tv_repayment_money.getText().length());
+        }
+    }
+
+    private void setOverdueStatus(boolean isOverdue) {
+        if (isOverdue) {
+            //已逾期
+            lay_top.setBackgroundResource(R.drawable.red_roundshape);
+            lay_top_dark.setBackgroundResource(R.drawable.c_dark_red_rectangle);
+            //逾期提示
+            String overTip = String.format(getResources().getString(R.string.c_borrow_record_current_payment_tip),
+                    0.5 + "%");
+            text_next_repay_date.setVisibility(View.GONE);
+            tv_next_repay_date.setVisibility(View.VISIBLE);
+            tv_next_repay_date.setText(Html.fromHtml(overTip));
+        } else {
+            //未逾期
+            lay_top.setBackgroundResource(R.drawable.roundshape);
+            lay_top_dark.setBackgroundResource(R.drawable.c_dark_blue_rectangle);
+            text_next_repay_date.setVisibility(View.VISIBLE);
+            tv_next_repay_date.setText(CDateUtil.DateToStrForRecord(CDateUtil.parseDate(detailResponse.getTerm_date(), "yyyyMMdd")) + " 22:00");
+        }
+        //提示用户，当前所有应还金额，包括手续费
+        if (!TextUtils.isEmpty(detailResponse.getOwed_amount() + "")) {
+            if(detailResponse.getOwed_amount()==0){
+                setSumAmount("0.00");
+            }
+            setSumAmount(String.valueOf(detailResponse.getOwed_amount()));
+        } else {
+            setSumAmount("0.00");
+        }
+    }
+
+    /**
+     * 当前应还金额
+     *
+     * @param money
+     */
+    private void setSumAmount(String money) {
+        String s = String.format(getResources().getString(R.string.c_repay_total_owe_amount),
+                CMoneyEncoder.EncodeFormat(money));
+        tv_current_repay_amount.setText(Html.fromHtml(s));
+    }
+
+    /**
+     * 监听还款金额输入框限定最多小数点后两位
+     *
+     * @param editText
+     */
+    public void setRePaymentAmountListener(final EditText editText) {
+        editText.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before,
+                                      int count) {
+                if (s.toString().contains(".")) {
+                    if (s.length() - 1 - s.toString().indexOf(".") > 2) {
+                        s = s.toString().subSequence(0,
+                                s.toString().indexOf(".") + 3);
+                        editText.setText(s);
+                        editText.setSelection(s.length());
+                    }
+                }
+                if (".".equals(s.toString().trim().substring(0))) {
+                    s = "0" + s;
+                    editText.setText(s);
+                    editText.setSelection(2);
+                }
+
+                if (s.toString().startsWith("0")
+                        && s.toString().trim().length() > 1) {
+                    if (!".".equals(s.toString().substring(1, 2))) {
+                        editText.setText(s.subSequence(0, 1));
+                        editText.setSelection(1);
+                        return;
+                    }
+                }
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count,
+                                          int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
+    }
+
+    /**
+     * 快速还款防止重复点击
+     */
+    NoDoubleClickListener clickListener = new NoDoubleClickListener() {
+        @Override
+        protected void onNoDoubleClick(View view) {
+            int id = view.getId();
+            if (id == R.id.lay_repaystyle) {
+                showRepayStyle();
+
+            } else if (id == R.id.c_payback_money_btn) {
+                enteredPrice = c_tv_repayment_money.getText().toString().trim();
+                if (checkInput()) {
+                    loanRepay();
+
+                }
+            } else if (id == R.id.lay_change_hkcard) {
+                Intent intent = new Intent(RYDRepaymentAcitivity.this, BankSelectActivity.class);
+                intent.putExtra("is_hk", true);
+                intent.putExtra("paid_cash_card", detailResponse.getRepaid_cash_card());
+                startActivityForResult(intent, 994);
+            } else if (id == R.id.c_tv_show_record) {
+                showRepayRecords();
+            }
+           /* else if(id== img_quest){
+                showHelpPopWindow();
+            }*/
+        }
+    };
+
+    public void showHelpPopWindow() {
+        if (detailResponse == null) {
+            return;
+        }
+        View view = LayoutInflater.from(this).inflate(R.layout.c_xjd_borrow_help_popview, null);
+        TextView tv_content = (TextView) view.findViewById(R.id.tv_content);
+        tv_content.setText(getString(R.string.content_repayamount));
+//        到账金额
+        AutoLinearLayout lay_arriveAmount = (AutoLinearLayout) view.findViewById(R.id.lay_arriveAmount);
+        lay_arriveAmount.setVisibility(View.VISIBLE);
+        TextView text_arriveamount = (TextView) view.findViewById(R.id.text_arriveamount);
+        text_arriveamount.setText("本金：");
+        TextView arriveTv = (TextView) view.findViewById(R.id.tv_arriveAmount);
+        arriveTv.setText(String.valueOf(detailResponse.getLoan_amount()));
+//        利息
+        AutoLinearLayout lay_interest = (AutoLinearLayout) view.findViewById(R.id.lay_interest);
+        TextView interestTvv = (TextView) view.findViewById(R.id.tv_interest);
+        if (!TextUtils.isEmpty(String.valueOf(detailResponse.getSub_cost_amount()))) {
+            interestTvv.setText(String.valueOf(detailResponse.getSub_cost_amount()));
+        } else {
+            interestTvv.setText("￥0.00");
+        }
+        lay_interest.setVisibility(View.VISIBLE);
+
+//        服务费
+        TextView serviceTv = (TextView) view.findViewById(R.id.tv_service_fee);
+        if (!TextUtils.isEmpty(detailResponse.getOther_cost_amount())) {
+            serviceTv.setText(String.valueOf(detailResponse.getOther_cost_amount()));
+        } else {
+            serviceTv.setText("￥0.00");
+        }
+        // 逾期手续费
+        AutoLinearLayout lay_overdue_fee = (AutoLinearLayout) view.findViewById(R.id.lay_overdue_fee);
+        lay_overdue_fee.setVisibility(View.VISIBLE);
+        TextView overdueTv = (TextView) view.findViewById(R.id.tv_overdue_fee);
+        if (!TextUtils.isEmpty(detailResponse.getOverdue_interest())) {
+            overdueTv.setText(String.valueOf(detailResponse.getOverdue_interest()));
+        } else {
+            overdueTv.setText("￥0.00");
+        }
+        boolean isLightTheme = ThemeManager.getInstance().getCurrentTheme() == 0;
+        Dialog.Builder builder = new Dialog.Builder(isLightTheme ? R.style.SimpleDialogLight : R.style.SimpleDialog);
+        final Dialog dialog = builder.build(RYDRepaymentAcitivity.this);
+        dialog.setContentView(view);
+        dialog.show();
+    }
+
+    //选择还款方式对话框
+
+    private BottomSheetDialog mrepayStyleDialog;
+
+    //借款期限
+    private void showRepayStyle() {
+        mrepayStyleDialog = new BottomSheetDialog(this, R.style.Material_App_BottomSheetDialog);
+        View v = LayoutInflater.from(this).inflate(R.layout.c_choose_repay_style, null);
+        ImageView imgview_close = (ImageView) v.findViewById(R.id.imgview_close);
+        imgview_close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mrepayStyleDialog.dismiss();
+            }
+        });
+        RecyclerView lv_style = (RecyclerView) v.findViewById(R.id.lv_style);
+        RecyclerViewHelper.init().setRVLinearLayout(this, lv_style);
+        List<String> list = new ArrayList<>();
+        list.add("刷卡还款");
+        list.add("代扣还款");
+        CRepayStyleAdapter styleAdapter = new CRepayStyleAdapter(this, list, R.layout.c_choose_repay_style_item);
+        lv_style.setAdapter(styleAdapter);
+        styleAdapter.setOnItemClickListener(new OnListItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position, Object data) {
+                select_style = position;
+                if (select_style == 0) {
+                    tv_repay_style.setText("刷卡还款");
+                } else {
+                    tv_repay_style.setText("代扣还款");
+                }
+                mrepayStyleDialog.dismiss();
+            }
+        });
+        mrepayStyleDialog.contentView(v)
+                .show();
+    }
+
+    private String changed_dfCardNo, hkBankCode, hkBankName;//还款卡
+
+    /**
+     * 还款银行卡信息
+     */
+    private void getHuanKuanBank(CcardRepaymentResponse.ResultBean dkCardInfo) {
+        if (dkCardInfo == null) {
+            return;
+        }
+        changed_dfCardNo = dkCardInfo.getCard_num();
+        hkBankCode = dkCardInfo.getBank_title_code();
+        hkBankName = dkCardInfo.getBank_name();
+        initViewSattus();
+     //   change_dkCard();
+    }
+
+    //更换代扣卡
+    private void change_dkCard() {
+        if (TextUtils.isEmpty(changed_dfCardNo)) {
+            CLogUtil.showToast(this, "请选择另一张银行卡！");
+            return;
+        }
+        //如果更换后的银行卡不为空，并且和代扣卡相同则不更换
+        if (!TextUtils.isEmpty(changed_dfCardNo) && changed_dfCardNo.equals(repayBankNum)) {
+            CLogUtil.showToast(this, "请选择另一张银行卡！");
+            return;
+        }
+        ChangeDkCardRequest request = new ChangeDkCardRequest();
+        request.setCard_num(changed_dfCardNo);
+        request.setRepayment_card_num(repayBankNum);
+        request.setContract_id(contract_id);
+        httpsPost(this, request, ReqAction.APPLICATION_CHANGE_DKCARD, LoanRepayResponse.class, new ICallback<LoanRepayResponse>() {
+            @Override
+            public void success(LoanRepayResponse loanRepayResponse) {
+                initViewSattus();
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(RYDRepaymentAcitivity.this, tips);
+            }
+        });
+    }
+
+    //初始化代扣卡内容
+    private void initViewSattus() {
+        c_tv_hkbankNo.setText(CStringUnit.cardJiaMi(changed_dfCardNo));
+        CBanksUtils.selectIcoidToImgView(RYDRepaymentAcitivity.this, hkBankCode, c_dfbank_iv);
+    }
+
+    //点击还款按钮，弹出提示对话框
+    private void loanRepay() {
+        enteredPrice = CMoneyEncoder.CleanFormat(enteredPrice);
+        RyxSimpleConfirmDialog ryxSimpleConfirmDialog = new RyxSimpleConfirmDialog(this,
+                new RyxSimpleConfirmDialog.ConFirmDialogListener() {
+                    @Override
+                    public void onPositiveActionClicked(RyxSimpleConfirmDialog ryxSimpleConfirmDialog) {
+                        /*c_payback_money_btn.setEnabled(false);
+                        c_payback_money_btn.setBackgroundDrawable(ContextCompat.getDrawable(
+                                RYDRepaymentAcitivity.this, R.drawable.roundshape_gray));*/
+                        ryxSimpleConfirmDialog.dismiss();
+                        //刷卡还款
+                        if (select_style == 0) {
+                            gotoSwipe();
+
+                        }
+                        //代扣还款
+                        else if (select_style == 1) {
+                            gotoLoanRepay();
+                        }
+                    }
+
+                    @Override
+                    public void onNegativeActionClicked(RyxSimpleConfirmDialog ryxSimpleConfirmDialog) {
+                        ryxSimpleConfirmDialog.dismiss();
+                    }
+                });
+        ryxSimpleConfirmDialog.show();
+        ryxSimpleConfirmDialog.setContent("您确定要还款 " + enteredPrice + " 元吗?");
+    }
+
+    //刷卡还款
+    private void gotoSwipe() {
+        try {
+            Intent intent = new Intent(RYDRepaymentAcitivity.this,
+                    Class.forName(getApplicationContext().getPackageName() + ".convenience.CreateOrder_"));
+            JSONObject jsObject = new JSONObject();
+            jsObject.put("id", 70);//定死值70
+            jsObject.put("ordertype", "闪付");
+            jsObject.put("merchantId", "0001000008");
+            jsObject.put("productId", "0000000000");
+            jsObject.put("isNeedSign", true);
+            jsObject.put("orderRemark", "刷卡还贷款");
+            jsObject.put("orderAmt", CMoneyEncoder.EncodeFormat2(enteredPrice));
+            jsObject.put("orderDesc", contract_id);// orderdesc 传输客户合同编号
+            jsObject.put("account2", RyxcreditConfig.getRealName());//用户显示名称
+            jsObject.put("disPlayContent", "瑞蚨小贷");//显示备注
+            jsObject.put("isMustMpos", false);//是否必须为MPOS设备
+//            intentMapVal.put("payee",customerId);//传输小贷客户编号
+//            intentMapVal.put("cardIdx",cardIdx);//待确定
+            jsObject.put("iscashCardIntercept", true);//是否进行磁条卡拦截
+            jsObject.put("interfaceTag", "12");//12走SmartPayments小贷接口
+            jsObject.put("servcode", "200029");
+            jsObject.put("tradecode", "RYX003");
+            intent.putExtra("orderStr", jsObject.toString());
+            startActivityForResult(intent, 101);
+            c_payback_money_btn.setEnabled(true);
+            c_payback_money_btn.setBackgroundDrawable(ContextCompat.getDrawable(
+                    RYDRepaymentAcitivity.this, R.drawable.roundshape));
+        } catch (Exception e) {
+            CLogUtil.showToast(RYDRepaymentAcitivity.this, "数据错误,请稍后再试!");
+        }
+    }
+
+    //代扣还款
+    public void gotoLoanRepay() {
+        LoanRepayRequest request = new LoanRepayRequest();
+        request.setContract_id(contract_id);
+        request.setRepayment_amount(CNummberUtil.parseDouble(enteredPrice, 0));
+        if(changed_dfCardNo!=null&&!"".equalsIgnoreCase(changed_dfCardNo)){
+            request.setCard_num(changed_dfCardNo);
+        }
+        httpsPost(this, request, ReqAction.APPLICATION_LOAN_REPAY, LoanRepayResponse.class, new ICallback<LoanRepayResponse>() {
+            @Override
+            public void success(LoanRepayResponse loanRepayResponse) {
+                int result = loanRepayResponse.getResult();
+                if (result == 1) {
+                    CCommonDialog.showRepaymentOK(RYDRepaymentAcitivity.this, "还款成功", "如已结清，借款状态会在24:00之后变更", new CCommonDialog.IMessage() {
+                        @Override
+                        public void callback() {
+                            finish();
+                        }
+                    });
+                    setResult(RESPONSE_QUICK_PAYMENT_CODE);
+                } else if (result==3) {
+                    CCommonDialog.showRepaymentTreat(RYDRepaymentAcitivity.this, "还款申请已受理 ", "最终还款结果请稍后查询", new CCommonDialog.IMessage() {
+                        @Override
+                        public void callback() {
+                            finish();
+                        }
+                    });
+                 /*   Intent intent = getIntent();
+                    startActivityForResult(intent,RESPONSE_QUICK_PAYMENT_CODE_TREAT);*/
+                     setResult(RESPONSE_QUICK_PAYMENT_CODE);
+                }else {
+                    c_payback_money_btn.setEnabled(true);
+                    CCommonDialog.showRepaymentError(RYDRepaymentAcitivity.this, "还款失败", "");
+                }
+            }
+            @Override
+            public void failture(String tips) {
+                /*c_payback_money_btn.setEnabled(true);
+                c_payback_money_btn.setBackgroundDrawable(ContextCompat.getDrawable(
+                        RYDRepaymentAcitivity.this, R.drawable.roundshape));*/
+                CCommonDialog.showRepaymentError(RYDRepaymentAcitivity.this, "还款失败", tips);
+            }
+        });
+    }
+
+    /**
+     * 输入还款额校验
+     *
+     * @return
+     */
+    public boolean checkInput() {
+        if (!is_opened) {
+            CLogUtil.showToast(RYDRepaymentAcitivity.this, "抱歉，非交易时间无法操作借款及还款！");
+            return false;
+        }
+        if (detailResponse.getStatus() != 1) {
+           // CLogUtil.showToast(this, "抱歉，借款成功后第二个自然日开始可进行还款!");
+                c_tv_repayment_money.setText("明日可进行还款操作");
+                c_tv_repayment_money.setBackgroundColor(Color.WHITE);
+                c_tv_repayment_money.setTextColor(Color.BLACK);
+            return false;
+        }
+        if (TextUtils.isEmpty(enteredPrice)) {
+            CLogUtil.showToast(this, "请填写还款金额!");
+            return false;
+        }
+        //当前未还金额，包括手续费
+        String maxRepaymentAmount = "¥0.00";
+        if (!TextUtils.isEmpty(String.valueOf(detailResponse.getOwed_amount()))) {
+            maxRepaymentAmount = CMoneyEncoder.EncodeFormat(String.valueOf(detailResponse.getOwed_amount()));
+        }
+        if (TextUtils.isEmpty(String.valueOf(detailResponse.getOwed_amount())) || detailResponse.getOwed_amount() <= 0) {
+            CLogUtil.showToast(this, "您无需还款");
+            return false;
+        }
+
+        if ("¥0.00".equals(enteredPrice)) {
+            CLogUtil.showToast(this, "还款金额必须大于零");
+            return false;
+        }
+        if (enteredPrice.replace(",", "").length() > 9) {
+            CLogUtil.showToast(this, "还款金额超限");
+            return false;
+        }
+        if (CMoneyEncoder.encodeToPost(enteredPrice)
+                .compareTo(
+                        CMoneyEncoder.encodeToPost(maxRepaymentAmount)) > 0) {
+            CLogUtil.showToast(this, "还款金额超出最大还款额");
+            return false;
+        }
+
+        return true;
+    }
+
+    //还款记录
+    private XRecyclerView xRecyclerView;
+    private List<CXJDRepayRecordResponse.ResultBean.RepaymentsBean> list = new ArrayList<>();
+    private List<CXJDRepayRecordResponse.ResultBean.RepaymentsBean> recordsList;
+
+    //查看还款记录
+    private void showRepayRecords() {
+        Dialog.Builder builder = null;
+        builder = new SimpleDialog.Builder(R.style.SimpleNewDialogLight) {
+            @Override
+            protected void onBuildDone(final Dialog dialog) {
+                WindowManager wm = dialog.getWindow().getWindowManager();
+                DisplayMetrics dm = new DisplayMetrics();
+                wm.getDefaultDisplay().getMetrics(dm);
+                dialog.setCancelable(true);
+                dialog.setCanceledOnTouchOutside(true);
+                intListView(dialog);
+                dialog.layoutParams(dm.widthPixels - CDensityUtil.dip2px(context, 32), ViewGroup.LayoutParams.WRAP_CONTENT);
+            }
+        };
+        builder.contentView(R.layout.c_dialog_repay_records);
+        builder.title("还款记录");
+        DialogFragment fragment = DialogFragment.newInstance(builder);
+        fragment.show(getSupportFragmentManager(), null);
+    }
+
+    //查看还款记录
+    private void intListView(Dialog dialog) {
+        xRecyclerView = (XRecyclerView) dialog.findViewById(R.id.lv);
+        xRecyclerView.setPullRefreshEnabled(false);//不启用下拉刷新
+        xRecyclerView.setLoadingMoreEnabled(false);//不启用加载更多
+        RecyclerViewHelper.init().setXRVLinearLayout(this, xRecyclerView);
+        list.clear();
+        AutoLinearLayout mRepaymentRecordLl = (AutoLinearLayout) dialog.findViewById(R.id.ll_repayment_record_null);
+        if (recordsList == null || recordsList.isEmpty()) {
+            mRepaymentRecordLl.setVisibility(View.VISIBLE);
+        } else {
+            for (int i = 0; i < recordsList.size(); i++) {
+                if ("S".equals(recordsList.get(i).getLoan_status())) {
+                    list.add(recordsList.get(i));
+                }
+            }
+            if (list.isEmpty()) {
+                mRepaymentRecordLl.setVisibility(View.VISIBLE);
+            } else {
+                XjdRePayRecordsAdapter adapter = new XjdRePayRecordsAdapter
+                        (list, this, R.layout.c_listview_repay_record);
+                xRecyclerView.setAdapter(adapter);
+            }
+        }
+    }
+
+    private int select_style = 0;
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 994) {
+            if (data != null)
+                getHuanKuanBank((CcardRepaymentResponse.ResultBean) data.getSerializableExtra("hkCardInfo"));
+        }
+    }
+}

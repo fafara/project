@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="280px"
+    android:layout_width="match_parent"
+   android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="3">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_height="0px"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/tv_devname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="艾创小蓝牙"
+                android:textSize="@dimen/mediumtitletext"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px"
+                android:textColor="@color/black" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_height="0px"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <TextView
+                android:id="@+id/tv_devid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="11111111111111111111111111111111"
+                android:textSize="@dimen/bodytextsize"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40px"
+                android:textColor="@color/graytime" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:background="@color/white"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:visibility="invisible"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_down"
+            android:layout_marginRight="40px"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

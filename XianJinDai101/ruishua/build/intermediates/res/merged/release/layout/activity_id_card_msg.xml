@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GridBG"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/merchantinfo_title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="150px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40px"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="姓名:"/>
+
+        <EditText
+            android:id="@+id/edt_userName"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/please_enter_your_real_name"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/fourblack"
+            android:textCursorDrawable="@null"
+            android:lines="1"
+            android:maxLength="10"
+            android:textSize="@dimen/bodylittletextsize"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:background="@color/register_line_color"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="150px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="40px"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="身份证号:"/>
+
+        <EditText
+            android:id="@+id/idcard_number_et"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/fourblack"
+            android:textCursorDrawable="@null"
+            android:lines="1"
+            android:hint="@string/please_enter_id_number"
+            android:digits="0123456789x"
+            android:maxLength="18"
+            android:inputType="textVisiblePassword"
+            android:textSize="@dimen/bodylittletextsize"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="60px"
+        android:layout_height="150px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/threeblack"
+            android:layout_marginLeft="40px"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="有效期:"/>
+
+        <EditText
+            android:id="@+id/validDateStart_et"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:textColor="@color/threeblack"
+            android:textColorHint="@color/fourblack"
+            android:textCursorDrawable="@null"
+            android:maxLength="21"
+            android:inputType="text"
+            android:enabled="false"
+            android:lines="1"
+            android:hint="请输入国徽面有效期限"
+            android:textSize="@dimen/bodylittletextsize"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/onepx"
+        android:background="@color/register_line_color"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_height="150px">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/threeblack"
+            android:layout_marginLeft="40px"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="地址:"/>
+
+        <EditText
+            android:id="@+id/address_et"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:textColor="@color/threeblack"
+            android:textColorHint="@color/fourblack"
+            android:textCursorDrawable="@null"
+            android:hint="请输入身份证住址"
+            android:textSize="@dimen/bodylittletextsize"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px">
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_next"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dimen_70_dip"
+            android:layout_marginRight="@dimen/dimen_70_dip"
+            android:text="@string/next"
+            android:textSize="@dimen/contenttitletext"
+            />
+    </LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

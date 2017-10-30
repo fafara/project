@@ -1,0 +1,404 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ryx.ryxcredit.newfragment.baseinfo.SixChooseOneFragment">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eef1f3">
+  <!--      <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="@color/xd_blue"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/tileleftImg"
+                android:layout_width="110px"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/c_titleback_bg"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="瑞卡贷"
+                android:textColor="#fff"
+                android:textSize="19sp"/>
+            <ImageView
+                android:id="@+id/tilerightImg"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:focusable="false"
+                android:background="@drawable/c_more"
+                android:visibility="invisible"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>-->
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/ll_hint"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_below="@+id/ll_title">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/six_choose_one"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:gravity="center"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <!--人行征信查询-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/xjd_ll_quota_activation_credit"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_below="@+id/ll_hint"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/xjd_iv_quota_activation_credit"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/activationcredit"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:id="@+id/tv_quota_activation_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_toRightOf="@+id/xjd_iv_quota_activation_credit"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/people_inquiries"/>
+            <ImageView
+                android:layout_toRightOf="@+id/tv_quota_activation_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="40px"
+                android:src="@drawable/recommend"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xjd_iv_quota_activation_credit"
+                android:layout_marginLeft="48px"
+                android:text="@string/people_inquiries_language"
+                android:layout_alignBottom="@+id/tv_quota_activation_credit"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="10sp"
+                android:textColor="#ff7a6b"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/home_right_img"
+                android:scaleType="fitCenter" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--公积金信息认证-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/xjd_ll_quota_fund_fnformation_certification"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="50px"
+            android:layout_below="@+id/xjd_ll_quota_activation_credit"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/xjd_iv_quota_fund_fnformation_certification"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/activationprovidentfund"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="45px"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:id="@+id/xjd_tv_provident_fund_fnformation_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_toRightOf="@+id/xjd_iv_quota_fund_fnformation_certification"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/provident_fund_fnformation_certification"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xjd_iv_quota_fund_fnformation_certification"
+                android:layout_marginLeft="48px"
+                android:layout_alignBottom="@+id/xjd_tv_provident_fund_fnformation_certification"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="10sp"
+                android:text="@string/provident_fund_fnformation_certification_language"
+                android:textColor="#999999"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/home_right_img"
+                android:scaleType="fitCenter" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/xjd_ll_quota_fund_fnformation_certification_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/xjd_ll_quota_fund_fnformation_certification"
+            android:textColor="#000000"/>
+
+        <!--社保信息认证-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/xjd_ll_social_security_information_certification"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_below="@+id/xjd_ll_quota_fund_fnformation_certification_line"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/xjd_iv_social_security_information_certification"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/activationsocialsecurity"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="45px"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:id="@+id/xjd_tv_social_security_information_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_toRightOf="@+id/xjd_iv_social_security_information_certification"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/social_security_information_certification"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xjd_iv_social_security_information_certification"
+                android:layout_marginLeft="48px"
+                android:layout_alignBottom="@+id/xjd_tv_social_security_information_certification"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="10sp"
+                android:text="@string/social_security_information_certification_language"
+                android:textColor="#999999"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/home_right_img"
+                android:scaleType="fitCenter" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <!--信用卡账单认证-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/xjd_ll_credit_card_certification"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="50px"
+            android:layout_below="@+id/xjd_ll_social_security_information_certification"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/xjd_iv_credit_card_certification"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/activationcreditcard"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="45px"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:id="@+id/xjd_tv_credit_card_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_toRightOf="@+id/xjd_iv_credit_card_certification"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/credit_card_certification"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xjd_iv_credit_card_certification"
+                android:layout_marginLeft="48px"
+                android:layout_alignBottom="@+id/xjd_tv_credit_card_certification"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="10sp"
+                android:text="@string/credit_card_certification_language"
+                android:textColor="#999999"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/home_right_img"
+                android:scaleType="fitCenter" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/xjd_ll_credit_card_certification_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/xjd_ll_credit_card_certification"
+            android:textColor="#000000"/>
+        <!--淘宝认证-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/xjd_ll_taobao_certification"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_below="@+id/xjd_ll_credit_card_certification_line"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/xjd_iv_taobao_certification"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/activationtaobao"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="45px"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:id="@+id/xjd_tv_taobao_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_toRightOf="@+id/xjd_iv_taobao_certification"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/taobao_certification"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xjd_iv_taobao_certification"
+                android:layout_marginLeft="48px"
+                android:layout_alignBottom="@+id/xjd_tv_taobao_certification"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="10sp"
+                android:text="@string/taobao_certification_language"
+                android:textColor="#999999"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/home_right_img"
+                android:scaleType="fitCenter" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <!--京东认证-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/xjd_ll_jingdong_certification"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="50px"
+            android:layout_below="@+id/xjd_ll_taobao_certification"
+            android:background="#fff">
+
+            <ImageView
+                android:id="@+id/xjd_iv_jingdong_certification"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/activationjingdong"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="45px"
+                android:layout_marginLeft="30px"/>
+
+            <TextView
+                android:id="@+id/xjd_tv_jingdong_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="48px"
+                android:layout_toRightOf="@+id/xjd_iv_jingdong_certification"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:text="@string/jingdong_certification"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/xjd_iv_jingdong_certification"
+                android:layout_marginLeft="48px"
+                android:layout_alignBottom="@+id/xjd_tv_jingdong_certification"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:textSize="10sp"
+                android:text="@string/jingdong_certification_language"
+                android:textColor="#999999"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15px"
+                android:layout_marginTop="15px"
+                android:background="@drawable/home_right_img"
+                android:scaleType="fitCenter" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</FrameLayout>

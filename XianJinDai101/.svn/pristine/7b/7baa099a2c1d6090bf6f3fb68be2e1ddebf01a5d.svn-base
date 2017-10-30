@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.ryx.ryxcredit.ryd.BorrowRecordsActivity">
+
+    <include layout="@layout/c_widget_title" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                app:elevation="0dp">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/c_tl_borrow_records"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:tabSelectedTextColor="@color/xd_blue"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabTextColor="@color/threeblack">
+
+                </android.support.design.widget.TabLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/fourblack" />
+            </android.support.design.widget.AppBarLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/sp_product"
+            style="@style/Material.Widget.Spinner"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <FrameLayout
+        android:id="@+id/c_fl_borrow_records"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

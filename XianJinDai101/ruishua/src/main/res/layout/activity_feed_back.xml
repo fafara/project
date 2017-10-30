@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<include layout="@layout/ryxpaytitle"></include>
+	<EditText
+		android:id="@+id/feedback_content_edit"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/dimen_300_dip"
+		android:background="#ffffff"
+		android:gravity="top"
+		android:hint="请描述你的问题"
+		android:maxLength="128"
+		android:paddingLeft="@dimen/dimen_40_dip"
+		android:paddingTop="@dimen/dimen_40_dip"
+		android:singleLine="false"
+		android:textColor="#ff2b323a"
+		android:textColorHint="#cccccc"
+		android:textSize="16sp"/>
+
+	<com.rey.material.widget.Button
+		android:id="@+id/btn_submit"
+		style="@style/LightRaiseColorButtonRippleStyle"
+		android:layout_width="match_parent"
+		android:layout_gravity="center"
+		android:layout_marginLeft="@dimen/dimen_60_dip"
+		android:layout_marginRight="@dimen/dimen_60_dip"
+		android:layout_marginTop="@dimen/dimen_60_dip"
+		android:gravity="center"
+		android:text="@string/btn_submit"
+		android:textSize="@dimen/contenttitletext"
+	/>
+</LinearLayout>

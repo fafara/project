@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ryx.ryxcredit.fragment.baseinfo.CallRecordsFragment"
+    >
+    <include
+        android:id="@+id/c_credit_home_header"
+        layout="@layout/c_widget_title" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldv_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/c_fl_base_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</FrameLayout>

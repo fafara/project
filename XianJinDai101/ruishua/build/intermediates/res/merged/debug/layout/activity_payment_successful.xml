@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<include layout="@layout/ryxpaytitle"></include>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="200px"
+    android:weightSum="4">
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/successok"/>
+<TextView
+    android:id="@+id/paysuccess_content_tv"
+    android:layout_width="0px"
+    android:layout_height="55dp"
+    android:layout_weight="3"
+    android:layout_marginRight="70px"
+    android:layout_gravity="center"
+    android:textSize="@dimen/mediumtitletext"
+    android:text="恭喜你交易完成，随心支付，享受移动生活！"/>
+</com.zhy.autolayout.AutoLinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200px"
+        android:orientation="vertical">
+        <com.rey.material.widget.Button
+
+            android:id="@+id/btn_backshouye"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="返回首页"/>
+        <com.rey.material.widget.Button
+            android:id="@+id/bt_lookmxi"
+            style="@style/LightwhiteColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext"
+            android:text="查看明细"/>
+
+
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

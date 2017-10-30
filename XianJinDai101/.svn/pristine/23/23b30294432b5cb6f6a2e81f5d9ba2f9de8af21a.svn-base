@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+   <include  layout="@layout/ryxpaytitle"
+       android:layout_width="match_parent"
+       android:layout_height="56dp"></include>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="@dimen/mediumtitletext"
+    android:layout_marginTop="50px"
+    android:textColor="@color/black"
+    android:text="卡内余额"/>
+
+  <TextView
+      android:id="@+id/tv_yue"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:textSize="@dimen/maxtitletext"
+      android:layout_marginTop="40px"
+      android:textColor="@color/black"/>
+</com.zhy.autolayout.AutoLinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <com.rey.material.widget.Button
+
+      android:id="@+id/bt_redo"
+      style="@style/LightRaiseColorButtonRippleStyle"
+      android:layout_marginTop="50px"
+      android:layout_marginLeft="70px"
+      android:layout_marginRight="70px"
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:textSize="@dimen/contenttitletext"
+      android:text="完成"/>
+    <com.rey.material.widget.Button
+        android:id="@+id/bt_againswiper"
+        style="@style/LightwhiteColorButtonRippleStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:gravity="center"
+        android:textSize="@dimen/contenttitletext"
+        android:text="再次查询"/>
+
+
+</LinearLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

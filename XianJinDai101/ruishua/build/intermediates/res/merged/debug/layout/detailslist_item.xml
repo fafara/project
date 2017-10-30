@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="180px"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:weightSum="2">
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_height="0px"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="闪付"
+        android:gravity="center"
+        android:textSize="@dimen/mediumtitletext"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40px"
+        android:textColor="@color/black"
+        android:id="@+id/tv_shouming" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="+200"
+        android:textSize="@dimen/mediumtitletext"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/black"
+        android:layout_marginRight="40px"
+        android:id="@+id/tv_money" />
+</com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_height="0px"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2016-05-22 10:33:45"
+            android:gravity="center"
+            android:textSize="@dimen/bodytextsize"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/graytime"
+            android:id="@+id/tv_time" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="交易成功"
+            android:visibility="invisible"
+            android:textSize="@dimen/bodytextsize"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:textColor="@color/blue_bank"
+            android:id="@+id/tv_state" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

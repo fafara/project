@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context="com.ryx.ryxcredit.activity.QuickPaymentActivity">
+
+    <include layout="@layout/c_widget_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40px">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_bg"
+            android:orientation="vertical">
+
+            <!--头部布局-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_normal_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/lay_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="90px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:layout_marginTop="40px"
+                    android:background="@color/xd_blue"
+                    android:paddingTop="40px">
+
+                    <TextView
+                        android:id="@+id/text_xjd"
+                        android:layout_marginLeft="40px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text=""
+                        android:textSize="@dimen/bodylittletextsize" />
+
+                    <TextView
+                        android:id="@+id/tv_repay_amount"
+                        android:layout_marginLeft="40px"
+                        android:layout_marginBottom="120px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_xjd"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_36" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="180px"
+                        android:layout_height="60px"
+                        android:layout_marginRight="40px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/c_white_rectangle"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/commontextsize" />
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/lay_top_dark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/dark_blue"
+                        android:gravity="center"
+                        android:paddingTop="15px"
+                        android:paddingBottom="15px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/text_next_repay_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/thisperiod_repay_date"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+
+                        <TextView
+                            android:id="@+id/tv_next_repay_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20px"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/bodylittletextsize" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoRelativeLayout>
+<!--                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text=""/>-->
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_over_date_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="90px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:layout_marginTop="40px"
+                    android:background="#ff7a6b"
+                    android:paddingLeft="54px"
+                    android:paddingRight="45px"
+                    android:paddingTop="40px">
+
+                    <TextView
+                        android:id="@+id/text_over_date_xjd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/bodylittletextsize" />
+
+                    <TextView
+                        android:id="@+id/tv_over_date_repay_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text_over_date_xjd"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_36" />
+
+                    <TextView
+                        android:id="@+id/tv_over_date_status"
+                        android:layout_width="180px"
+                        android:layout_height="60px"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="100px"
+                        android:background="@drawable/c_white_rectangle"
+                        android:gravity="center"
+                        android:text="已逾期"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/commontextsize" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff503c"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/next_repay_date"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/bodylittletextsize" />
+
+                    <TextView
+                        android:id="@+id/tv_over_date_next_repay_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/bodylittletextsize" />
+                </com.zhy.autolayout.AutoLinearLayout>
+                <TextView
+                    android:id="@+id/tv_overdue_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="8sp"
+                    android:textColor="#ff9af0"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="40px" />
+            <!--逾期记录-->
+
+
+            <!--还款详情-->
+
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+            <!--还款卡-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_change_hkcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="45px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="45px">
+
+                <TextView
+                    style="@style/BorrowLeftTitleStyle"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/repay_card"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <ImageView
+                    android:id="@+id/c_dfbank_iv"
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30px"
+                    android:layout_toLeftOf="@+id/c_tv_hkbankNo"
+                    android:src="@drawable/bank_default"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/c_tv_hkbankNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_hkright"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <ImageView
+                    android:id="@+id/img_hkright"
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_right_img"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <!--还款方式-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_repaystyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="45px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="45px">
+
+                <TextView
+                    style="@style/BorrowLeftTitleStyle"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/c_sure_borrow_repayment_metod"
+                    android:textColor="@color/threeblack"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:id="@+id/tv_repay_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30px"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_style_right"
+                    android:text="@string/swipe_repay"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <ImageView
+                    android:id="@+id/img_style_right"
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_right_img"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:paddingBottom="45px"
+                android:paddingLeft="40px"
+                android:paddingRight="40px"
+                android:paddingTop="45px" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/c_repayment_money"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <TextView
+                    android:id="@+id/c_tv_show_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/img_right"
+                    android:text="@string/c_view_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodylittletextsize" />
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="66px"
+                    android:layout_height="66px"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/home_right_img"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_overdue_remaining_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="45px"
+                >
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/lay_current_remaining_repay_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:id="@+id/tv_current_remaining_repay_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40px"
+                        android:textColor="@color/threeblack"
+                        android:textSize="@dimen/bodytextsize" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+ <!--           <View
+                style="@style/BlackHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/rl_overdue_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="54px">
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_current_repay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                >
+                <TextView
+                    android:id="@+id/tv_current_repay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:layout_marginTop="40px"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodytextsize" />
+
+                <ImageView
+                    android:id="@+id/img_quest"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginBottom="35px"
+                    android:layout_marginTop="35px"
+                    android:layout_toRightOf="@+id/tv_current_repay_amount"
+                    android:background="@drawable/question"
+                    android:scaleType="fitCenter" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay_current_repay_amount"
+                    android:background="@color/white"
+                    android:layout_marginBottom="54px">
+
+                    <EditText
+                        android:id="@+id/c_tv_repayment_money"
+                        android:layout_width="450px"
+                        android:layout_height="150px"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/grey_bg"
+                        android:gravity="center"
+                        android:hint="请输入还款金额"
+                        android:inputType="numberDecimal"
+                        android:maxLength="12"
+                        android:padding="20px"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="14sp" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/c_payback_money_btn"
+                style="@style/CLightRaiseColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="90px"
+                android:text="@string/c_repayment_sure"
+                android:textSize="@dimen/bodytextsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginTop="20px"
+                android:gravity="left"
+                android:text="温馨提示："
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/bodylittletextsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginTop="20px"
+                android:gravity="left"
+                android:text="@string/tv_repayment_tips"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/bodylittletextsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginTop="20px"
+                android:gravity="left"
+                android:text="@string/tv_borrow_state_tip"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/bodylittletextsize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginTop="20px"
+                android:gravity="left"
+                android:text="@string/tv_repayment_tip"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/bodylittletextsize" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

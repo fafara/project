@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/ryxpaytitle"></include>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eef1f3"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_switch"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginTop="@dimen/dimen_60_dip"
+            android:background="@drawable/selector_user_action_bg"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_40_dip"
+                android:text="使用手势密码登录"
+                style="@style/textViewStyle"/>
+            <CheckBox
+                android:id="@+id/gesture_togglebtn"
+                android:layout_width="120px"
+                android:layout_height="70px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="45px"
+                android:scaleType="fitCenter"
+                android:background="@drawable/slideswitchbac"
+                android:button="@null"/>
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"
+            />
+        <!--修改登录密码 -->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_update_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/selector_user_action_bg"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_40_dip"
+                android:text="登录密码修改"
+                style="@style/textViewStyle"/>
+
+            <ImageView
+                android:id="@+id/iv_user_mymessage_jiantou"
+                android:layout_width="@dimen/dimen_25_dip"
+                android:layout_height="@dimen/dimen_54_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_46_dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_user_jiantou"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"
+            />
+        <!--手势密码-->
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_update_gesture_paswd"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/selector_user_action_bg"
+            android:clickable="true"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_40_dip"
+                android:text="手势密码修改"
+                style="@style/textViewStyle"/>
+
+            <ImageView
+                android:id="@+id/iv_user_transfer_jiantou"
+                android:layout_width="@dimen/dimen_25_dip"
+                android:layout_height="@dimen/dimen_54_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_46_dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_user_jiantou"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e0e0e0"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

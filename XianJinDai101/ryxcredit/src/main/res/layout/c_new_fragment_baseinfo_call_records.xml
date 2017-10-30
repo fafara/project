@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ryx.ryxcredit.newfragment.baseinfo.CallRecordsFragment"
+    >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ldv_content"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/contact_login"
+            layout="@layout/c_fragment_call_records"
+            android:visibility="visible"
+            />
+        <include
+            android:id="@+id/contact_auth"
+            layout="@layout/c_fragment_call_records_auth"
+            android:visibility="gone"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</FrameLayout>

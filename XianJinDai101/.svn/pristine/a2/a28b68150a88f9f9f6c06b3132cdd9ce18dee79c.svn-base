@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="DevideBlock">#f5f4f9</color>
+    <color name="GridBG">#eef1f3</color>
+    <color name="grid_item_bg">#f5f4f9</color>
+    <color name="transplant">#00000000</color>
+    <color name="home_text">#4e4e4e</color>
+    <color name="register_head_bg">#09aef2</color>
+    <color name="register_text_color">#3c3c3c</color>
+    <color name="register_contract_text_color">#08aef1</color>
+    <color name="register_edittext_color">#333333</color>
+    <color name="register_line_color">#d7d7d7</color>
+    <color name="edit_input_bg">#ffFFFFFF</color>
+    <color name="edit_focus_input_bg">#ffFFFFFF</color>
+    <color name="edit_press_input_bg">#ffFFFFFF</color>
+    <color name="list_press_bg">#eafbff</color>
+</resources>

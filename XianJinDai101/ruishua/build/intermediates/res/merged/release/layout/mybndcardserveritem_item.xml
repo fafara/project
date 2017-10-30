@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="180px"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+  >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/cardserver_displaycontennt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="80px"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/secondblack"
+            android:text="代扣服务:信用卡,借助自动还款"/>
+        <TextView
+            android:id="@+id/cardserver_isstarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_marginRight="50px"
+            android:layout_centerInParent="true"
+           android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/white"
+            android:background="@color/card_shadow"
+            android:text="已开通"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

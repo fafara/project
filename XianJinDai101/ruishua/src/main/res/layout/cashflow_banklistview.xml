@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+<com.zhy.autolayout.AutoRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="140px">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center_vertical"
+    android:textSize="@dimen/mediumtitletext"
+    android:textColor="#000"
+    android:text="请选择银行卡"/>
+
+</com.zhy.autolayout.AutoRelativeLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/onepx"
+        android:background="@color/payhorizontalline" />
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ListView
+        android:id="@+id/im_pay_bottomListViewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#e4e4e4"
+        android:dividerHeight="1px"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        >
+
+    </ListView>
+</com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/onepx"
+        android:background="@color/payhorizontalline" />
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px">
+        <TextView
+            android:id="@+id/cashflow_addbankcard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/mediumtitletext"
+            android:text="添加银行卡"/>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

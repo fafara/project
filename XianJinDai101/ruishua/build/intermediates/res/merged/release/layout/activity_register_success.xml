@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<include layout="@layout/ryxpaytitle"></include>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/dimen_70_dip"
+		android:layout_marginTop="@dimen/dimen_60_dip"
+		android:gravity="center"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linearLayout1"
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:layout_marginTop="36dp"
+			android:orientation="horizontal"
+			android:paddingLeft="25dp"
+			android:paddingRight="25dp">
+
+			<ImageView
+				android:layout_width="0dp"
+				android:layout_height="55dp"
+				android:layout_weight="1"
+				android:scaleType="fitCenter"
+				android:src="@drawable/img_ok"/>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="2"
+				android:gravity="center_vertical|left"
+				android:orientation="vertical">
+
+				<TextView
+					android:id="@+id/tv_h1"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="center_vertical|start"
+					android:text="@string/register_success_line1"
+					android:textColor="#ff2b323a"
+					android:textSize="16sp"
+					android:textStyle="bold"/>
+
+				<TextView
+					android:id="@+id/tv_h2"
+					android:layout_width="wrap_content"
+					android:layout_height="0dp"
+					android:layout_weight="1"
+					android:gravity="center_vertical|start"
+					android:text="@string/register_success_line2"
+					android:textColor="#ff2b323a"
+					android:textSize="16sp"
+					android:textStyle="bold"/>
+			</LinearLayout>
+		</LinearLayout>
+		<com.rey.material.widget.Button
+			android:id="@+id/btn_register_success"
+			style="@style/LightRaiseColorButtonRippleStyle"
+			android:layout_width="match_parent"
+			android:layout_marginTop="@dimen/dimen_80_dip"
+			android:gravity="center"
+			android:text="进入瑞刷"
+			android:textSize="@dimen/contenttitletext"
+		/>
+	</LinearLayout>
+</LinearLayout>

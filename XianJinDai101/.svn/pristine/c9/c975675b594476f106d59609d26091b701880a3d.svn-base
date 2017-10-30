@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/qrcodeallaout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qrcodepytype"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="4">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="80px"
+        android:layout_marginBottom="20px"
+        android:background="@drawable/whiteroundshape"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/qrcodeimg"
+            android:layout_width="800px"
+            android:layout_height="800px"
+            android:layout_gravity="center"
+            android:src="@drawable/qrcodefail"
+            android:layout_marginTop="80px" />
+        <TextView
+            android:id="@+id/tv_qrcodedesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <com.rey.material.widget.Button
+                android:id="@+id/bt_saveqrcodeimg"
+                style="@style/LightRaiseColorButtonRippleStyle"
+                android:background="@color/white"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/contenttitletext"
+                android:textColor="@color/colorPrimary"
+                android:text="保存到手机"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/relayout_unionqrcode_payshow"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/selector_qrcodepaytype_action_bg"
+            >
+            <ImageView
+                android:id="@+id/imgview"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/bank_default"
+                android:layout_marginLeft="100px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/tv_unionqrcode_payshow"
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50px"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgview"/>
+
+            <ImageView
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_user_jiantou"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/coupons_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/selector_qrcodepaytype_action_bg"
+            android:layout_height="150px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="100px"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/threeblack"
+                android:text="优惠券"/>
+            <ImageView
+                android:id="@+id/coupons_rightimg"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginRight="40px"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/righttocontent"/>
+            <TextView
+                android:id="@+id/selectedcoupons_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/coupons_rightimg"
+                android:layout_marginRight="30px"
+                android:textColor="@color/black"
+                android:text="选择优惠券"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onepx"
+            android:background="@color/payhorizontalline" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20px"
+        android:orientation="vertical">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="366px"
+                android:layout_marginRight="60px"
+                android:src="@drawable/qrcode_img_weixin"/>
+            <ImageView
+                android:layout_width="75px"
+                android:layout_height="75px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/qrcode_img_zhifubao"/>
+            <ImageView
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="366px"
+                android:layout_marginLeft="60px"
+                android:src="@drawable/qrcode_img_ruishua"/>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30px"
+            android:textSize="@dimen/contenttitletext"
+            android:text="仅支持以上APP扫码识别,向我付款"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

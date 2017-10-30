@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/ryxpaytitle"></include>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/commonTabLayout_rs"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabTextColor="@color/threeblack"
+
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            >
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收款"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫码收款"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缴费"
+                />
+        </android.support.design.widget.TabLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/commonTabLayout_ryx"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:tabSelectedTextColor="@color/blue"
+            app:tabTextColor="@color/threeblack"
+
+            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+            >
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收款"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扫码收款"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结算"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缴费"
+                />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/tabfragemetcomtent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</com.zhy.autolayout.AutoLinearLayout>

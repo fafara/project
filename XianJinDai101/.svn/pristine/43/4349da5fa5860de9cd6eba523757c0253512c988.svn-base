@@ -1,0 +1,245 @@
+package com.ryx.ryxcredit.newfragment.baseinfo;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.rey.material.widget.Button;
+import com.ryx.ryxcredit.R;
+import com.ryx.ryxcredit.beans.ReqAction;
+import com.ryx.ryxcredit.services.ICallback;
+import com.ryx.ryxcredit.services.UICallBack;
+import com.ryx.ryxcredit.utils.CLogUtil;
+import com.ryx.ryxcredit.utils.CPreferenceUtil;
+import com.ryx.ryxcredit.utils.HttpUtil;
+import com.ryx.ryxcredit.widget.RyxCreditLoadDialog;
+import com.ryx.ryxcredit.xjd.BaseInfoSuccesActivity;
+import com.ryx.ryxcredit.xjd.bean.CreateTask.CreateTaskRequest;
+import com.ryx.ryxcredit.xjd.bean.CreateTask.CreateTaskResponse;
+import com.ryx.ryxcredit.xjd.bean.SearchTask.SearchTaskRequest;
+import com.ryx.ryxcredit.xjd.bean.SearchTask.SearchTaskResponse;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class TaoBaoAccountFragment extends Fragment implements View.OnClickListener {
+    private BaseInfoSuccesActivity baseInfoActivity;
+    private BaseInfoSuccesActivity callback;
+    private CPreferenceUtil preferenceUtil;
+    private View rootView;
+    private LinearLayout ll_sitchooseone_taobao_account;
+    private EditText et_sitchooseone_taobao_account;
+    private LinearLayout ll_sitchooseone_taobao_password;
+    private EditText et_sitchooseone_taobao_password;
+    private CheckBox cb_sitchooseone_taobao_agreement;
+    private Button  bt_sitchooseone_taobao_next;
+    private int cb_sitchooseone_taobao_agreement_num ;
+    private TextView tv_sitchooseone_taobao_agreement;
+    private String sitchooseone_taobao_accountEt;
+    private String sitchooseone_taobao_passwordEt;
+    private Timer mtimer;
+    private SearchTaskResponse.ResultBean searchTaskResult;
+    private String searchTaskStatus;
+    private int inputCount = 0;
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        baseInfoActivity = (BaseInfoSuccesActivity) getActivity();
+        callback = (BaseInfoSuccesActivity) getActivity();
+        preferenceUtil = CPreferenceUtil.getInstance(getActivity().getApplication());
+        rootView = inflater.inflate(R.layout.xjd_sixchooseone_fragment_tao_bao_account, container, false);
+        initView();
+        return rootView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        inputCount=0;
+    }
+
+    /*
+        * 初始化控件
+        * */
+    private void initView() {
+        ll_sitchooseone_taobao_account = (LinearLayout) rootView.findViewById(R.id.xjd_ll_sitchooseone_taobao_account);
+        et_sitchooseone_taobao_account = (EditText) rootView.findViewById(R.id.xjd_et_sitchooseone_taobao_account);
+        ll_sitchooseone_taobao_password = (LinearLayout) rootView.findViewById(R.id.xjd_ll_sitchooseone_taobao_password);
+        et_sitchooseone_taobao_password = (EditText) rootView.findViewById(R.id.xjd_et_sitchooseone_taobao_password);
+        cb_sitchooseone_taobao_agreement = (CheckBox) rootView.findViewById(R.id.xjd_cb_sitchooseone_taobao_agreement);
+        bt_sitchooseone_taobao_next = (Button) rootView.findViewById(R.id.xjd_bt_sitchooseone_taobao_next);
+        tv_sitchooseone_taobao_agreement = (TextView) rootView.findViewById(R.id.xjd_tv_sitchooseone_taobao_agreement);
+        ll_sitchooseone_taobao_account.setOnClickListener(this);
+        ll_sitchooseone_taobao_password.setOnClickListener(this);
+        cb_sitchooseone_taobao_agreement.setOnClickListener(this);
+        tv_sitchooseone_taobao_agreement.setOnClickListener(this);
+        bt_sitchooseone_taobao_next.setOnClickListener(this);
+    }
+    /*
+    * 检测内容是否输入完整
+    * */
+    private boolean checkInput() {
+         sitchooseone_taobao_accountEt = et_sitchooseone_taobao_account.getText().toString().trim();
+        if (TextUtils.isEmpty(sitchooseone_taobao_accountEt)) {
+            CLogUtil.showToast(getActivity(), "淘宝账号不能为空!");
+            return false;
+        }
+         sitchooseone_taobao_passwordEt = et_sitchooseone_taobao_password.getText().toString().trim();
+        if (TextUtils.isEmpty(sitchooseone_taobao_passwordEt)) {
+            CLogUtil.showToast(getActivity(), "淘宝密码不能为空!");
+            return false;
+        }
+        if (cb_sitchooseone_taobao_agreement_num ==1) {
+            CLogUtil.showToast(getActivity(), "请同意授权信息使用协议!");
+            return false;
+        }
+        return true;
+    }
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+        if (id==R.id.xjd_bt_sitchooseone_taobao_next){
+            if (checkInput()){
+                //如果第一次进入调用第一个接口，否则调用第三个接口（接口设计缺陷）
+                if(inputCount==0) {
+                    submitData();
+                }else{
+                    updataData();
+                }
+            }
+        }else if(id==R.id.xjd_cb_sitchooseone_taobao_agreement){
+            cb_sitchooseone_taobao_agreement.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (cb_sitchooseone_taobao_agreement.isChecked()) {
+                        cb_sitchooseone_taobao_agreement_num =0;
+                    }else{
+                        cb_sitchooseone_taobao_agreement_num =1;
+                    }
+                }
+            });
+        }else if(id==R.id.xjd_tv_sitchooseone_taobao_agreement){
+            //跳转协议页面
+            CLogUtil.showLog("协议");
+        }
+    }
+
+    /*
+    *淘宝登陆接口
+    * */
+    private void submitData() {
+        CreateTaskRequest createTaskRequest = new CreateTaskRequest();
+        createTaskRequest.setLogin_name(sitchooseone_taobao_accountEt);
+        createTaskRequest.setLogin_password(sitchooseone_taobao_passwordEt);
+        HttpUtil.getInstance(getActivity()).httpsPost(createTaskRequest, ReqAction.TAOBAO_CREATTASK, CreateTaskResponse.class, new ICallback<CreateTaskResponse>() {
+            @Override
+            public void success(CreateTaskResponse CreateTaskResponse) {
+                // CLogUtil.showToast(CenterBankCreditActivity.this, "客户信息审核中");
+                RyxCreditLoadDialog.getInstance(getActivity()).setMessage("授权需要1-2分钟，请不要退出!");
+                RyxCreditLoadDialog.getInstance(getActivity()).show();
+                doResearch();
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(getActivity(), tips);
+
+            }
+        },new UICallBack() {
+            @Override
+            public void complete() {
+
+            }
+        });
+    }
+/*
+* 淘宝登陆接口(第二次进入的时候)
+* */
+    private void updataData() {
+        CreateTaskRequest createTaskRequest = new CreateTaskRequest();
+        createTaskRequest.setLogin_name(sitchooseone_taobao_accountEt);
+        createTaskRequest.setLogin_password(sitchooseone_taobao_passwordEt);
+        HttpUtil.getInstance(getActivity()).httpsPost(createTaskRequest, ReqAction.TAOBAO_CREATTASK, CreateTaskResponse.class, new ICallback<CreateTaskResponse>() {
+            @Override
+            public void success(CreateTaskResponse CreateTaskResponse) {
+                // CLogUtil.showToast(CenterBankCreditActivity.this, "客户信息审核中");
+                RyxCreditLoadDialog.getInstance(getActivity()).setMessage("授权需要1-2分钟，请不要退出!");
+                RyxCreditLoadDialog.getInstance(getActivity()).show();
+                doResearch();
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(getActivity(), tips);
+
+            }
+        },new UICallBack() {
+            @Override
+            public void complete() {
+
+            }
+        });
+    }
+
+    //轮询search接口
+    private void doResearch() {
+        mtimer = new Timer();
+        mtimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                bTaobaoStatus();
+
+            }
+        }, 10000, 10000);
+    }
+    //淘宝状态接口
+    private void bTaobaoStatus() {
+        SearchTaskRequest searchTaskRequest = new SearchTaskRequest();
+        HttpUtil.getInstance(getActivity()).httpsPost(searchTaskRequest, ReqAction.TAOBAO_SEARCHTASK, SearchTaskResponse.class, new ICallback<SearchTaskResponse>() {
+            @Override
+            public void success(SearchTaskResponse searchTaskResponse) {
+                RyxCreditLoadDialog.getInstance(getActivity()).setMessage("授权需要1-2分钟，请不要退出!");
+                RyxCreditLoadDialog.getInstance(getActivity()).show();
+                searchTaskResult =searchTaskResponse.getResult();
+                searchTaskStatus = searchTaskResult.getStatus();
+                if ("login".equalsIgnoreCase(searchTaskStatus)) {
+                    CLogUtil.showToast(getActivity(), "正在登录");
+                }else if ("smsCode".equalsIgnoreCase(searchTaskStatus)) {
+                  //  CLogUtil.showToast(getActivity(), "输入验证码");
+                }else if ("smsReady".equalsIgnoreCase(searchTaskStatus)) {
+                    CLogUtil.showToast(getActivity(), "重新获取验证码");
+                }else if ("password".equalsIgnoreCase(searchTaskStatus)) {
+                    CLogUtil.showToast(getActivity(), "重新输入密码");
+                }else if ("nameAndWord".equalsIgnoreCase(searchTaskStatus)) {
+                    CLogUtil.showToast(getActivity(), "请重新登录输入账号密码");
+                    inputCount++;
+                }else if ("A".equalsIgnoreCase(searchTaskStatus)) {
+                    CLogUtil.showToast(getActivity(), "用户可以进行下一步");
+                }
+            }
+
+            @Override
+            public void failture(String tips) {
+                CLogUtil.showToast(getActivity(), tips);
+
+            }
+        }, new UICallBack() {
+            @Override
+            public void complete() {
+
+            }
+        });
+    }
+}

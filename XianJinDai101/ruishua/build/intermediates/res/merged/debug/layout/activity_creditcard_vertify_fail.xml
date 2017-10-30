@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="74px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/senior_txt210"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_reason"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/senior_txt211"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_common" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="110px"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:text="@string/delete_card"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:gravity="center"
+            android:textSize="@dimen/contenttitletext" />
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_reauth"
+            android:background="@drawable/button_blank_bg"
+            android:textColor="@color/text_a"
+            android:gravity="center"
+            android:layout_marginTop="42px"
+            android:textSize="@dimen/contenttitletext"
+            android:layout_width="match_parent"
+            android:layout_height="110px"
+            android:text="@string/reauth" />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

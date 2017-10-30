@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="space_weight">1dp</dimen>
+    <dimen name="block_weight">5dp</dimen>
+    <dimen name="home_bottom_margin">20dp</dimen>
+    <dimen name="home_grid_text_size">12sp</dimen>
+    <dimen name="register_head_height">168px</dimen>
+    <dimen name="register_head_text_size">20sp</dimen>
+    <dimen name="register_head_text_bottom_margin">45px</dimen>
+    <dimen name="register_head_img_bottom_margin">60px</dimen>
+    <dimen name="register_head_img_size">17dp</dimen>
+    <dimen name="home_header_height">202dp</dimen>
+    <dimen name="register_head_img_right_margin">20dp</dimen>
+    <dimen name="register_layout_left_margin">92px</dimen>
+    <dimen name="register_layout_top_margin">105px</dimen>
+    <dimen name="register_layout_horizontal_space">22px</dimen>
+    <dimen name="register_layout_vertical_space">9dp</dimen>
+    <dimen name="register_text_horizontal_space">71px</dimen>
+    <dimen name="register_edittext_size">16sp</dimen>
+    <dimen name="register_text_bottom_margin">19px</dimen>
+    <dimen name="register_text_top_margin">72px</dimen>
+    <dimen name="register_row_top_margin">40px</dimen>
+    <dimen name="register_second_row_top_margin">5px</dimen>
+    <dimen name="register_row_bottom_margin">30px</dimen>
+    <dimen name="register_show_pwd_left_margin">10px</dimen>
+    <dimen name="register_show_pwd_right_margin">54px</dimen>
+    <dimen name="checkcode_button_width">23dp</dimen>
+    <dimen name="checkcode_button_height">35dp</dimen>
+    <dimen name="checkcode_button_top_mardin">23dp</dimen>
+    <dimen name="register_text_size">16sp</dimen>
+    <dimen name="register_info_text_size">14sp</dimen>
+    <dimen name="register_line_left_margin">103px</dimen>
+    <dimen name="register_img_size">30dp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="register_contract_top_margin">22dp</dimen>
+    <dimen name="register_button_margin">90px</dimen>
+    <dimen name="register_button_height">40dp</dimen>
+    <dimen name="register_button_top_margin">112px</dimen>
+    <dimen name="register_buttom_text_top_margin">26px</dimen>
+
+    <dimen name="login_layout_top_margin">300px</dimen>
+    <dimen name="login_edit_row_height">66px</dimen>
+    <dimen name="login_edit_layout_height">48dp</dimen>
+    <dimen name="login_edit_layout_width">880px</dimen>
+    <dimen name="login_edit_layout_line_height">3px</dimen>
+    <dimen name="login_img_left_margin">38px</dimen>
+    <dimen name="login_img_top_margin">41px</dimen>
+    <dimen name="login_account_item_txt_top_margin">60px</dimen>
+    <dimen name="login_text_left_margin">44px</dimen>
+    <dimen name="login_button_height">45dp</dimen>
+    <dimen name="login_button_width">880px</dimen>
+    <dimen name="login_button_text_size">18sp</dimen>
+    <dimen name="login_button_horizental_margin">210px</dimen>
+    <dimen name="login_layout_horizental_margin">90px</dimen>
+    <dimen name="login_show_pwd_img_right_margin">44px</dimen>
+    <dimen name="login_button_top_margin">108px</dimen>
+    <dimen name="login_register_btn_top_margin">321px</dimen>
+    <dimen name="login_register_btn_left_margin">390px</dimen>
+    <dimen name="login_register_btn_bottom_margin">165px</dimen>
+    <dimen name="login_account_list_left_margin">265px</dimen>
+
+</resources>

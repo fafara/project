@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:background="@drawable/selector_user_action_bg">
+
+    <TextView
+        android:id="@+id/tv_paytypename"
+        style="@style/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="60px"/>
+
+    <ImageView
+        android:id="@+id/iv_jiantou"
+        android:layout_width="20px"
+        android:layout_height="50px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40px"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_user_jiantou"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@id/tv_paytypename"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/DevideBlock"
+        />
+</com.zhy.autolayout.AutoRelativeLayout>

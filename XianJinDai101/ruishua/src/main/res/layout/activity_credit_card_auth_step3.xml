@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <ImageView
+        android:id="@+id/img_pro"
+        android:layout_width="900px"
+        android:layout_height="121px"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="74px"
+        android:src="@drawable/auth_creditcard_progress2" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="35px"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/verysmallsize"
+            android:text="@string/credit_card_auth_step1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/verysmallsize"
+            android:text="@string/credit_card_auth_step2"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="53px"
+        android:layout_marginTop="30px"
+        android:text="信用卡照片"
+        android:textSize="@dimen/contenttitletext" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_back_photo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="53px"
+        android:layout_marginRight="49px"
+        android:layout_marginTop="53px"
+        android:orientation="horizontal">
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/lay_back"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_creditcard_front"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/auth_credit_card_front" />
+
+            <ImageView
+                android:id="@+id/iv_check_front"
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/auth_photo_checked"
+                android:visibility="gone" />
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="46px"
+            android:layout_toRightOf="@+id/lay_back"
+            android:src="@drawable/auth_credit_card_example" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:id="@+id/tv_warn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90px"
+        android:layout_marginLeft="53px"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="@dimen/contenttitletext" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.rey.material.widget.Button
+        android:id="@+id/btn_next"
+        style="@style/LightRaiseColorButtonRippleStyle"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px"
+        android:layout_marginTop="96px"
+        android:text="@string/upload_credit"
+        android:textSize="@dimen/contenttitletext" />
+</LinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

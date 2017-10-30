@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--加载框的背景颜色-->
+    <color name="loadingbac">#efefef</color>
+    <color name="grey_e6e6e6">#e6e6e6</color>
+
+    <color name="light_gray">#fff5f5f5</color>
+    <color name="xd_colorPrimary">#1db7f0</color>
+    <color name="xd_colorPrimaryDark">#1db7f0</color>
+    <!--瑞银信文字样式统一规范-->
+    <color name="black">#000000</color>
+    <color name="secondblack">#4c4c4c</color>
+    <color name="threeblack">#999999</color>
+    <color name="fourblack">#cccccc</color>
+    <color name="fifthblack">#f5f5f5</color>
+    <!--spinner-->
+    <color name="colorAccentHalf">#9000E5FF</color>
+    <color name="colorPrimaryHalf">#9003A9F4</color>
+    <color name="colorControlNormal">#FF78909C</color>
+
+
+    <!-- 瑞银信色彩搭配统一规范-->
+    <!--主色-->
+    <color name="xd_blue">#1db7f0</color>
+    <!--配色-->
+    <color name="red">#ed9f2b</color>
+    <color name="red_second">#ff7a6b</color>
+    <color name="red_third">#e65d4e</color>
+    <color name="orange">#9bd119</color>
+    <color name="orange_second">#FFAB2E</color>
+    <color name="orange_three">#ffebcc</color>
+    <color name="xd_blue_second">#7aa2ff</color>
+    <color name="view_background">#f0f0f0</color>
+
+    <color name="drakblack">#4c4c4c</color>
+    <color name="white">#ffffff</color>
+    <color name="grid_line">#e4e6e7</color>
+
+    <color name="dark_blue">#00A8E6</color>
+    <color name="grey_line">#e5e5e5</color>
+    <color name="grey_bg">#eef1f3</color>
+    <color name="grey_bg_grid">#f4f6f7</color>
+    <color name="grey_bottom_bg">#e6ecf0</color>
+    <color name="paygrytext">#969696</color>
+    <color name="payhorizontalline">#e4e4e4</color>
+    <color name="orderbackground">#efefef</color>
+    <color name="linecolor">#e0e0e0</color>
+    <color name="register_line_color">#d7d7d7</color>
+    <color name="text_a">#ff969ba0</color><!-- 未选中是字体颜色 -->
+    <color name="title_grey">#f0f3f5</color><!-- 对话框标题底色 -->
+    <color name="deep_blue">#1aa4d8</color><!-- 对话框标题底色 -->1aa4d8
+
+    <!--活体采集-->
+    <color name="htjc_main_bg">#1db7f0</color>
+    <color name="htjc_live_bg">#1db7f0</color>
+    <color name="htjc_title_bg">#0186aa</color>
+    <color name="htjc_white">#FFFFFF</color>
+    <color name="htjc_black">#000000</color>
+    <color name="htjc_orange">#FF7F00</color>
+
+    <color name="htjc_blue">#0000FF</color>
+    <color name="htjc_red">#FFFF3333</color>
+    <color name="htjc_green">#FF33FF33</color>
+    <color name="htjc_txt_blue">#FF3333FF</color>
+    <color name="htjc_bg_green">#009900</color>
+    <color name="htjc_bg_blue">#48a1dd</color>
+
+    <color name="htjc_transparent">#00000000</color>
+    <color name="htjc_txt_black">#de000000</color>
+
+    <!-- round_color  外圈默认颜色    -->
+    <color name="htjc_round_color">#004b5e</color>
+    <!-- progress_color  进度条颜色    -->
+    <color name="htjc_progress_color">#ed7d00</color>
+
+    <color name="colorPrimary">#1db7f0</color>
+    <color name="colorPrimaryDark">#1db7f0</color>
+    <color name="blue_second">#7aa2ff</color>
+    <color name="blue">#1db7f0</color>
+
+    <!--淘宝账号-->
+    <color name="xjd_sixchooseone_blue">#1db7f0</color>
+    <color name="xjd_sixchooseone_grey">#969696</color>
+    <color name="xjd_sixchooseone_black">#000000</color>
+</resources>

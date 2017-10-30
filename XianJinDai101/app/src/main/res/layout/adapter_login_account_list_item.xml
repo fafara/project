@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/register_button_height"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/login_account_item_txt_top_margin"
+        android:textColor="@color/register_edittext_color"
+        android:textSize="@dimen/register_edittext_size"/>
+
+    <ImageView
+        android:id="@+id/img_delete"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/login_img_top_margin"
+        android:layout_marginLeft="@dimen/register_show_pwd_left_margin"
+        android:layout_marginRight="@dimen/login_show_pwd_img_right_margin"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/login_delete_account"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_edit_layout_line_height"
+        android:background="@color/register_line_color"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

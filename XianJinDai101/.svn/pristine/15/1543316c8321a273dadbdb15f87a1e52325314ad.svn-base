@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/c_sv_baseinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:background="@color/grey_bg"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/c_person_info_tips"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_info"
+                        android:textColor="@color/xd_blue"
+                        android:textSize="@dimen/commontextsize"
+                        />
+
+                </TableRow>
+
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_company_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <EditText
+                        android:id="@+id/c_base_info_work_company_name_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:hint="@string/c_work_company_name_tip"
+                        android:textColorHint="@color/fourblack"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:textColor="@color/secondblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+
+                    </EditText>
+                </TableRow>
+
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_company_telephone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+                    <EditText
+                        android:id="@+id/edt_company_phone_et1"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:hint="区号"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:inputType="phone"
+                        android:textColor="@color/secondblack"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize"
+                        />
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/black"
+                        />
+                    <EditText
+                        android:id="@+id/c_base_info_work_company_phone_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_work_company_telephone_tip"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:inputType="phone"
+                        android:textColor="@color/secondblack"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize"
+                        />
+                </TableRow>
+
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_company_address"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <EditText
+                        android:id="@+id/c_base_info_work_detailaddress_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_work_address_tip2"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:textColorHint="@color/fourblack"
+                        android:textColor="@color/secondblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+                    </EditText>
+                </TableRow>
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_detailaddress_tip2"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <EditText
+                        android:id="@+id/c_base_info_work_address_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_work_detailaddress"
+                        android:background="@null"
+                        android:cursorVisible="true"
+                        android:textColorHint="@color/fourblack"
+                        android:textColor="@color/secondblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+                    </EditText>
+                </TableRow>
+
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_profession"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/c_base_info_work_profession_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:hint="@string/c_work_profession_tips"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+
+                    </com.rey.material.widget.TextView>
+
+                </TableRow>
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="职业分类"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <TextView
+                        android:id="@+id/c_base_info_wrok_occupational_classification_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="请选择职业分类"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+
+                    </TextView>
+                </TableRow>
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="18dp"
+                        android:paddingLeft="24dp"
+                        android:text="@string/c_work_month_money"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/commontextsize"
+                        android:visibility="visible"
+                        />
+
+                    <com.rey.material.widget.TextView
+                        android:id="@+id/c_base_info_wrok_month_level_et"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/c_work_month_money_tip"
+                        android:textColorHint="@color/fourblack"
+                        android:textSize="@dimen/commontextsize"
+                        >
+
+                    </com.rey.material.widget.TextView>
+                </TableRow>
+
+                <View
+                    style="@style/BlackHorizontalLine"
+                    >
+                </View>
+            </TableLayout>
+
+                        <com.zhy.autolayout.AutoLinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="60px"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/cb_base_info_Agreement"
+                                style="@style/textViewStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:checked="true"
+                                android:text="同意" />
+                            <com.rey.material.widget.TextView
+                                android:id="@+id/tv_base_info_JiHuo_Agreement"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:clickable="true"
+                                android:text="《瑞易贷产品服务协议》"
+                                android:textColor="@color/xd_blue" />
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/c_btn_workinfo_complete"
+                style="@style/CLightRaiseColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="24dp"
+                android:layout_weight="10"
+                android:text="@string/c_next"
+                android:textSize="@dimen/commontextsize"
+                >
+            </com.rey.material.widget.Button>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</com.zhy.autolayout.AutoLinearLayout>

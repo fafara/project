@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/c_credit_home_header"
+        layout="@layout/c_widget_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scoll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/xd_blue"
+                >
+
+                <com.zhy.autolayout.AutoFrameLayout
+                    android:id="@+id/frag_amount"
+                    android:layout_width="270px"
+                    android:layout_height="270px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="85px"
+                    android:layout_marginBottom="45px"
+                    android:layout_alignParentLeft="true">
+
+                    <ImageView
+                        android:layout_width="270px"
+                        android:layout_height="270px"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/circle" />
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_promoteAmount_quota"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5000"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/bodytextsize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="额度"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/leasttextsize" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+                </com.zhy.autolayout.AutoFrameLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="1px"
+                    android:layout_height="168px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="140px"
+                    android:layout_toRightOf="@+id/frag_amount"
+                    android:background="@drawable/dotted_line" />
+
+                <TextView
+                    android:id="@+id/tv_tip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="160px"
+                    android:layout_toRightOf="@+id/view"
+                    android:textColor="@color/white"
+                    android:text="补充以下信息"
+                    android:textSize="@dimen/bodytextsize"/>
+
+                <TextView
+                    android:id="@+id/tv_tip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_tip1"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="30px"
+                    android:layout_toRightOf="@+id/view"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bodytextsize"
+                    android:text="有助于提高您的可用额度" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+<!--央行征信-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/lay_center_bank_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img_providentfund"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="60px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/canter_bank_credit_auth"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/providentfund_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="65px"
+                    android:layout_toRightOf="@+id/img_providentfund"
+                    android:text="@string/center_bank_auth_tip1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodytextsize"/>
+
+                <TextView
+                    android:id="@+id/img_providentfund_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/providentfund_text1"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="65px"
+                    android:layout_toRightOf="@+id/img_providentfund"
+                    android:text="@string/center_bank_auth_tip2"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize"/>
+
+                <ImageView
+                    android:id="@+id/iv_center_bank_credit"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/credit_finished"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+<!--公积金认证-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/c_ll_provident_fund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="60px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/provident_fund_img"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/credit_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="65px"
+                    android:layout_toRightOf="@+id/img1"
+                    android:text="@string/providentfund_tip1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodytextsize"/>
+
+                <TextView
+                    android:id="@+id/credit_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/credit_text1"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="65px"
+                    android:layout_toRightOf="@+id/img1"
+                    android:text="@string/providentfund_tip2"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize"/>
+
+                <ImageView
+                    android:id="@+id/iv_provident_fund_credit"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/credit_finished"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+<!--手机运营商认证-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/c_ll_mobile_phone_operators"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mobile_img1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="60px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/tele_info_img"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/mobile__text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="65px"
+                    android:layout_toRightOf="@+id/mobile_img1"
+                    android:text="@string/mobile_manager_tip1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodytextsize"/>
+
+                <TextView
+                    android:id="@+id/mobile__text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobile__text1"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="65px"
+                    android:layout_toRightOf="@+id/mobile_img1"
+                    android:text="@string/mobile_manager_tip2"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize"/>
+
+                <ImageView
+                    android:id="@+id/iv_mobile_phone_operators"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/credit_outdate_img"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+<!--电商信息认证-->
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:id="@+id/c_ll_electricity_business_information_certification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="40px"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/elect_business_img1"
+                    android:layout_width="120px"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="60px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/elect_shop_img"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/elect_business___text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="65px"
+                    android:layout_toRightOf="@+id/elect_business_img1"
+                    android:text="@string/elect_shop_tip1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodytextsize"/>
+
+                <TextView
+                    android:id="@+id/elect_business__text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/elect_business___text1"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="65px"
+                    android:layout_toRightOf="@+id/elect_business_img1"
+                    android:text="@string/elect_shop_tip2"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize"/>
+
+                <ImageView
+                    android:id="@+id/iv__electricity_business_information_certification"
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/credit_under_auth"
+                    android:scaleType="fitCenter" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.zhy.autolayout.AutoLinearLayout>

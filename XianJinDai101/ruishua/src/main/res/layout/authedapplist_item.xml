@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+	android:layout_width="match_parent"
+	android:layout_margin="1px"
+	android:layout_height="260px"
+	android:background="@drawable/selector_grid_bg"
+	android:orientation="horizontal"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+		<ImageView
+			android:layout_weight="1"
+			android:id="@+id/auth_applogo"
+			android:layout_width="150px"
+			android:layout_height="150px"
+			android:layout_gravity="center"
+			android:layout_marginLeft="20px"
+			android:scaleType="centerInside"
+			/>
+		<com.zhy.autolayout.AutoLinearLayout
+			android:layout_weight="3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/auth_app_name"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginTop="10px"
+				android:layout_marginLeft="100px"
+				android:textColor="@color/secondblack"
+				android:textSize="@dimen/bodytextsize"/>
+
+			<TextView
+				android:id="@+id/auth_app_username"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_marginTop="10px"
+				android:layout_marginLeft="100px"
+				android:textColor="@color/secondblack"
+				android:textSize="@dimen/bodytextsize"/>
+			<com.zhy.autolayout.AutoLinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="10px"
+				android:layout_marginLeft="100px"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:textColor="@color/secondblack"
+					android:text="等级:"/>
+				<TextView
+					android:id="@+id/auth_app_level"
+					android:layout_width="100px"
+					android:layout_height="60px"
+					android:gravity="center"
+					android:background="@drawable/auth_creditcard_user_level"
+					android:textColor="@android:color/white"
+					android:textSize="@dimen/bodylittletextsize"/>
+			</com.zhy.autolayout.AutoLinearLayout>
+
+		</com.zhy.autolayout.AutoLinearLayout>
+		<ImageView
+			android:layout_weight="1"
+			android:id="@+id/iv_check_front"
+			android:layout_width="48px"
+			android:layout_height="48px"
+			android:layout_gravity="center"
+			android:visibility="invisible"
+			android:src="@drawable/auth_photo_checked"/>
+	</com.zhy.autolayout.AutoLinearLayout>
+
+
+

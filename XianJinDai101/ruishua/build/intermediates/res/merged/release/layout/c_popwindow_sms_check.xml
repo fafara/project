@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/SureBorrow.ContentTitle"
+            android:text="@string/c_common_mobile" />
+
+        <TextView
+            android:id="@+id/c_tv_phoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text=""
+            android:textSize="@dimen/mediumtitletext" />
+
+        <TextView
+            style="@style/SureBorrow.ContentTitle"
+            android:layout_marginLeft="3dp"
+            android:text="@string/c_common_checkno" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="120px"
+        android:background="@drawable/whiteroundshape"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/c_et_phonecode"
+            style="@style/SureBorrow.ContentTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:maxLength="4"
+            android:background="@null"
+            android:hint="@string/c_common_input_verify_code"
+            android:inputType="number"
+            android:textColorHint="@color/fourblack" />
+
+
+        <com.rey.material.widget.TextView
+            android:id="@+id/c_btn_sendmsg"
+            style="@style/SureBorrow.ContentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/xd_blue" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="190px"
+        android:layout_marginLeft="90px"
+        android:layout_marginRight="90px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/whiteroundshape"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/c_sure_borrow_btn"
+            style="@style/CLightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认"
+            android:textSize="@dimen/btntext" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

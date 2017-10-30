@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="226px"
+            android:layout_height="226px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/htic_identify_fail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="检测失败"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="可能失败的原因："
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rezion_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="15sp" android:layout_marginLeft="50dp"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/rl_remind2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginTop="120px"
+            android:orientation="horizontal">
+
+            <com.rey.material.widget.Button
+                android:id="@+id/btn_again"
+                style="@style/CLightwhiteColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="100px"
+                android:layout_marginTop="90px"
+                android:background="@color/xd_blue"
+                android:text="重新检测"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/btntext"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

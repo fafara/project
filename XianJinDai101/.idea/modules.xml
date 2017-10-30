@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XianJinDai101.iml" filepath="$PROJECT_DIR$/XianJinDai101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/keyBoard/keyBoard.iml" filepath="$PROJECT_DIR$/keyBoard/keyBoard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quickAdapter/quickAdapter.iml" filepath="$PROJECT_DIR$/quickAdapter/quickAdapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ruishua/ruishua.iml" filepath="$PROJECT_DIR$/ruishua/ruishua.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ryxcredit/ryxcredit.iml" filepath="$PROJECT_DIR$/ryxcredit/ryxcredit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ryxhttp/ryxhttp.iml" filepath="$PROJECT_DIR$/ryxhttp/ryxhttp.iml" />
+    </modules>
+  </component>
+</project>

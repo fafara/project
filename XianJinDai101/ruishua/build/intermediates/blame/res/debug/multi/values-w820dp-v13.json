@@ -1,0 +1,64 @@
+[
+    {
+        "outputFile": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 54,
+                    "endOffset": 105
+                },
+                "from": {
+                    "file": "D:\\RuiYinXin\\XianJinDai101\\ryxcredit\\build\\intermediates\\bundles\\default\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 54,
+                        "endOffset": 105
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 110,
+                    "endColumn": 57,
+                    "endOffset": 163
+                },
+                "from": {
+                    "file": "D:\\RuiYinXin\\XianJinDai101\\ruishua\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 168,
+                    "endColumn": 63,
+                    "endOffset": 227
+                },
+                "from": {
+                    "file": "C:\\Users\\RYX\\.android\\build-cache\\e3e7d93288044ed615fdfc8a02397b6c2ea362a6\\output\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            }
+        ]
+    }
+]

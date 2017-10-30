@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/GridBG"
+	android:baselineAligned="false"
+	android:orientation="vertical">
+	<include layout="@layout/ryxpaytitle"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"/>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="90px"
+		android:layout_gravity="center"
+		android:gravity="center"
+		android:text="只能绑定您本人银行卡"
+		android:textColor="@color/threeblack"
+		android:textSize="12sp"/>
+
+	<com.zhy.autolayout.AutoRelativeLayout
+		android:id="@+id/lay_name"
+		android:layout_width="match_parent"
+		android:layout_height="170px"
+		android:background="#ffffff"
+		>
+		<TextView
+			android:id="@+id/tv_userName_txt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="70px"
+			android:text="姓名"
+			android:textColor="@color/secondblack"
+			android:textSize="@dimen/bodytextsize"/>
+
+		<TextView
+			android:id="@+id/tv_userName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/tv_userName_txt"
+			android:layout_marginLeft="50px"
+			android:text="未知"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/bodytextsize"/>
+
+		<View
+			android:id="@+id/line_name"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/onepx"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="60px"
+			android:layout_marginRight="60px"
+			android:background="@color/register_line_color"
+			/>
+	</com.zhy.autolayout.AutoRelativeLayout>
+	<com.zhy.autolayout.AutoRelativeLayout
+		android:id="@+id/lay_id"
+		android:layout_width="match_parent"
+		android:layout_height="170px"
+		android:background="#ffffff"
+		>
+		<TextView
+			android:id="@+id/tv_debitcardno_txt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="70px"
+			android:text="卡号"
+			android:textColor="@color/secondblack"
+			android:textSize="@dimen/bodytextsize"/>
+		<EditText
+			android:id="@+id/edt_debitcardNo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/tv_debitcardno_txt"
+			android:layout_marginLeft="50px"
+			android:background="@null"
+			android:cursorVisible="true"
+			android:hint="请输入或拍照识别卡号"
+			android:inputType="number"
+			android:maxLength="30"
+			android:textColor="@android:color/black"
+			android:textColorHint="#cccccc"
+			android:textSize="@dimen/bodytextsize"/>
+		<ImageView
+			android:id="@+id/iv_indentify_card"
+			android:layout_width="104px"
+			android:layout_height="80px"
+			android:layout_marginRight="70px"
+			android:layout_alignParentRight="true"
+			android:scaleType="fitCenter"
+			android:layout_centerVertical="true"
+			android:src="@drawable/card_identify_img"/>
+	</com.zhy.autolayout.AutoRelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/lay_id"
+		android:layout_marginLeft="90px"
+		android:layout_marginRight="90px"
+		android:layout_marginTop="95px">
+		<com.rey.material.widget.Button
+			android:id="@+id/btn_next"
+			style="@style/LightRaiseColorButtonRippleStyle"
+			android:layout_width="match_parent"
+			android:text="@string/next"
+			android:textSize="@dimen/contenttitletext"
+			/>
+	</RelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GridBG"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/merchantinfo_title"
+        layout="@layout/ryxpaytitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+<com.zhy.autolayout.AutoLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/bodylittletextsize"
+        android:layout_marginTop="40px"
+        android:textColor="@color/black"
+        android:text="请将身份证正反面放置指定区域"/>
+    <ImageView
+        android:id="@+id/img_front_idcard"
+        android:layout_width="560px"
+        android:layout_height="366px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70px"
+        android:src="@drawable/idcard_front"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="身份证头像面"
+        android:layout_marginTop="30px"
+        android:textSize="@dimen/bodylittletextsize"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/img_back_idcard"
+        android:layout_width="560px"
+        android:layout_height="366px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90px"
+        android:src="@drawable/idcard_back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="身份证国徽面"
+        android:layout_marginTop="30px"
+        android:textSize="@dimen/bodylittletextsize"
+        android:layout_marginBottom="60px"
+        android:textColor="@color/black"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_marginTop="30px"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="120px">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40px"
+            android:textColor="@color/red"
+            android:textSize="@dimen/bodylittletextsize"
+            android:text="注意事项:采用标准拍摄,避免反光和模糊,避免图片太小"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120px"
+        android:layout_marginLeft="70px"
+        android:layout_marginRight="70px">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btn_next"
+            style="@style/LightRaiseColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="下一步"
+            android:textSize="@dimen/contenttitletext" />
+    </LinearLayout>
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

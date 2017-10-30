@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:text="请在设备上插卡或刷卡"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediumtitletext" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:lineSpacingMultiplier="1.2"
+                android:singleLine="false"
+                android:text="插卡时将芯片紧贴感应面垂直插入，交易过程中请勿拔卡，直至交易完成看到拔卡提示后方可移出卡片。"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/paygrytext" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="300px"
+                android:src="@drawable/common_card_insert" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        
+        
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/onepx"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="5px"
+            android:background="@color/payhorizontalline" />
+        
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                android:lineSpacingMultiplier="1.2"
+                android:singleLine="false"
+                android:text="刷卡时自左向右平稳、匀速刷卡，磁条面向自己，将卡片紧贴卡槽底部，刷卡时不要提起或翘起卡片。"
+                android:textSize="@dimen/bodytextsize"
+                android:textColor="@color/paygrytext" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+         <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="300px"
+                android:layout_weight="1"
+                android:src="@drawable/img_swiping" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        
+        
+        
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

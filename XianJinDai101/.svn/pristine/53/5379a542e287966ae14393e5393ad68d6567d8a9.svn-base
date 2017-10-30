@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_head_height"
+        android:background="@color/register_head_bg"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="@dimen/register_head_img_size"
+            android:layout_height="@dimen/register_head_img_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/register_head_img_bottom_margin"
+            android:layout_marginLeft="@dimen/register_head_img_right_margin"
+            android:src="@drawable/register_close" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/register_head_text_bottom_margin"
+            android:text="@string/register_head"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/register_head_text_size" />
+
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_left_margin"
+        android:layout_marginTop="@dimen/register_layout_top_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/register_img_size"
+            android:layout_height="@dimen/register_img_size"
+            android:layout_gravity="bottom"
+            android:src="@drawable/register_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_layout_horizontal_space"
+            android:text="@string/register_phone_num"
+            android:textColor="@color/register_text_color"
+            android:textSize="@dimen/register_text_size" />
+
+        <EditText
+            android:id="@+id/reg_phoneet"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/register_text_horizontal_space"
+            android:background="@null"
+            android:layout_weight="1"
+            android:ems="10"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/register_edittext_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/register_edittext_size" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/register_text_bottom_margin"
+        android:layout_marginLeft="@dimen/register_line_left_margin"
+        android:background="@color/register_line_color" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_left_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/check_code"
+            android:layout_height="@dimen/register_img_size"
+            android:layout_width="@dimen/register_img_size"
+            android:layout_marginTop="@dimen/register_text_top_margin"
+            android:src="@drawable/register_checksum_img" />
+
+        <TextView
+            android:id="@+id/check_code_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/check_code"
+            android:layout_marginLeft="@dimen/register_layout_horizontal_space"
+            android:layout_marginTop="@dimen/register_text_top_margin"
+            android:text="@string/register_check_code"
+            android:textColor="@color/register_text_color"
+            android:textSize="@dimen/register_text_size" />
+
+        <EditText
+            android:id="@+id/check_code_edttxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/register_text_top_margin"
+            android:layout_marginLeft="@dimen/register_text_horizontal_space"
+            android:layout_toRightOf="@+id/check_code_txt"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:layout_weight="4"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/register_edittext_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/register_edittext_size" />
+
+        <Button
+            android:id="@+id/getcode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/checkcode_button_height"
+            style="@style/button_style"
+            android:text="获取验证码"
+            android:layout_marginLeft="@dimen/register_show_pwd_left_margin"
+            android:layout_marginTop="@dimen/register_row_top_margin"
+            android:layout_marginRight="@dimen/register_show_pwd_right_margin"
+            android:layout_toRightOf="@+id/check_code_edttxt" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/register_text_bottom_margin"
+        android:layout_marginLeft="@dimen/register_line_left_margin"
+        android:background="@color/register_line_color" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_left_margin"
+        android:layout_marginTop="@dimen/register_text_top_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phone_img"
+            android:layout_width="@dimen/register_img_size"
+            android:layout_height="@dimen/register_img_size"
+            android:src="@drawable/register_password_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_password"
+            android:layout_marginLeft="@dimen/register_layout_horizontal_space"
+            android:textColor="@color/register_text_color"
+            android:textSize="@dimen/register_text_size" />
+
+        <EditText
+            android:id="@+id/pwd_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_text_horizontal_space"
+            android:background="@null"
+            android:layout_weight="1"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:textColor="@color/register_edittext_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/register_edittext_size" />
+
+        <ImageView
+            android:id="@+id/show_pwd"
+            android:layout_width="@dimen/register_img_size"
+            android:layout_height="@dimen/register_img_size"
+            android:layout_marginLeft="@dimen/register_show_pwd_left_margin"
+            android:layout_marginRight="@dimen/register_show_pwd_right_margin"
+            android:background="@drawable/register_hide_password"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/register_text_bottom_margin"
+        android:layout_marginLeft="@dimen/register_line_left_margin"
+        android:background="@color/register_line_color" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_left_margin"
+        android:layout_marginTop="@dimen/register_text_top_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phone_imgpwd_edt_confirm"
+            android:layout_width="@dimen/register_img_size"
+            android:layout_height="@dimen/register_img_size"
+            android:src="@drawable/register_password_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_password"
+            android:layout_marginLeft="@dimen/register_layout_horizontal_space"
+            android:textColor="@color/register_text_color"
+            android:textSize="@dimen/register_text_size" />
+
+        <EditText
+            android:id="@+id/pwd_edt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_text_horizontal_space"
+            android:background="@null"
+            android:layout_weight="1"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:textColor="@color/register_edittext_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/register_edittext_size" />
+
+        <ImageView
+            android:id="@+id/show_pwd_confirm"
+            android:layout_width="@dimen/register_img_size"
+            android:layout_height="@dimen/register_img_size"
+            android:layout_marginLeft="@dimen/register_show_pwd_left_margin"
+            android:layout_marginRight="@dimen/register_show_pwd_right_margin"
+            android:background="@drawable/register_hide_password"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginTop="@dimen/register_text_bottom_margin"
+        android:layout_marginLeft="@dimen/register_line_left_margin"
+        android:background="@color/register_line_color" />
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/register_layout_left_margin"
+        android:layout_marginTop="@dimen/register_contract_top_margin"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/agree_checkbox"
+            android:layout_width="@dimen/register_img_size"
+            android:layout_height="@dimen/register_img_size"
+            android:background="@drawable/register_unchecked_contract"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/register_layout_horizontal_space"
+            android:textColor="@color/register_text_color"
+            android:text="@string/register_agree_contract"
+            android:textSize="@dimen/register_info_text_size"/>
+        <TextView
+            android:id="@+id/contract_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/register_contract_text_color"
+            android:text="@string/register_contract"
+            android:textSize="@dimen/register_info_text_size"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_button_height"
+        style="@style/button_style"
+        android:textColor="@android:color/white"
+        android:text="@string/register_txt"
+        android:textSize="@dimen/register_text_size"
+        android:layout_marginTop="@dimen/register_button_top_margin"
+        android:layout_marginLeft="@dimen/register_button_margin"
+        android:layout_marginRight="@dimen/register_button_margin"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/register_buttom_text_top_margin"
+        android:textColor="@color/register_text_color"
+        android:text="@string/register_swear"
+        android:textSize="@dimen/register_info_text_size"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

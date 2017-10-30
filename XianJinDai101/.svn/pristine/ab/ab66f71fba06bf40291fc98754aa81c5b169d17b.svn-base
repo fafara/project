@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ryx.payment.ruishua">
+
+    <!-- 获取手机相关信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 下载图片 使用 wifi 权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    >
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- 二维码 所需的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- itron 刷卡器权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 访问DownloadManager的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+   <!-- Android7.0以上音频获取勿打扰权限-->
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+
+
+    <!-- 信用卡识别的权限 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name="com.ryx.payment.ruishua.RyxApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ruishualogo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:replace="android:label,android:name">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="@string/rs_GDKey" />
+        <!-- xucc本地ruishua测试key -->
+        <!-- 0c12075a73aefb4b1b56fe63c4b8e568 -->
+        <!-- 瑞银信高德key -->
+        <!-- 5c0f58ee1e487164c4265c3f22fe0fae -->
+        <!-- 瑞刷高德key -->
+        <!-- 0ffe0b737bc0cadb24eeef1bc3b5b356 -->
+        <!-- 瑞刷2.0高德key -->
+        <!-- 057f8cdaf69002fc5dcff4c31d6e5d94 -->
+        <!-- 瑞和信高德key -->
+        <!-- e8ee28a5e3b5d36a97eee1f49210b132 -->
+        <!-- 配置美工出图大小，很重要 -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5761015267e58e5921003daf" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <uses-library android:name="android.test.runner" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德service -->
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.SplashActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ruishua">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.MyCreditCardActivity_"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.QuickPayOpenActivity_"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.Swiper_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.LoginActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" /> <!-- 请勿设为单利模式会导致首页生命周期有问题xucc -->
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.MessageScreenActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.MainActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.MessageDetailActiviy_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.UserInfoAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.UserAuthPhotoUploadActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.UserAuthenticateSignatureActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditCardAuthStep3Activity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditCardAuthStep1Activity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditCardAuthStep2Activity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditCardCheckFailActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditCardAuthSuccedActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditcardVertifyFailActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- <activity android:name=".authenticate.creditcard.CreditCardListActivity_" /> -->
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.AuthResultActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.CreateOrder_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.ImPayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.ryx.credit.swiper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.MainFragmentActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- <activity android:name=".convenience.Swiper_"></activity> -->
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.CardBalanceResultActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.RegisterEnterMobileMac_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.RegisterEnterPhoneNumber_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.ResetPassword_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.SetPassword_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.OrderSignature_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.RegisterSuccess_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.PaymentSuccessful_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.SignRequisitions_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.Cardno_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.BMIncomeAndExpenditureDetails2_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.RegisterAgreement_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.HtmlMessageActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.CreditClubActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.setting.Setting_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.setting.AboutUs_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.setting.FeedBack_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.setting.Update_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.setting.ChangePassWord_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.DetailsTabMainActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.DeviceList_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.GuideActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.BindDebitCardActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.BindDebitCardInfoAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.BindedDebitCardListActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.MoreActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.FlowActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.QqCoinRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.RefuelRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.MobileRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.AliPayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.JDRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.No1RechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.SuNingRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.AmazonRechargeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.SDActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.GYActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.WanMeiActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.BoKeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.TCActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.CreditCardListActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.CreditCardAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.RepaymentActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.TransferCardListActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.TransferCardAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.recharge.TransferCardInfoAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.BlackCheckMsgActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.BlackPhotoMsgActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.BlackCheckSignActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.PaymentActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.WithdrawListImActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.QrcodePayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.ScanningCodeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.ScanningPayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.ScanPayQrcodeDisPalyActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.CreditSplashActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.BindedCardListActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.MyBindCardItemActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.BankCardAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.DebitCardInfoAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        >
+        <activity android:name="com.ryx.payment.ruishua.bindcard.MyCreditCardAuthActivity_" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.MerchantInfoAdd_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.MerchantCredentialsUpload_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.Authenticate_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.UserToMerchantActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.SweepQuickPayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.VerificationCodeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.bindcard.BindedCardOpenQuickPay_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.SwiperMsgUploadActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.RegReferrerActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.DeViceListActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.SweepQuickPayOrderActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!-- 当前service暂时废弃,具体原因看service备注 -->
+        <service
+            android:name="com.ryx.payment.payplug.service.IFactoryService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.ryx.payment.payplug.activity.RyxPaySwiperActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.payplug.activity.PaySuccessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.ryx.payment.ruishua.service.IFactoryService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.ryx.payment.payplug.activity.RyxPayOrderMainActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ryx.payment.payplug.base.PayPlugBaseActivity" />
+        <activity
+            android:name="com.ryx.payment.payplug.activity.WeiXinQrcodePayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.payplug.activity.ZfbQrcodeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.payplug.activity.UnionQrcodePayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.CreateGestureActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.GesturePawdCheckActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.setting.UpdatePaswdActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.MoreIncreateActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.MyInvitationCodeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.DevPurchaseActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.IncomeDetailsActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.IncomeDetailInfoActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.DevPurchaseQrcodeActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.ADHtmlActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.SjfxDevPayQuickPayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.IncomeGuideActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.MyCouponActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.UnionQrcodePayActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.UnionQrcodePayShowActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.TermPledgeRuleActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.SweepQuickPayDataReplenishActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.UionQrcodeDataReplenishActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.PayStateCheckBaseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.sjfx.CirclefriendsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.RuibeanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.RuiBeanBuyUseRecordMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.RuiBeanPayActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.HtmlMsgKotlinMiddleWareAct"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.newauthenticate.IdCardUploadAct_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.newauthenticate.IdCardMsgAct_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.newauthenticate.newcreditcard.CreditAddCardNumberAct_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.newauthenticate.newcreditcard.CreditAddPhoneMsgAct_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.newauthenticate.NewAuthResultAct_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.authenticate.newauthenticate.newcreditcard.CreditcardVertifyFailNewActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.activity.QuickpayGuideActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.convenience.swiping.SwipingCardActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.ryx.payment.ruishua.convenience.swiping.SwipingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.ScanningPayResultActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ryx.payment.ruishua.usercenter.LoginVerificationCodeAct_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ryx.payment.ruishua.authenticate.creditcard.CreditCardAuthCardAddActivity_"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

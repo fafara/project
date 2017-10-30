@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?><!--信用卡激活-->
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eef1f3"
+    android:orientation="vertical"
+
+    >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/c_widget_title"></include>
+
+    <!--头部描述信息-->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="46px"
+        android:paddingTop="60px"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/c_activate_credit_line_tip"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/maxtextsize" />
+
+        <TextView
+            android:id="@+id/tv_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tip1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:text="@string/c_activate_credit_line_tip_1"
+            android:textAlignment="center"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+
+        <TextView
+            android:id="@+id/tv_tip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tip2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15px"
+            android:text="@string/c_activate_credit_line_tip_2"
+            android:textAlignment="center"
+            android:textColor="@color/threeblack"
+            android:textSize="@dimen/bodylittletextsize" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <!--基本信息-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay1"
+        android:layout_marginTop="60px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="54px"
+        android:paddingLeft="60px"
+        android:paddingTop="54px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_common_base_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodytextsize" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_gofinish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="点击去完善"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/commontextsize"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_finished"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_img"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="40px"
+                android:src="@drawable/c_icon_jiantou_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <!--运营商信息-->
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/lay_cotactinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_info"
+        android:layout_marginTop="60px"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="54px"
+        android:paddingLeft="60px"
+        android:paddingTop="54px"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/c_common_contact_info"
+            android:textColor="@color/black"
+            android:textSize="@dimen/bodytextsize" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_contactgofn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="点击去完善"
+                android:textColor="@color/threeblack"
+                android:textSize="@dimen/commontextsize"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_contactfn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/right_img"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="40px"
+                android:src="@drawable/c_icon_jiantou_right" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_cotactinfo">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="25dp">
+            <!--信用卡记录-->
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="54px"
+                    android:layout_marginTop="54px"
+                    android:text="@string/perfect_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/bodytextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onepx"
+                android:background="@color/grey_bg" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/c_ry_credit_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onepx"
+                android:background="@color/grey_bg" />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/lay_addMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/onepx"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/add_img" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="54px"
+                    android:layout_marginLeft="60px"
+                    android:layout_marginTop="54px"
+                    android:text="@string/c_add_more"
+                    android:textColor="@color/threeblack"
+                    android:textSize="@dimen/bodylittletextsize" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <!--下一步按钮-->
+            <com.rey.material.widget.Button
+                android:id="@+id/c_btn_activate_apply_limit"
+                style="@style/CLightRaiseColorButtonRippleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:layout_marginTop="90px"
+                android:text="下一步"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/bodytextsize"
+                android:visibility="gone" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="90px"
+                android:layout_marginRight="90px"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/c_tv_dfbank_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/df_bank_list"
+                    android:textColor="@color/xd_blue"
+                    android:textSize="@dimen/leasttextsize" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+
+
+    <include
+        layout="@layout/c_view_common_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

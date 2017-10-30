@@ -1,0 +1,248 @@
+package com.ryx.payment.ruishua.fragment;
+
+import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+import android.widget.ListView;
+
+import com.cjj.MaterialRefreshLayout;
+import com.cjj.MaterialRefreshListener;
+import com.ryx.payment.ruishua.R;
+import com.ryx.payment.ruishua.RyxAppconfig;
+import com.ryx.payment.ruishua.RyxAppdata;
+import com.ryx.payment.ruishua.activity.BaseFragment;
+import com.ryx.payment.ruishua.activity.MessageDetailActiviy_;
+import com.ryx.payment.ruishua.activity.MessageScreenActivity;
+import com.ryx.payment.ruishua.adapter.MsgListAdapter;
+import com.ryx.payment.ruishua.bean.MsgInfo;
+import com.ryx.payment.ruishua.bean.RyxPayResult;
+import com.ryx.payment.ruishua.listener.FragmentListener;
+import com.ryx.payment.ruishua.utils.JsonUtil;
+import com.ryx.payment.ruishua.utils.LogUtil;
+import com.ryx.payment.ruishua.utils.PreferenceUtil;
+import com.zhy.autolayout.AutoLinearLayout;
+
+import org.androidannotations.annotations.AfterViews;
+import org.androidannotations.annotations.Bean;
+import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ItemClick;
+import org.androidannotations.annotations.ViewById;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+/**
+ * Created by xiepingping on 2016/7/14.
+ */
+@EFragment(R.layout.fragment_message_personal_content)
+public class MessagePersonalFragment extends BaseFragment {
+
+    private FragmentListener mListener;
+    @ViewById
+    MaterialRefreshLayout materialRefreshLayout;
+    @ViewById
+    ListView lv_personalmsg;
+    @Bean
+    MsgListAdapter adapter;
+    @ViewById
+    AutoLinearLayout lay_top;
+
+    private boolean isUpRefresh = false;
+    private boolean isDownRefresh = false;
+    ArrayList<MsgInfo> tempNoticeList = new ArrayList<MsgInfo>();
+    private int offset = 1;
+
+    private int unreadPersonNoticeNumber = 0;//未读个人消息
+    private Context context;
+    private String jsonData;
+    private  final  int  WILL_HAS_UPDATE=21;
+    /**
+     * 创建资金动态实例
+     *
+     * @return
+     */
+    public static MessagePersonalFragment newInstance() {
+        MessagePersonalFragment_ fragment = new MessagePersonalFragment_();
+        return fragment;
+    }
+
+    @AfterViews
+    public void afterView() {
+        initRefreshViews();
+        tempNoticeList.clear();
+        adapter.setList(tempNoticeList);
+        lv_personalmsg.setAdapter(adapter);
+        mListener.doDataRequest(null);
+    }
+
+    private void initRefreshViews() {
+        materialRefreshLayout.setMaterialRefreshListener(new MaterialRefreshListener() {
+            @Override
+            public void onRefresh(final MaterialRefreshLayout materialRefreshLayout) {
+                isDownRefresh = true;
+                tempNoticeList.clear();
+                offset = 1;
+                unreadPersonNoticeNumber = 0;
+                mListener.doDataRequest(null);
+            }
+
+            @Override
+            public void onRefreshLoadMore(final MaterialRefreshLayout materialRefreshLayout) {
+                isUpRefresh = true;
+                tempNoticeList.clear();
+                mListener.doDataRequest(null);
+            }
+        });
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        this.context= context;
+        try {
+            mListener = (MessageScreenActivity) getBaseActivity();
+        } catch (ClassCastException e) {
+            e.printStackTrace();
+        }
+        super.onAttach(context);
+    }
+
+    /**
+     * activity回调Fragment接口
+     *
+     * @param actiontype
+     * @param qtpayResult
+     */
+    public void send(int actiontype, RyxPayResult qtpayResult) {
+
+        if (actiontype == 0x111) {
+            if(isUpRefresh){
+                materialRefreshLayout.finishRefreshLoadMore();
+            }else if(isDownRefresh){
+                materialRefreshLayout.finishRefresh();
+            }
+            ArrayList<MsgInfo> list =  analyzeNotices(qtpayResult.getData());
+            if(list.size()>0){
+                tempNoticeList.addAll(list);
+            }else if(isUpRefresh){
+                LogUtil.showToast((MessageScreenActivity)context,"无更多消息！");
+            }
+            if(isUpRefresh){
+                isUpRefresh= false;
+            }
+            if(isDownRefresh){
+                isDownRefresh = false;
+            }
+            initList();
+        } else if (actiontype == 0x222) {
+            if(isUpRefresh){
+                materialRefreshLayout.finishRefreshLoadMore();
+                isUpRefresh = false;
+            }else if(isDownRefresh){
+                materialRefreshLayout.finishRefresh();
+                isDownRefresh = false;
+            }
+        }
+    }
+
+    private void initList() {
+        resetPubList();
+        adapter.notifyDataSetChanged();
+        lv_personalmsg.setAdapter(adapter);
+        if (tempNoticeList.size() == 0) {
+            lay_top.setVisibility(View.VISIBLE);
+        } else {
+            lay_top.setVisibility(View.GONE);
+        }
+    }
+
+    public void resetPubList() {
+        int len = tempNoticeList.size();
+        ArrayList<MsgInfo> templist1 = new ArrayList<MsgInfo>();
+        ArrayList<MsgInfo> templist2 = new ArrayList<MsgInfo>();
+        for (int i = 0; i < len; i++) {
+            MsgInfo msgInfo = tempNoticeList.get(i);
+            if ("0".equals(msgInfo.getReadFlag())) {
+                templist1.add(msgInfo);
+            } else {
+                templist2.add(msgInfo);
+            }
+        }
+        tempNoticeList.clear();
+        tempNoticeList.addAll(templist1);
+        tempNoticeList.addAll(templist2);
+    }
+
+    //解析通知内容
+    private ArrayList<MsgInfo> analyzeNotices(String noticeData) {
+        ArrayList<MsgInfo> list = new ArrayList<MsgInfo>();
+        if (noticeData != null) {
+            try {
+                JSONObject noticeObj = new JSONObject(noticeData);
+                if (RyxAppconfig.QTNET_SUCCESS.equals(noticeObj.getJSONObject(
+                        "result").getString("resultCode"))) {
+                    JSONArray noticeArray = noticeObj.getJSONArray("resultBean");
+                    int length = noticeArray.length();
+                    MsgInfo msgInfo = null;
+                    for (int i = 0; i < length; i++) {
+                        msgInfo = new MsgInfo();
+                        String noticeCode = JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "noticeCode");
+                        msgInfo.setNoticeCode(noticeCode);
+                        msgInfo.setTitle(JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "title"));
+                        msgInfo.setContent(JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "noticeContent"));
+                        msgInfo.setTime(JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "effectTime"));
+                        msgInfo.setReadFlag(JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "readFlag"));
+                        String noticeType = JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "noticeType");
+                        msgInfo.setPopup(JsonUtil.getValueFromJSONObject(
+                                noticeArray.getJSONObject(i), "popup"));
+                        msgInfo.setNoticeType(noticeType);
+                        String readFlag = "";
+                        if ("1".equals(noticeType)) {
+                            readFlag = JsonUtil.getValueFromJSONObject(
+                                    noticeArray.getJSONObject(i), "readFlag");
+                            msgInfo.setReadFlag(readFlag);
+                            list.add(msgInfo);
+                        }
+                        // 如果是个人消息，则根据readFlag判断消息状态
+                        if(("1".equals(noticeType) && "0".equals(readFlag))){
+                            unreadPersonNoticeNumber = unreadPersonNoticeNumber+1;
+                        }
+                    }
+                    PreferenceUtil.getInstance((MessageScreenActivity)context).saveInt(
+                            "unreadNoticePersonNumber_"
+                                    + RyxAppdata.getInstance((MessageScreenActivity)context)
+                                    .getMobileNo(), unreadPersonNoticeNumber);
+                    offset = offset + noticeArray.length();
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            } finally {
+                noticeData = null;
+            }
+        }
+        return list;
+    }
+
+    @ItemClick(R.id.lv_personalmsg)
+    public void getClickItem(int position) {
+        Intent intent = new Intent((MessageScreenActivity)context, MessageDetailActiviy_.class);
+        intent.putExtra("msgMap", (Serializable) tempNoticeList.get(position));
+        startActivityForResult(intent,WILL_HAS_UPDATE);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+            tempNoticeList.clear();
+            offset = 1;
+            unreadPersonNoticeNumber=0;
+            mListener.doDataRequest(null);
+    }
+
+}

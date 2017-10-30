@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GridBG"
+    tools:context="com.ryx.payment.ruishua.fragment.ExpiredFragment">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/nodatalayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/GridBG"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:src="@drawable/usercentert_nocoupon"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textmsg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px"
+            android:text="暂无数据!"
+            android:textSize="@dimen/bodytextsize"
+            android:textColor="@color/secondblack"/>
+
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/rc_expired"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        />
+
+</FrameLayout>
